@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Жанна Халбекова](https://up.htmlacademy.ru/htmlcss/33/user/1774289).
-* Наставник: `Андрей Ефимов`.(https://htmlacademy.ru/profile/efiand)
+* Наставник: `Андрей Ефимов`.(https://up.htmlacademy.ru/profession/frontender/13/htmlcss/user/367335)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
