@@ -19,8 +19,8 @@
       <nav class="navigation">
         <form action="https://echo.htmlacademy.ru">
           <label>
-            <span class="visually-hidden">Иконка Лупы.</span>
-            <input type="search" name="search" value="Текст поиска">
+            <span class="visually-hidden">Поиск:</span>
+            <input type="search" name="search" placeholder="Поиск по сайту">
           </label>
           <button type="submit">
             Найти
@@ -30,7 +30,7 @@
         <ul class="navigation-user">
           <li class="user-item">
             <a class="user-link" href="#">
-              <span class="visually-hidden">Иконка пользователя.</span>
+              <span class="visually-hidden">Вход</span>
               Войти
             </a>
           </li>
@@ -41,22 +41,24 @@
           </li>
           <li class="user-item">
             <a class="user-link" href="#">
-              <span class="visually-hidden">Иконка корзины.</span>
+              <p class="user-link-count">
+                <span class="visually-hidden">Товаров в корзине:</span> 2
+              </p>
               Корзина
             </a>
             <ul class="basket-list">
               <li><a href="#">Любительская селфи-палка</a></li>
               <li><a href="#">Профессиональная селфи-палка</a></li>
-              <p>Товаров: 2</p>
-              <p>Сумма: 2000 ₽</p>
             </ul>
+            <p>Товаров: 2</p>
+            <p>Сумма: 2000 ₽</p>
             <a href="#">Открыть корзину</a>
           </li>
         </ul>
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <ul>
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
@@ -82,14 +84,14 @@
     <!-- Main-index -->
     <main class="main-index">
 
-      <!-- Slider-div -->
-      <div class="slider-div">
+      <!-- Block-slider -->
+      <div class="block-slider">
         <div class="container">
             <a class="slider-btn slider-btn-prev" href="#">Prev</a>
             <a class="slider-btn slider-btn-next" href="#">Next</a>
 
             <!-- Slider-list -->
-            <ol class="slider-list">
+            <ul class="slider-list">
               <li class="slider-item">
                 <img class="slider-image" src="#" alt="Квадрокоптер.">
                 <p class="slider-title">
@@ -102,12 +104,14 @@
 
                 <!-- Slider-table -->
                 <dl class="slider-table">
-                  <dt>800 м</dt>
-                  <dd>Дальность полета</dd>
-                </dl>
-                <dl>
-                  <dt>50 м</dt>
-                  <dd>Радиус поражения</dd>
+                  <div>
+                    <dt>800 м</dt>
+                    <dd>Дальность полета</dd>
+                  </div>
+                  <div>
+                    <dt>50 м</dt>
+                    <dd>Радиус поражения</dd>
+                  </div>
                 </dl>
               </li>
 
@@ -140,19 +144,21 @@
 
                 <!-- Slider-table -->
                 <dl class="slider-table">
-                  <dt>8,5 м</dt>
-                  <dd>Длина палки</dd>
-                </dl>
-                <dl class="slider-table">
-                  <dt>5 кг</dt>
-                  <dd>Вес палки</dd>
-                </dl>
-                <dl class="slider-table">
-                  <dt>Карбон</dt>
-                  <dd>Материал</dd>
+                  <div>
+                    <dt>8,5 м</dt>
+                    <dd>Длина палки</dd>
+                  </div>
+                  <div>
+                    <dt>5 кг</dt>
+                    <dd>Вес палки</dd>
+                  </div>
+                  <div>
+                    <dt>Карбон</dt>
+                    <dd>Материал</dd>
+                  </div>
                 </dl>
               </li>
-          </ol>
+          </ul>
 
         </div>
       </div>
@@ -267,8 +273,8 @@
     <!-- Main-footer -->
     <footer class="main-footer">
 
-      <!-- Footer-contacts -->
-      <div class="footer-contacts">
+      <!-- Page-footer-start -->
+      <div class="page-footer-start">
         <img src="#" alt="Логотип интернет-магазина «Девайс».">
         <address class="footer-contacts-address">
           <p class="about-text">
@@ -315,8 +321,8 @@
         </ul>
       </section>
 
-      <!-- Footer-logo -->
-      <div class="footer-logo">
+      <!-- Page-footer-end -->
+      <div class="page-footer-end">
         <a href="tel:88128121212">Тел:+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img src="#" alt="Логотип Html Academy.">
