@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Каталог в интернет-магазине гаджетов "Девайс".</title>
     <base href="https://htmlacademy-htmlcss.github.io/1774289-device-33/3/">
 </head>
   <body>
@@ -10,7 +10,7 @@
     <!-- Header-logo -->
     <header class="header-logo">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс".</h1>
-      <a class="header-logo-link">
+      <a class="header-logo-link" href="index.html">
         <img src="#" alt="Логотип интернет-магазина «Девайс».">
       </a>
     </header>
@@ -21,7 +21,7 @@
         <form action="https://echo.htmlacademy.ru">
           <label>
             <span class="visually-hidden">Поиск:</span>
-            <input type="search" name="search" placeholder="Поиск по сайту">
+            <input type="search" name="search" placeholder="Поиск по сайту" value="Текст поиска">
           </label>
           <button type="submit">
             Найти
@@ -31,7 +31,6 @@
         <ul class="navigation-user">
           <li class="user-item">
             <a class="user-link" href="#">
-              <span class="visually-hidden">Вход</span>
               Коля Петухов
             </a>
             <a class="disabled" href="#">Выйти</a>
@@ -94,7 +93,7 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог товаров</a>
+            <a class="breadcrumbs-link" href="#!">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -110,7 +109,12 @@
           <!-- Catalog-filter-group -->
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
-            от 0<input type="range" min="0" max="10000" step="5000">до 5000
+            <label>
+              от <input type="number" min="0" max="8000">
+            </label>
+            <label>
+              до <input type="number" min="0" max="8000">
+            </label>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -118,31 +122,31 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="black" checked>
+                  <input class="control-input" type="checkbox" name="color[]" value="black" checked>
                   Черный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="white" checked>
+                  <input class="control-input" type="checkbox" name="color[]" value="white" checked>
                   Белый
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="blue">
+                  <input class="control-input" type="checkbox" name="color[]" value="blue">
                   Синий
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="red">
+                  <input class="control-input" type="checkbox" name="color[]" value="red">
                   Красный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="pink">
+                  <input class="control-input" type="checkbox" name="color[]" value="pink">
                   Розовый
                 </label>
               </li>
@@ -154,13 +158,13 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="option-yes" value="there's" checked>
+                  <input class="control-input" type="radio" name="option" value="there's" checked>
                   Есть
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="option-no" value="no">
+                  <input class="control-input" type="radio" name="option" value="no">
                   Нет
                 </label>
               </li>
@@ -171,23 +175,24 @@
         </form>
 
         <!-- Select -->
-        <label>Сортировка:</label>
-        <select class="select-control">
-          <option value="popular">Популярные</option>
-          <option value="cheap">Дешёвые</option>
-          <option value="expensive">Дорогие</option>
-        </select>
-        <a class="button" href="#">
+        <label> Сортировка:
+          <select class="select-control">
+            <option value="popular">Популярные</option>
+            <option value="cheap">Дешёвые</option>
+            <option value="expensive">Дорогие</option>
+          </select>
+        </label>
+        <a class="button-ascending" href="#">
           <span class="visually-hidden">По возрастанию</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-descending" href="#">
           <span class="visually-hidden">По убыванию</span>
         </a>
 
         <!-- Product-list -->
         <ul class="product-list">
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="Селфи-палка.">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
@@ -252,7 +257,7 @@
     <!-- Main-footer -->
     <footer class="main-footer">
 
-      <!-- Page-Footer-Start -->
+      <!-- Page-footer-start -->
       <div class="page-footer-start">
         <img src="#" alt="Логотип интернет-магазина «Девайс».">
         <address class="footer-contacts-address">
@@ -300,7 +305,7 @@
         </ul>
       </section>
 
-      <!-- Page-footer-End -->
+      <!-- Page-footer-end -->
       <div class="page-footer-end">
         <a href="tel:88128121212">Тел:+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
