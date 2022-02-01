@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Raleway */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #fff;
+  color: #000;
+}
+
+.button {
+  font-family: "Raleway";
+  font-weight: 800;
+  background-color: #FFE17F;
+  font-size: inherit;
+  line-height: 21px;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  background-color: #ffe17f;
+  color: #000;
+}
+
+.user-link {
+  font-family: "Rubik";
+  font-weight: 400;
+  color: #000;
+  background-color: #ffe17f;
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: #000;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-link {
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/* Main-index */
+.main-index {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Block-slider */
+.slider-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.slider-description {
+  font-family: "Rubik";
+  font-weight: 400;
+  color: #444;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.subhead {
+  font-weight: 400;
+  font-size: 16px;
+  color: #444;
+}
+
+.category-link {
+  font-family: "Raleway";
+  font-weight: 800;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.item-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.item-subtitle {
+  font-weight: 400;
+  color: #444;
+}
+
+.button-wide-iconable {
+  font-family: "Raleway";
+  font-weight: 800;
+  color: #000;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
