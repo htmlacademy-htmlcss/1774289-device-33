@@ -12,13 +12,18 @@
   <!-- Block-slider -->
   <div class="block-slider">
     <div class="container">
-      <a class="slider-button slider-button-prev" href="#">Prev</a>
-      <a class="slider-button slider-button-next" href="#">Next</a>
+      <a class="slider-button slider-button-prev">
+        <img src="../images/icons/left-tall-arrow.svg" alt="Стрелка влево." width="20" height="60">
+      </a>
+
+      <a class="slider-button slider-button-next">
+        <img src="../images/icons/right-tall-arrow.svg" alt="Стрелка вправо." width="20" height="60">
+      </a>
 
       <!-- Slider-list -->
       <ul class="slider-list">
         <li class="slider-item">
-          <img class="slider-image" src="#" alt="Квадрокоптер.">
+          <img class="slider-image" src="../images/slider/slider1.png" alt="Квадрокоптер." width="560" height="560">
           <p class="title">
             Порхает как бабочка, жалит как пчела!
           </p>
@@ -41,7 +46,7 @@
         </li>
 
         <li class="slider-item">
-          <img class="slider-image" src="#" alt="Фитнес-браслет.">
+          <img class="slider-image" src="../images/slider/slider2.png" alt="Фитнес-браслет." width="560" height="560">
           <p class="title">
             Худеем правильно!
           </p>
@@ -58,7 +63,7 @@
         </li>
 
         <li class="slider-item">
-          <img class="slider-image" src="#" alt="Палка для селфи.">
+          <img class="slider-image" src="../images/slider/slider3.png" alt="Палка для селфи." width="560" height="560">
           <p class="title">
             Делай селфи, как Бен Стиллер!
           </p>
@@ -94,22 +99,40 @@
     <h2 class="visually-hidden">Список категорий каталога.</h2>
     <ul class="category-list">
       <li class="category-item">
-        <a class="category-link" href="#">Виртуальная реальность</a>
+        <a class="category-link" href="#">
+          <img src="../images/property/property1.svg" alt="Категория «Виртуальная реальность»." width="160" height="160">
+          Виртуальная реальность
+        </a>
       </li>
       <li class="category-item">
-        <a class="category-link" href="#">Моноподы для селфи</a>
+        <a class="category-link" href="#">
+          <img src="../images/property/property2.svg" alt="Категория «Моноподы для селфи»." width="160" height="160">
+          Моноподы для селфи
+        </a>
       </li>
       <li class="category-item">
-        <a class="category-link" href="#">Экшн-камеры</a>
+        <a class="category-link" href="#">
+          <img src="../images/property/property3.svg" alt="Категория «Экшн-камеры»." width="160" height="160">
+          Экшн-камеры
+        </a>
       </li>
       <li class="category-item">
-        <a class="category-link" href="#">Фитнес-браслеты</a>
+        <a class="category-link" href="#">
+          <img src="../images/property/property4.svg" alt="Категория «Фитнес-браслеты»." width="160" height="160">
+          Фитнес-браслеты
+        </a>
       </li>
       <li class="category-item">
-        <a class="category-link" href="#">Умные часы</a>
+        <a class="category-link" href="#">
+          <img src="../images/property/property5.svg" alt="Категория «Умные часы»." width="160" height="160">
+          Умные часы
+        </a>
       </li>
       <li class="category-item">
-        <a class="category-link" href="#">Квадрокоптеры</a>
+        <a class="category-link" href="#">
+          <img src="../images/property/property6.svg" alt="Категория «Квадрокоптеры»." width="160" height="160">
+          Квадрокоптеры
+        </a>
       </li>
     </ul>
   </section>
@@ -125,6 +148,7 @@
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
           заработаем, поднимая его на ваш этаж.
         </p>
+        <img src="../images/info/image1.svg" alt="Служба доставки курьером." width="136" height="164">
       </li>
       <li class="security-item">
         <a class="button button-security" href="#">Гарантия</a>
@@ -133,6 +157,7 @@
           Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
           не дом, конечно же.
         </p>
+        <img src="../images/info/image2.svg" alt="Гарантийное обслуживание." width="171" height="195">
       </li>
       <li class="credit-item">
         <a class="button button-credit" href="#">Кредит</a>
@@ -141,13 +166,15 @@
           Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
           Выгодные для банка, разумеется.
         </p>
+        <img src="../images/info/image3.svg" alt="Помощь в получении кредита." width="156" height="188">
       </li>
     </ol>
   </section>
 
-  <!-- Delivery -->
-  <a class="delivery-button" href="#">
+  <a class="button-wide-iconable" href="#">
+    <img src="../images/icons/truck.svg" alt="Иконка грузовика." width="47" height="31">
     <p>Доставим редкий товар под заказ</p>
+    <img src="../images/exclamation-point.png" alt="Иконка восклицательного знака." width="40" height="40">
   </a>
 
   <!-- About-us -->
@@ -197,7 +224,9 @@
       <input type="email" placeholder="Ваш e-mail">
       <button class="button-subscribe" type="submit">Подписаться</button>
     </form>
-    <p class="check-title">Это бесплатно</p>
+    <p class="check-title">
+      <img src="../images/icons/tick-big-green.svg" alt="Иконка галочки." width="16" height="16">
+      Это бесплатно</p>
   </section>
 </main>
 

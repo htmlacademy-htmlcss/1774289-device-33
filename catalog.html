@@ -42,6 +42,7 @@
 
                 <li class="user-item">
                     <a class="user-link" href="#">
+                        <img src="../images/icons/user.svg" alt="Иконка пользователя." width="15" height="12">
                         Коля Петухов
                     </a>
                     <a class="disabled" href="#">Выйти</a>
@@ -49,6 +50,7 @@
 
                 <li class="user-item">
                     <a class="user-link" href="#">
+                        <img src="../images/icons/static.svg" alt="Иконка статистики." width="10" height="12">
                         Сравнить
                     </a>
                 </li>
@@ -57,11 +59,22 @@
                         <p class="user-link-count">
                             <span class="visually-hidden">Товаров в корзине:</span> 2
                         </p>
+                        <img src="../images/icons/basket.svg" alt="Иконка корзины." width="13" height="21">
                         Корзина
                     </a>
                     <ul class="basket-list">
-                        <li><a href="#">Любительская селфи-палка</a></li>
-                        <li><a href="#">Профессиональная селфи-палка</a></li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/product-1-small.jpg" alt="Товар:«Любительская селфи-палка» добавлен в корзину" width="39" height="43">
+                                Любительская селфи-палка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/product-2-small.jpg" alt="Товар:«Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+                                Профессиональная селфи-палка
+                            </a>
+                        </li>
                     </ul>
                     <p>Товаров: 2</p>
                     <p>Сумма: 2000 ₽</p>
@@ -197,39 +210,39 @@
                     <option value="expensive">Дорогие</option>
                 </select>
             </label>
-            <a class="button-ascending" href="#">
-                <span class="visually-hidden">По возрастанию</span>
+            <a class="button-ascending">
+                <img src="../images/icons/sort-item1.svg" alt="По возрастанию." width="30" height="30">
             </a>
-            <a class="button-descending" href="#">
-                <span class="visually-hidden">По убыванию</span>
+            <a class="button-descending">
+                <img src="../images/icons/sort-item2.svg" alt="По убыванию." width="30" height="30">
             </a>
 
             <!-- Product-list -->
             <ul class="product-list">
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Селфи-палка.">
+                        <img class="product-card-image" src="../images/products/product1.jpg" alt="Селфи-палка." width="360" height="380">
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
                     </a>
                     <p class="product-card-price">744 ₽</p>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Профессиональная селфи-палка.">
+                        <img class="product-card-image" src="../images/products/product2.jpg" alt="Профессиональная селфи-палка." width="360" height="380">
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                     </a>
                     <p class="product-card-price">1500 ₽</p>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Непотопляемая cелфи-палка.">
+                        <img class="product-card-image" src="../images/products/product3.jpg" alt="Непотопляемая селфи-палка." width="360" height="380">
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                     </a>
                     <p class="product-card-price">2500 ₽</p>
                 </li>
                 <li class="product-card">
                     <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной».">
+                        <img class="product-card-image" src="../images/products/product4.jpg" alt="Селфи-палка «Следуй за мной»." width="360" height="380">
                         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                     </a>
                     <p class="product-card-price">1500 ₽</p>
@@ -275,7 +288,7 @@
 
         <!-- Page-footer-start -->
         <div class="page-footer-start">
-            <img src="#" alt="Логотип интернет-магазина «Девайс».">
+            <img src="../images/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
             <address class="footer-contacts-address">
                 <p class="about-text">
                     Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -304,18 +317,21 @@
             <h2 class="visually-hidden">Социальные сети.</h2>
             <ul class="footer-social-list">
                 <li class="footer-social-item">
-                    <a class="button" href="https://www.facebook.com/htmlacademy">
+                    <a class="button-social" href="https://www.facebook.com/htmlacademy">
                         <span class="visually-hidden">Facebook.</span>
+                        <img src="../images/icons/facebook.svg" alt="Facebook." width="40" height="40">
                     </a>
                 </li>
                 <li class="footer-social-item">
-                    <a class="button" href="https://www.instagram.com/htmlacademy/">
+                    <a class="button-social" href="https://www.instagram.com/htmlacademy/">
                         <span class="visually-hidden">Instagram.</span>
+                        <img src="../images/icons/instagram.svg" alt="Instagram." width="40" height="40">
                     </a>
                 </li>
                 <li class="footer-social-item">
-                    <a class="button" href="https://twitter.com/htmlacademy_ru">
+                    <a class="button-social" href="https://twitter.com/htmlacademy_ru">
                         <span class="visually-hidden">Twitter.</span>
+                        <img src="../images/icons/twitter.svg" alt="Twitter." width="40" height="40">
                     </a>
                 </li>
             </ul>
@@ -325,7 +341,7 @@
         <div class="page-footer-end">
             <a href="tel:88128121212">Тел:+7 (812) 812-12-12</a>
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                <img src="#" alt="Логотип Html Academy.">
+                <img src="../images/logo-html-academy.svg" alt="Логотип Html Academy." width="115" height="33">
             </a>
         </div>
     </footer>
