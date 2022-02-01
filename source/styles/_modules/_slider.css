@@ -1,0 +1,12 @@
+.slider-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.slider-description {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #444;
+}
