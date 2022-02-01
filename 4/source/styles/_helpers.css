@@ -1,0 +1,10 @@
+.container {
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
