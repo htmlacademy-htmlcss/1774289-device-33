@@ -2,18 +2,18 @@
 <html lang="ru">
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta charset="utf-8">
+    <title>Device – Главная</title>
+
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link type="image/png" href="favicon-32x32.png" rel="icon" sizes="32x32">
+    <link type="image/png" href="favicon-16x16.png" rel="icon" sizes="16x16">
+    <link href="site.webmanifest" rel="manifest">
+    <link href="safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
-
-    <meta charset="utf-8">
-    <title>Device</title>
-
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <header class="header-logo">
         <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс".</h1>
         <a class="header-logo-link">
-            <img src="img/logo-device.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
+            <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
         </a>
     </header>
 
@@ -31,7 +31,7 @@
             <form action="https://echo.htmlacademy.ru">
                 <label>
                     <span class="visually-hidden">Поиск:</span>
-                    <input type="search" name="search" placeholder="Поиск по сайту" value="Текст поиска">
+                    <input name="search" type="search" placeholder="Поиск по сайту" value="Текст поиска">
                 </label>
                 <button type="submit">
                     Найти
@@ -39,11 +39,13 @@
             </form>
 
             <ul class="navigation-list navigation-user">
+
                 <li class="user-item">
                     <a class="user-link" href="#">
                         Войти
                     </a>
                 </li>
+
                 <li class="user-item">
                     <a class="user-link" href="#">
                         Сравнить
@@ -68,7 +70,9 @@
 
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+                    <a class="navigation-link " href="catalog.html">
+                        Каталог товаров
+                    </a>
                     <ul>
                         <li><a class="catalog-link" href="#">Виртуальная реальность</a></li>
                         <li><a class="catalog-link" href="#">Моноподы для селфи</a></li>
@@ -90,6 +94,8 @@
             </ul>
         </nav>
     </header>
+
+
 
     <!-- Main-index -->
     <main class="main-index">
@@ -148,7 +154,8 @@
                             Делай селфи, как Бен Стиллер!
                         </p>
                         <p class="slider-description">
-                            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                            Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+                            5 кг.
                         </p>
                         <a class="button button-more" href="#">Подробнее</a>
 
@@ -206,21 +213,24 @@
                     <a class="button button-delivery" href="#">Доставка</a>
                     <h3 class="title">Доставка</h3>
                     <p class="item-subtitle">
-                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                        заработаем, поднимая его на ваш этаж.
                     </p>
                 </li>
                 <li class="security-item">
                     <a class="button button-security" href="#">Гарантия</a>
                     <h3 class="title">Гарантия</h3>
                     <p class="item-subtitle">
-                        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
+                        не дом, конечно же.
                     </p>
                 </li>
                 <li class="credit-item">
                     <a class="button button-credit" href="#">Кредит</a>
                     <h3 class="title">Кредит</h3>
                     <p class="item-subtitle">
-                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+                        Выгодные для банка, разумеется.
                     </p>
                 </li>
             </ol>
@@ -271,7 +281,8 @@
         <section class="subscription">
             <h2 class="title">Подпишитесь на рассылку</h2>
             <p class="subscription-subtitle">
-                Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+                Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения
+                и вот это вот всё.
             </p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
                 <input type="email" placeholder="Ваш e-mail">
@@ -280,6 +291,8 @@
             <p class="check-title">Это бесплатно</p>
         </section>
     </main>
+
+
 
     <!-- Main-footer -->
     <footer class="main-footer">
@@ -339,9 +352,7 @@
                 <img src="#" alt="Логотип Html Academy.">
             </a>
         </div>
-
     </footer>
-
 </body>
 
 </html>
