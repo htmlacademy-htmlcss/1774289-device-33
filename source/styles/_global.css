@@ -1,0 +1,12 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #fff;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
