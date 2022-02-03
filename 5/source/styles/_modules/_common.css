@@ -1,0 +1,24 @@
+.main-index {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.catalog-products {
+  background-color: #F0F0F0;
+}
+
+.container {
+  background: #FFFFFF;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.item-subtitle {
+  font-weight: 400;
+  color: #444444;
+}

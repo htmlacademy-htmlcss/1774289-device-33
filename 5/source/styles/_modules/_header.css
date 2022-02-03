@@ -1,0 +1,64 @@
+/* Header */
+.header {
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+.user-link {
+  color: #000000;
+  background-color: #FFE17F;
+  text-decoration: none;
+}
+
+.products-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.user-link-secondary {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-link {
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.catalog-filter-item {
+  font-size: 16px;
+  line-height: 19px;
+}
