@@ -1,10 +1,8 @@
-.heading {
-  font-weight: 400;
+.slider-heading {
   font-size: 36px;
 }
 
-.subhead {
-  font-weight: 400;
+.slider-subhead {
   font-size: 16px;
   color: #444444;
 }

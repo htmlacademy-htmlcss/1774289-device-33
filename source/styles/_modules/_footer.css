@@ -1,10 +1,6 @@
-.main-footer {
+.footer-main {
   color: #FFFFFF;
   background-color: #444444;
-}
-
-.main-footer a {
-  color: #FFFFFF;
 }
 
 .footer-contacts-address {
@@ -20,9 +16,10 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  color: inherit;
 }
 
-.contacts-phone-secondary {
+.footer-contacts-phone {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;

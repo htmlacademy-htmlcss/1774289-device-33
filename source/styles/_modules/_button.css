@@ -1,11 +1,11 @@
 .button {
-  font-family: inherit;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   background-color: #FFE17F;
   font-size: inherit;
   line-height: 21px;
   text-align: center;
-  color: #000000;
+  color: inherit;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
@@ -14,9 +14,9 @@
 .button-wide-iconable {
   display: block;
   background-color: #F0F0F0;
-  font-family: inherit;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  color: #000000;
+  color: inherit;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
@@ -25,48 +25,3 @@
   text-decoration: none;
 }
 
-.button-products {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  background-color: #FFFFFF;
-  color: #000000;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.pagination-show-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.pagination-list {
-  list-style-type: none;
-  background: #EBEBEB;
-}
-
-.pagination-link-secondary {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  color: #000000;
-  text-decoration: none;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.pagination-link {
-  font-size: 16px;
-  line-height: 20px;
-  color: #444444;
-  opacity: 0.3;
-  text-decoration: none;
-}
