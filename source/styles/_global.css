@@ -1,9 +1,10 @@
 body {
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  background-color: #fff;
-  color: #000;
+  background-color: #FFFFFF;
+  color: #444444;
 }
 
 img {

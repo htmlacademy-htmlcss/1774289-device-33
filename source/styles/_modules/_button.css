@@ -1,20 +1,22 @@
 .button {
-  font-family: inherit;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   background-color: #FFE17F;
   font-size: inherit;
   line-height: 21px;
   text-align: center;
-  color: #000;
+  color: inherit;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .button-wide-iconable {
-  font-family: inherit;
+  display: block;
+  background-color: #F0F0F0;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  color: #000;
+  color: inherit;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
