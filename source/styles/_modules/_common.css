@@ -1,16 +1,7 @@
-.main-index {
-  color: #000000;
-}
-
 .title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  color: inherit;
-}
-
-.item-subtitle {
-  font-weight: 400;
-  color: #444444;
+  color: #000000;
 }
