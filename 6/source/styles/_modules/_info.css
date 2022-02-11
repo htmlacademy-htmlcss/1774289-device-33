@@ -1,0 +1,7 @@
+.info-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+}

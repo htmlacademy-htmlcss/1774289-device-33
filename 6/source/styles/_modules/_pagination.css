@@ -1,0 +1,30 @@
+.pagination-show-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: inherit;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.pagination-list {
+  list-style-type: none;
+  background: #EBEBEB;
+}
+
+.pagination-link-secondary {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}

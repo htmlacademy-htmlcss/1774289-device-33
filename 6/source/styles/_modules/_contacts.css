@@ -1,0 +1,22 @@
+.contacts {
+  width: 532px;
+  color:#444444;
+}
+
+.contacts-title {
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  text-decoration-line: underline;
+  color: inherit;
+}

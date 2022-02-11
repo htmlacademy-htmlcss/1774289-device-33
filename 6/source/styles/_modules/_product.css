@@ -1,0 +1,15 @@
+.product-container {
+  background-color: #FFFFFF;
+}
+
+.product-card-link {
+  font-weight: 700;
+  color: inherit;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.product-card-price {
+  line-height: 21px;
+  color: #444444;
+}
