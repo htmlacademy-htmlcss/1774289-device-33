@@ -7,26 +7,10 @@
 
 .navigation-header {
   width: 517px;
-}
-
-.navigation-list {
-  width: 500px;
   margin: 0;
   padding: 0;
 }
 
 .navigation-list-secondary {
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-item-secondary {
-  max-width: 600px;
-  margin-left: auto;
-}
-
-.navigation-item {
-  width: 600px;
-  margin-left: auto;
 }

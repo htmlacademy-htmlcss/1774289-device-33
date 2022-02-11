@@ -74,6 +74,7 @@ img {
 }
 
 .catalog-products {
+  display: flex;
   color: #000000;
   background-color: #f0f0f0;
 }
@@ -96,6 +97,15 @@ img {
 .catalog-filter-item {
   font-size: 16px;
   line-height: 19px;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 40px;
+}
+
+.catalog-right-column {
+  width: 840px;
 }
 
 .categories-list {
@@ -176,7 +186,17 @@ img {
   color: #ffffff;
 }
 
-.header-container {
+.footer-start {
+  width: 239px;
+  margin-right: 112px;
+}
+
+.footer-end {
+  margin-left: auto;
+  max-width: 175px;
+}
+
+.footer-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
@@ -266,10 +286,6 @@ img {
   background-color: #444444;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -279,28 +295,12 @@ img {
 
 .navigation-header {
   width: 517px;
-}
-
-.navigation-list {
-  width: 500px;
   margin: 0;
   padding: 0;
 }
 
 .navigation-list-secondary {
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-item-secondary {
-  max-width: 600px;
-  margin-left: auto;
-}
-
-.navigation-item {
-  width: 600px;
-  margin-left: auto;
 }
 
 .page a {
@@ -312,20 +312,8 @@ img {
   margin: 0 auto;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.page-footer-start {
-  width: 239px;
-  margin-right: 112px;
-}
-
-.page-footer-end {
-  margin-left: auto;
-  max-width: 175px;
+.page-main {
+  flex-grow: 1;
 }
 
 .pagination-show-more {

@@ -20,3 +20,19 @@
   text-decoration-line: underline;
   color: #FFFFFF;
 }
+
+.footer-start {
+  width: 239px;
+  margin-right: 112px;
+}
+
+.footer-end {
+  margin-left: auto;
+  max-width: 175px;
+}
+
+.footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}

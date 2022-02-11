@@ -7,18 +7,6 @@
   margin: 0 auto;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.page-footer-start {
-  width: 239px;
-  margin-right: 112px;
-}
-
-.page-footer-end {
-  margin-left: auto;
-  max-width: 175px;
+.page-main {
+  flex-grow: 1;
 }
