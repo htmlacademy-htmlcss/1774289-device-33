@@ -1,0 +1,12 @@
+.page a {
+  text-decoration: none;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-main {
+  flex-grow: 1;
+}

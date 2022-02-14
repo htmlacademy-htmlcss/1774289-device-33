@@ -4,15 +4,18 @@
 }
 
 .header-link {
-  color: inherit;
   background-color: #FFE17F;
-  text-decoration: none;
+  color: inherit;
+}
+
+.header-link-count {
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .header-log-off {
-  color: #000000;
   opacity: 0.3;
-  text-decoration: none;
+  color: inherit;
 }
 
 .header-basket {
@@ -23,7 +26,6 @@
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  text-decoration: none;
 }
 
 .header-products {
@@ -34,28 +36,25 @@
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   background-color: #FFFFFF;
-  color: #000000;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
+  color: inherit;
 }
 
 .header-link-secondary {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  color: inherit;
   line-height: 21px;
   letter-spacing: 0.2em;
-  text-decoration: none;
   text-transform: uppercase;
+  color: inherit;
 }
 
 .header-catalog {
-  color: inherit;
   font-size: 16px;
   line-height: 18px;
-  text-decoration: none;
+  color: inherit;
 }

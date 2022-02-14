@@ -16,29 +16,32 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="page">
+
   <!-- Header-logo -->
-  <header class="header-logo">
+  <header class="header-logo container">
     <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс".</h1>
-    <a class="header-logo-link" {% block rootLink %}href="index.html"{% endblock %}>
+    <a class="header-logo-link" {% block rootLink %}href="index.html" {% endblock %}>
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
   </header>
 
   <!-- Header-navigation -->
-  <header class="header">
+  <header class="header container">
     <nav class="navigation">
-      <form action="https://echo.htmlacademy.ru">
-        <label>
-          <span class="visually-hidden">Поиск:</span>
-          <input name="search" type="search" placeholder="Поиск по сайту" value="Текст поиска">
-        </label>
-        <button type="submit">
-          Найти
-        </button>
-      </form>
+      <div class="navigation-header">
+        <form action="https://echo.htmlacademy.ru">
+          <label>
+            <span class="visually-hidden">Поиск:</span>
+            <input name="search" type="search" placeholder="Поиск по сайту" value="Текст поиска">
+          </label>
+          <button type="submit">
+            Найти
+          </button>
+        </form>
+      </div>
 
-      <ul class="header-navigation-list navigation-user">
+      <ul class="navigation-list">
         {% block profile %}
         <li class="header-item">
           <a class="header-link" href="#">Войти</a>
@@ -49,7 +52,7 @@
         </li>
         <li class="header-item">
           <a class="header-link" href="#">
-            <p class="link-count">
+            <p class="header-link-count">
               <span class="visually-hidden">Товаров в корзине:</span> 2
             </p>
             Корзина
@@ -58,13 +61,15 @@
             <ul class="header-basket-list">
               <li>
                 <a class="header-products-link" href="#">
-                  <img src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
+                  <img src="images/products/product-1-small.jpg"
+                    alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
                   Любительская селфи-палка
                 </a>
               </li>
               <li>
                 <a class="header-products-link" href="#">
-                  <img src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+                  <img src="images/products/product-2-small.jpg"
+                    alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
                   Профессиональная селфи-палка
                 </a>
               </li>
@@ -78,7 +83,7 @@
         </li>
       </ul>
 
-      <ul class="header-list-secondary">
+      <ul class="navigation-list navigation-list-secondary">
         <li class="header-item-secondary">
           <a class="header-link-secondary {% block catalogLink %}{% endblock %}" href="catalog.html">
             Каталог товаров
@@ -107,66 +112,65 @@
 
   {% block main %}Страница в разработке.{% endblock %}
 
-  <!-- Footer-main -->
-  <footer class="footer-main">
+  <!-- Main-footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
 
-    <!-- Page-footer-start -->
-    <div class="page-footer-start">
-      <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
-      <address class="footer-contacts-address">
-        <p class="about-text">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </p>
-      </address>
-    </div>
+      <!-- Footer-start -->
+      <div class="footer-start">
+        <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
+        <address class="footer-contacts-address">
+          <p class="about-text">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </p>
+        </address>
+      </div>
 
-    <!-- Footer-menu -->
-    <section class="footer-menu">
-      <h2 class="visually-hidden">Меню разделов.</h2>
-      <ul class="footer-menu-list">
-        <li class="footer-menu-item">
-          <a class="footer-menu-link" href="#">Доставка</a>
-        </li>
-        <li class="footer-menu-item">
-          <a class="footer-menu-link" href="#">Гарантия</a>
-        </li>
-        <li class="footer-menu-item">
-          <a class="footer-menu-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </section>
+      <!-- Footer-menu -->
+      <section class="footer-menu">
+        <h2 class="visually-hidden">Меню разделов.</h2>
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
 
-    <!-- Footer-social -->
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети.</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Facebook.</span>
-            Facebook
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.instagram.com/htmlacademy/">
-            <span class="visually-hidden">Instagram.</span>
-            Instagram
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Twitter.</span>
-            Twitter
-          </a>
-        </li>
-      </ul>
-    </section>
+        <!-- Footer-social-list -->
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook.</span>
+              Facebook
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Instagram.</span>
+              Instagram
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Twitter.</span>
+              Twitter
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Page-footer-end -->
-    <div class="page-footer-end">
-      <a class="footer-contacts-phone" href="tel:88128121212">Тел:+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img src="images/logo/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
-      </a>
+      <!-- Footer-end -->
+      <div class="footer-end">
+        <a class="footer-contacts-phone" href="tel:88128121212">Тел:+7 (812) 812-12-12</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img src="images/logo/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

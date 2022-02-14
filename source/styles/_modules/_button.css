@@ -5,10 +5,9 @@
   font-size: inherit;
   line-height: 21px;
   text-align: center;
-  color: inherit;
+  color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .button-wide-iconable {
@@ -16,12 +15,20 @@
   background-color: #F0F0F0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  color: inherit;
+  color: #000000;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
+.button-secondary-current {
+  background-color: #000000;
+  color: #FFE17F;
+}
+
+.button-secondary:active {
+  background-color: #000000;
+  color: #FFE17F;
+}

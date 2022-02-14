@@ -1,4 +1,6 @@
 .catalog-products {
+  display: flex;
+  color: #000000;
   background-color: #F0F0F0;
 }
 
@@ -20,4 +22,13 @@
 .catalog-filter-item {
   font-size: 16px;
   line-height: 19px;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 40px;
+}
+
+.catalog-right-column {
+  width: 840px;
 }
