@@ -26,9 +26,15 @@
 .button-secondary-current {
   background-color: #000000;
   color: #FFE17F;
+  text-align: left;
+  width: 280px;
 }
 
 .button-secondary:active {
   background-color: #000000;
   color: #FFE17F;
+  text-align: left;
+  width: 280px;
 }
+
+

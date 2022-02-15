@@ -88,7 +88,7 @@
                     </a>
                     <ul>
                         <li><a class="header-catalog" href="#">Виртуальная реальность</a></li>
-                        <li><a class="header-catalog" href="#">Моноподы для селфи</a></li>
+                        <li><a class="header-catalog" href="catalog.html">Моноподы для селфи</a></li>
                         <li><a class="header-catalog" href="#">Экшн-камеры</a></li>
                         <li><a class="header-catalog" href="#">Фитнес-браслеты</a></li>
                         <li><a class="header-catalog" href="#">Умные часы</a></li>
@@ -110,9 +110,9 @@
 
 
 
-    <!-- Main-container -->
-    <main class="page-main">
-        <div class="page-container">
+    <!-- Main-page -->
+    <main class="main-page">
+        <div class="main-index-inner container">
 
             <!-- Block-slider -->
             <div class="slider-block">
@@ -229,16 +229,20 @@
             <section class="info">
                 <h2 class="visually-hidden">Информация о доставке, гарантии и кредита.</h2>
                 <ol class="info-list">
-                    <li class="info-item">
+                    <div class="info-button">
                         <a class="button button-secondary-current" href="#!">Доставка</a>
+                    </div>
+                    <li class="info-item">
                         <h3 class="title">Доставка</h3>
                         <p class="item-subtitle">
                             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                             заработаем, поднимая его на ваш этаж.
                         </p>
                     </li>
-                    <li class="info-item">
+                    <div class="info-button">
                         <a class="button button-secondary" href="#!">Гарантия</a>
+                    </div>
+                    <li class="info-item">
                         <h3 class="title">Гарантия</h3>
                         <p class="item-subtitle">
                             Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
@@ -246,8 +250,10 @@
                             не дом, конечно же.
                         </p>
                     </li>
-                    <li class="info-item">
+                    <div class="info-button">
                         <a class="button button-secondary" href="#!">Кредит</a>
+                    </div>
+                    <li class="info-item">
                         <h3 class="title">Кредит</h3>
                         <p class="item-subtitle">
                             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
@@ -299,29 +305,30 @@
                     <a class="button button-feedback" href="#">Напишите нам</a>
                 </section>
             </div>
-
-            <!-- Subscription -->
-            <section class="subscription">
-                <h2 class="title">Подпишитесь на рассылку</h2>
-                <p class="subscription-subtitle">
-                    Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
-                    спецпредложения
-                    и вот это вот всё.
-                </p>
-                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <input type="email" placeholder="Ваш e-mail">
-                    <button class="button-subscribe" type="submit">Подписаться</button>
-                </form>
-                <p class="check-title">Это бесплатно</p>
-            </section>
         </div>
+
+        <!-- Subscription -->
+        <section class="subscription">
+            <h2 class="title">Подпишитесь на рассылку</h2>
+            <p class="subscription-subtitle">
+                Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+                спецпредложения
+                и вот это вот всё.
+            </p>
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="email" placeholder="Ваш e-mail">
+                <button class="button-subscribe" type="submit">Подписаться</button>
+            </form>
+            <p class="check-title">Это бесплатно</p>
+        </section>
+
     </main>
 
 
 
     <!-- Main-footer -->
     <footer class="main-footer">
-        <div class="footer-container">
+        <div class="main-footer-inner container">
 
             <!-- Footer-start -->
             <div class="footer-start">

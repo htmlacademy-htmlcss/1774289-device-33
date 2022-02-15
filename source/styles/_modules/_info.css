@@ -1,7 +1,17 @@
 .info-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
   background-color: #F0F0F0;
+}
+
+.info-item {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.info-button {
+  display: flex;
+  width: 280px;
 }

@@ -22,17 +22,17 @@
 }
 
 .footer-start {
-  width: 239px;
-  margin-right: 112px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.footer-menu {
+  flex-grow: 0;
+  margin: auto;
 }
 
 .footer-end {
-  margin-left: auto;
-  max-width: 175px;
+  flex-shrink: 0;
+  width: 300px;
 }
 
-.footer-container {
-  display: flex;
-  width: 1160px;
-  margin: 0 auto;
-}

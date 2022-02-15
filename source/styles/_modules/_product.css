@@ -13,3 +13,8 @@
   line-height: 21px;
   color: #444444;
 }
+
+.product-list {
+  margin: 0;
+  padding: 0;
+}

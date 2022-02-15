@@ -2,11 +2,10 @@
   text-decoration: none;
 }
 
-.page-container {
-  width: 1160px;
-  margin: 0 auto;
+.page ul, ol {
+  list-style-type: none;
 }
 
-.page-main {
-  flex-grow: 1;
-}
+
+
+

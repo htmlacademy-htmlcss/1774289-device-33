@@ -2,3 +2,11 @@
   color: #FFFFFF;
   background-color: #444444;
 }
+
+.main-footer-inner {
+  display: flex;
+}
+
+.main-page {
+  flex-grow: 1;
+}
