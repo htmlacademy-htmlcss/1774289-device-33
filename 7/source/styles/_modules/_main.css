@@ -1,0 +1,22 @@
+.main-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.main-footer-inner {
+  display: flex;
+  padding: 62px 0;
+}
+
+.main-page {
+  flex-grow: 1;
+}
+
+.main-inner {
+  padding-top: 35px;
+}
+
+.inner-header-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+}

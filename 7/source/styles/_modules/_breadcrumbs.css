@@ -1,0 +1,12 @@
+.breadcrumbs-link {
+  margin-right: 36px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}

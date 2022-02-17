@@ -1,0 +1,32 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-heading {
+  font-size: 36px;
+  color: #000000;
+}
+
+.slider-subhead {
+  font-size: 16px;
+}
+
+.slider-block {
+  margin-bottom: 70px;
+}
+
+.slider-item {
+  width: 560px;
+}
+
+.slider-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.slider-item-subtitle {
+  margin: 0;
+}

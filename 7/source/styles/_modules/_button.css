@@ -1,0 +1,43 @@
+.button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  background-color: #FFE17F;
+  font-size: inherit;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button-wide-iconable {
+  display: block;
+  background-color: #F0F0F0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button-secondary-current {
+  background-color: #000000;
+  color: #FFE17F;
+  text-align: left;
+  width: 280px;
+}
+
+.button-secondary:active {
+  background-color: #000000;
+  color: #FFE17F;
+  text-align: left;
+  width: 280px;
+}
+
+.button-ascending {
+  width: 30px;
+  height: 30px ;
+}
