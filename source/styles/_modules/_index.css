@@ -1,4 +1,11 @@
 .index-columns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.index-columns-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  color: #000000;
 }

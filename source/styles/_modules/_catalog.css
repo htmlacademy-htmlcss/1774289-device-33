@@ -13,6 +13,10 @@
   text-transform: uppercase;
 }
 
+.catalog-title-add {
+  padding: 25.5px 0;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   line-height: 20px;

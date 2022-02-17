@@ -109,19 +109,21 @@
 
         <div class="catalog-right-column">
           <!-- Catalog-title -->
-          <label class="catalog-title"> Сортировка:
-            <select class="select-control">
-              <option value="popular">Популярные</option>
-              <option value="cheap">Дешёвые</option>
-              <option value="expensive">Дорогие</option>
-            </select>
-          </label>
-          <a class="button-ascending">
-            <span class="visually-hidden">По возрастанию.</span>
-          </a>
-          <a class="button-descending">
-            <span class="visually-hidden">По убыванию.</span>
-          </a>
+          <div class="sorting-container">
+            <label class="catalog-title-add catalog-title"> Сортировка:
+              <select class="select-control">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+            </label>
+            <a class="button-ascending">
+              <span class="visually-hidden">По возрастанию.</span>
+            </a>
+            <a class="button-descending">
+              <span class="visually-hidden">По убыванию.</span>
+            </a>
+          </div>
 
           <!-- Product-container -->
           <div class="product-container">
@@ -160,35 +162,40 @@
               </li>
             </ul>
 
-            <button class="pagination-show-more" type="button">Загрузить ещё</button>
+            <div class="pagination-show-more-container">
+              <button class="pagination-show-more" type="button">Загрузить ещё</button>
+            </div>
 
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="pagination-prev pagination-link-secondary" href="#">
-                  <span>Назад</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-next pagination-link-secondary" href="#">
-                  <span>Вперед</span>
-                </a>
-              </li>
-            </ul>
+
+            <div class="pagination-container">
+              <ol class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-prev pagination-link-secondary" href="#">
+                    <span>Назад</span>
+                  </a>
+                </li>
+                <li class="pagination-item-number">
+                  <a class="pagination-link" href="#">1</a>
+                </li>
+                <li class="pagination-item-number">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item-number">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item-number">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item-number">
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-next pagination-link-secondary" href="#">
+                    <span>Вперед</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
