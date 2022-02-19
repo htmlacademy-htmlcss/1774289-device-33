@@ -262,6 +262,7 @@ img {
 
 .header-link {
   display: block;
+  width: 240px;
   padding: 35px 26px;
   background-color: #ffe17f;
   color: inherit;
@@ -348,11 +349,6 @@ img {
   flex-wrap: wrap;
 }
 
-.info-button {
-  display: flex;
-  width: 280px;
-}
-
 .inner-header {
   color: #000000;
   background-color: #ffffff;
@@ -395,6 +391,8 @@ img {
 }
 
 .navigation-list-secondary {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -502,11 +500,6 @@ ol {
 .product-card-price {
   line-height: 21px;
   color: #444444;
-}
-
-.product-list {
-  margin: 0;
-  padding: 0;
 }
 
 .slider-container {

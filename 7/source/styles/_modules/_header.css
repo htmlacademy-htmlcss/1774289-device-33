@@ -5,6 +5,7 @@
 
 .header-link {
   display: block;
+  width: 240px;
   padding: 35px 26px;
   background-color: #FFE17F;
   color: inherit;
