@@ -12,6 +12,8 @@
 }
 
 .navigation-list-secondary {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
