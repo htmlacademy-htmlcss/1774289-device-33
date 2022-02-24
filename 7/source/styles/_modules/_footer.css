@@ -14,11 +14,19 @@
 }
 
 .footer-contacts-phone {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 63px;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
   color: #FFFFFF;
+}
+
+.htmlacademy-link {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-start {
@@ -27,7 +35,6 @@
 }
 
 .footer-menu {
-  flex-grow: 0;
   margin: auto;
 }
 
@@ -50,8 +57,7 @@
 }
 
 .footer-end {
-  flex-shrink: 0;
-  width: 300px;
+  width: 175px;
 }
 
 .footer-social-list {
@@ -71,3 +77,4 @@
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
 }
+

@@ -1,17 +1,29 @@
+.categories {
+  margin: 70px 140px;
+}
+
 .categories-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  grid-gap: 40px;
   margin: 0;
   padding: 0;
 }
 
-.categories-item {
-  width: 160px;
+.categories-image::before {
+  content:"";
+  background-color: #FFE17F;
+  height: 160px;
+  margin-bottom: 32px;
 }
 
 .categories-link {
+  display: flex;
+  flex-direction: column;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
   color: #000000;
+  letter-spacing: -0.02em;
+  height: 253px;
 }

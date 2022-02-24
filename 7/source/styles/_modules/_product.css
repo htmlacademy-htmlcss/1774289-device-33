@@ -1,17 +1,41 @@
 .product-container {
+  padding: 70px 40px 78px;
   background-color: #FFFFFF;
 }
 
-.product-card-link {
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  margin: 0;
+  padding: 0;
+  gap: 44px 40px;
+}
+
+.product-card {
+  display: flex;
+}
+
+.product-card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 32px;
+}
+
+.product-card-title {
+  flex-grow: 0;
   font-weight: 700;
-  color: inherit;
+  color: #000000;
   line-height: 20px;
-  text-decoration: none;
+  margin: 0;
+  margin-right: 17px;
 }
 
 .product-card-price {
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  margin-bottom: auto;
   line-height: 21px;
   color: #444444;
 }
-
-

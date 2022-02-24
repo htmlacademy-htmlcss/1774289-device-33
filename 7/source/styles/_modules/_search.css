@@ -1,0 +1,30 @@
+.search-form {
+  border: 2px solid;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search-form__field {
+  background-image: url("../images/icons/search.svg");
+  background-position: 14px 50%;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 8px 16px 8px 45px;
+  width: 100%;
+}
+
+.search-form__field, .search-form__submit {
+  background-color: transparent;
+  outline-offset: 4px;
+}
+
+.search-form__submit {
+  border-left: 2px solid;
+  font: inherit;
+  min-width: 160px;
+  padding: 8px 16px;
+  text-align: center;
+}
