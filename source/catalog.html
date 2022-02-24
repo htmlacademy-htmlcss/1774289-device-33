@@ -2,43 +2,45 @@
 
 {% block title %}Каталог{% endblock %}
 
-{% block catalogLink %}navigation-link-current{% endblock %}
+{% block catalogLink %} navigation-link-current{% endblock %}
 
 {% block profile %}
-<li class="header-item">
-  <a class="header-link profile-link" href="#">Коля Петухов</a>
-  <a class="header-log-off" href="#">Выйти</a>
+<li>
+  <a class="user-nav__link user-nav__link--user" href="#">Коля Петухов</a>
+  <a class="user-nav__log-off" href="#">Выйти</a>
 </li>
+
+
 
 {% endblock %}
 
 {% block main %}
 <!-- Main-inner -->
-<main class="main-inner page-main">
-  <div class="page-container">
+<main class="main-inner main-page">
 
-    <!-- Inner-header -->
-    <header class="inner-header">
-      <h1 class="inner-header-title title">Моноподы для селфи</h1>
-      <ol class="breadcrumbs-list">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link " href="#!">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Моноподы для селфи</a>
-        </li>
-      </ol>
-    </header>
+  <!-- Inner-header -->
+  <header class="inner-header container">
+    <h1 class="inner-header-title title">Моноподы для селфи</h1>
+    <ol class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link " href="#!">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="catalog.html">Моноподы для селфи</a>
+      </li>
+    </ol>
+  </header>
 
-    <!-- Catalog-products -->
-    <section class="catalog-products">
-      <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
+
+  <!-- Catalog-products -->
+  <section class="catalog-products">
+    <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
+    <div class="catalog-container container">
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <h3 class="catalog-title">Фильтр:</h3>
-
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость</legend>
           <label>
@@ -102,13 +104,13 @@
             </li>
           </ul>
         </fieldset>
-
         <button class="button button-show" type="submit">Показать</button>
       </form>
 
       <div class="catalog-right-column">
         <!-- Catalog-title -->
-        <label class="catalog-title"> Сортировка:
+        <label class="catalog-title-add catalog-title">
+          Сортировка:
           <select class="select-control">
             <option value="popular">Популярные</option>
             <option value="cheap">Дешёвые</option>
@@ -129,69 +131,78 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-1.jpg" alt="Селфи-палка." width="360"
                   height="380">
-                <h3 class="product-card-title">Любительская селфи-палка</h3>
+                <div class="product-card-content">
+                  <h3 class="product-card-title">Любительская селфи-палка</h3>
+                  <p class="product-card-price">744 ₽</p>
+                </div>
               </a>
-              <p class="product-card-price">744 ₽</p>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-2.jpg" alt="Профессиональная селфи-палка."
                   width="360" height="380">
-                <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                <div class="product-card-content">
+                  <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                  <p class="product-card-price">1 500 ₽</p>
+                </div>
               </a>
-              <p class="product-card-price">1 500 ₽</p>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-3.jpg" alt="Непотопляемая селфи-палка."
                   width="360" height="380">
-                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                <div class="product-card-content">
+                  <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                  <p class="product-card-price">2 500 ₽</p>
+                </div>
               </a>
-              <p class="product-card-price">2 500 ₽</p>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-4.jpg" alt="Селфи-палка «Следуй за мной»."
                   width="360" height="380">
-                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                <div class="product-card-content">
+                  <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                  <p class="product-card-price">1 500 ₽</p>
+                </div>
               </a>
-              <p class="product-card-price">1 500 ₽</p>
             </li>
           </ul>
 
-          <button class="pagination-show-more" type="button">Загрузить ещё</button>
+          <a class="pagination-show-more" href="#">Загрузить ещё</a>
 
-          <ul class="pagination-list">
+          <!-- Pagination-list -->
+          <ol class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-prev pagination-link-secondary" href="#">
                 <span>Назад</span>
               </a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item-number">
               <a class="pagination-link" href="#">1</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item-number">
               <a class="pagination-link" href="#">2</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item-number">
               <a class="pagination-link" href="#">3</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item-number">
               <a class="pagination-link" href="#">...</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item-number">
               <a class="pagination-link" href="#">15</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-next pagination-link-secondary" href="#">
-                <span>Вперед</span>
+                <span>Вперёд</span>
               </a>
             </li>
-          </ul>
+          </ol>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </main>
 
 {% endblock %}

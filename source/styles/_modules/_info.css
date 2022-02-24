@@ -1,7 +1,21 @@
-.info-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+.info {
   background-color: #F0F0F0;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 287px 694px;
+}
+
+.info-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+  background-color: #F0F0F0;
+}
+
+.info-item {
+	display: flex;
+  flex-wrap: wrap;
 }

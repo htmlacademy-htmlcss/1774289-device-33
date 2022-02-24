@@ -10,25 +10,88 @@
   text-transform: uppercase;
 }
 
-.button-wide-iconable {
-  display: block;
-  background-color: #F0F0F0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  color: #000000;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 .button-secondary-current {
   background-color: #000000;
   color: #FFE17F;
+  text-align: left;
+  width: 280px;
 }
 
 .button-secondary:active {
   background-color: #000000;
   color: #FFE17F;
+  text-align: left;
+  width: 280px;
+}
+
+.button-ascending {
+  width: 30px;
+  height: 30px;
+}
+
+.button-container {
+  margin: 0;
+  padding: 70px 0;
+}
+
+.button-title {
+  font-family: var(--font-accent);
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  line-height: 23px;
+  padding: 30px;
+  position: relative;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-title::after {
+  background-color: var(--color-text);
+  content: "";
+  height: 12px;
+  left: 100%;
+  margin-left: 56px;
+  background-image: url("../images/icons/exclamation-point-1.svg");
+  opacity: .3;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity .2s ease-in-out;
+  width: 12px;
+}
+
+.button-wide-iconable {
+  background-color: var(--color-bg);
+  display: grid;
+  grid-template-columns: 124px 1fr 124px;
+  outline-offset: 4px;
+  text-align: center;
+}
+
+.button-wide-iconable::after {
+  align-self: center;
+  background-color: var(--color-bg-dark);
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  justify-self: center;
+  width: 40px;
+}
+
+.button-wide-iconable::before {
+  content: "";
+  background-color: var(--color-bg-accent);
+  background-image: url("../images/icons/truck.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 47px auto;
+  transition: inherit;
+}
+
+.button-submit {
+  border: none;
+}
+
+.button-wide-iconable:active .button-title:after, .button-wide-iconable:hover .button-title:after {
+  opacity: 0.3;
 }

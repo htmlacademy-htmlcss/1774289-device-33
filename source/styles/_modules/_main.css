@@ -2,3 +2,59 @@
   color: #FFFFFF;
   background-color: #444444;
 }
+
+.main-footer-inner {
+  display: flex;
+  padding: 62px 0;
+}
+
+.main-page {
+  flex-grow: 1;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.main-nav__link--product {
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.main-nav__link--catalog {
+  margin-right: 276px;
+}
+
+.main-nav__link--catalog::after {
+  background-color: #000000;
+  border-radius: 50px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  height: 13px;
+  width: 13px;
+}
+
+.main-nav__link--delivery,
+.main-nav__link--warranty {
+  margin-right: 45px;
+}
+
+.main-nav__list {
+  display: grid;
+  grid-template-columns: repeat(3, 215px);
+}
+
+.main-nav__list-products:first-child {
+  margin-right: 30px;
+}

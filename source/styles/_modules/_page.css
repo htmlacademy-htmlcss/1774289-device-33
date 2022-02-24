@@ -1,12 +1,56 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .page a {
   text-decoration: none;
 }
 
-.page-container {
-  width: 1160px;
-  margin: 0 auto;
+.page ul,
+.page ol {
+  list-style: none;
+  padding: 0;
 }
 
-.page-main {
-  flex-grow: 1;
+.page input {
+  -webkit-text-fill-color: currentColor;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font: inherit;
+  width: 100%;
+}
+
+.page a,
+button,
+input,
+select,
+textarea {
+  transition-duration: .2s;
+  transition-property: color,opacity,background-color,border-color,box-shadow;
+  transition-timing-function: ease-in-out;
+}
+
+.page-header {
+  align-items: start;
+  background-color: var(--color-bg-accent);
+  border-top: 40px solid var(--color-paper);
+  display: grid;
+  gap: 24px 30px;
+  grid-template-columns: 518px 1fr;
+  padding: 44px 60px 30px;
+  position: relative;
+  color: #000000;
+}
+
+.page-header__logo {
+  left: 60px;
+  position: absolute;
+  top: -22px;
+}
+
+.page-header__nav {
+  grid-column: span 2;
 }

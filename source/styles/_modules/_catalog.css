@@ -1,3 +1,7 @@
+.catalog-container {
+  display: flex;
+}
+
 .catalog-products {
   display: flex;
   color: #000000;
@@ -11,6 +15,10 @@
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.catalog-title-add {
+  padding: 25.5px 0;
 }
 
 .catalog-filter-title {

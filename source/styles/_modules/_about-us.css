@@ -1,5 +1,7 @@
 .about-us {
   width: 520px;
+  height: 493px;
+  padding-right: 108px;
 }
 
 .about-item {
@@ -9,4 +11,3 @@
   line-height: 20px;
   letter-spacing: -0.02em;
 }
-

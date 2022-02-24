@@ -18,103 +18,98 @@
 
 <body class="page">
 
-  <!-- Header-logo -->
-  <header class="header-logo container">
+  <!-- Page-header -->
+  <header class="container page-header header">
     <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс".</h1>
-    <a class="header-logo-link" {% block rootLink %}href="index.html" {% endblock %}>
+    <a class="logo page-header__logo" {% block rootLink %}href="index.html" {% endblock %}>
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
-  </header>
+    <form class="search-form" action="https://echo.htmlacademy.ru">
+      <label>
+        <span class="visually-hidden">Поиск:</span>
+        <input class="search-form__field" name="search" type="search" placeholder="Текст поиска">
+      </label>
+      <button class="search-form__submit button-submit">Найти</button>
+    </form>
 
-  <!-- Header-navigation -->
-  <header class="header container">
-    <nav class="navigation">
-      <div class="navigation-header">
-        <form action="https://echo.htmlacademy.ru">
-          <label>
-            <span class="visually-hidden">Поиск:</span>
-            <input name="search" type="search" placeholder="Поиск по сайту" value="Текст поиска">
-          </label>
-          <button type="submit">
-            Найти
-          </button>
-        </form>
-      </div>
-
-      <ul class="navigation-list">
-        {% block profile %}
-        <li class="header-item">
-          <a class="header-link" href="#">Войти</a>
-        </li>
-        {% endblock %}
-        <li class="header-item">
-          <a class="header-link" href="#">Сравнить</a>
-        </li>
-        <li class="header-item">
-          <a class="header-link" href="#">
-            <p class="header-link-count">
-              <span class="visually-hidden">Товаров в корзине:</span> 2
-            </p>
-            Корзина
-          </a>
-          <div class="header-basket">
-            <ul class="header-basket-list">
-              <li>
-                <a class="header-products-link" href="#">
-                  <img src="images/products/product-1-small.jpg"
-                    alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
-                  Любительская селфи-палка
-                </a>
-              </li>
-              <li>
-                <a class="header-products-link" href="#">
-                  <img src="images/products/product-2-small.jpg"
-                    alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
-                  Профессиональная селфи-палка
-                </a>
-              </li>
-            </ul>
-            <div class="header-products">
-              <p class="header-products-link">Товаров: 2</p>
-              <p class="header-products-link">Сумма: 2000 ₽</p>
-            </div>
-            <a class="header-button-products" href="#">Открыть корзину</a>
-          </div>
-        </li>
-      </ul>
-
-      <ul class="navigation-list navigation-list-secondary">
-        <li class="header-item-secondary">
-          <a class="header-link-secondary {% block catalogLink %}{% endblock %}" href="catalog.html">
-            Каталог товаров
-          </a>
-          <ul>
-            <li><a class="header-catalog" href="#">Виртуальная реальность</a></li>
-            <li><a class="header-catalog" href="#">Моноподы для селфи</a></li>
-            <li><a class="header-catalog" href="#">Экшн-камеры</a></li>
-            <li><a class="header-catalog" href="#">Фитнес-браслеты</a></li>
-            <li><a class="header-catalog" href="#">Умные часы</a></li>
-            <li><a class="header-catalog" href="#">Квадрокоптеры</a></li>
+    <!-- Page-header__user -->
+    <ul class="page-header__user user-nav">
+      {% block profile %}
+      <li>
+        <a class="user-nav__link user-nav__link--user" href="#">Войти</a>
+      </li>
+      {% endblock %}
+      <li>
+        <a class="user-nav__link user-nav__link--sort" href="#">Сравнить</a>
+      </li>
+      <li>
+        <a class="user-nav__link user-nav__link--cart" href="#">Корзина
+          <span class="visually-hidden">Товаров в корзине:</span>
+          <span class="user-nav__label">2</span>
+        </a>
+        <div class="header-basket">
+          <ul class="header-basket-list">
+            <li>
+              <a class="header-products-link" href="#">
+                <img src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину"
+                  width="39" height="43">
+                Любительская селфи-палка
+              </a>
+            </li>
+            <li>
+              <a class="header-products-link" href="#">
+                <img src="images/products/product-2-small.jpg"
+                  alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+                Профессиональная селфи-палка
+              </a>
+            </li>
           </ul>
-        </li>
-        <li class="header-item-secondary">
-          <a class="header-link-secondary" href="#">Доставка</a>
-        </li>
-        <li class="header-item-secondary">
-          <a class="header-link-secondary" href="#">Гарантия</a>
-        </li>
-        <li class="header-item-secondary">
-          <a class="header-link-secondary" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+          <div class="header-products">
+            <p class="header-products-link">Товаров: 2</p>
+            <p class="header-products-link">Сумма: 2000 ₽</p>
+          </div>
+          <a class="header-button-products" href="#">Открыть корзину</a>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="main-nav page-header__nav">
+      <li>
+        <a class="main-nav__link main-nav__link--catalog {% block catalogLink %}{% endblock %}" href="catalog.html">
+          Каталог товаров
+        </a>
+        <ul class="main-nav__list">
+          <ul class="main-nav__list-products">
+            <li><a class="main-nav__link--product" href="#">Виртуальная реальность</a></li>
+            <li><a class="main-nav__link--product" href="catalog.html">Моноподы для селфи</a></li>
+            <li><a class="main-nav__link--product" href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="main-nav__list-products">
+            <li><a class="main-nav__link--product" href="#">Фитнес-браслеты</a></li>
+            <li><a class="main-nav__link--product" href="#">Умные часы</a></li>
+          </ul>
+          <ul class="main-nav__list-products">
+            <li><a class="main-nav__link--product" href="#">Квадрокоптеры</a></li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <a class="main-nav__link main-nav__link--delivery" href="#">Доставка</a>
+      </li>
+      <li>
+        <a class="main-nav__link main-nav__link--warranty" href="#">Гарантия</a>
+      </li>
+      <li>
+        <a class="main-nav__link main-nav__link--contacts" href="#">Контакты</a>
+      </li>
+    </ul>
   </header>
 
   {% block main %}Страница в разработке.{% endblock %}
 
   <!-- Main-footer -->
   <footer class="main-footer">
-    <div class="footer-container">
+    <div class="main-footer-inner container">
 
       <!-- Footer-start -->
       <div class="footer-start">
@@ -146,19 +141,16 @@
           <li class="footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook.</span>
-              Facebook
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Instagram.</span>
-              Instagram
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter.</span>
-              Twitter
             </a>
           </li>
         </ul>
