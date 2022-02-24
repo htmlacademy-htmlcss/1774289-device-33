@@ -1,26 +1,3 @@
-.header {
-  background-color: #FFE17F;
-  color: #000000;
-}
-
-.header-link {
-  display: block;
-  width: 240px;
-  padding: 35px 26px;
-  background-color: #FFE17F;
-  color: inherit;
-}
-
-.header-link-count {
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.header-log-off {
-  opacity: 0.3;
-  color: inherit;
-}
-
 .header-basket {
   background-color: #000000;
 }
@@ -45,24 +22,4 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: inherit;
-}
-
-.header-link-secondary {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: inherit;
-}
-
-.header-catalog {
-  font-size: 16px;
-  line-height: 18px;
-  color: inherit;
-}
-
-.header-logo-link {
-  padding-top: 17px;
-  padding-bottom: 35px;
 }

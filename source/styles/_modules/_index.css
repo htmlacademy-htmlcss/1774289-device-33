@@ -1,7 +1,7 @@
 .index-columns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin: 70px 0;
 }
 
 .index-columns-title {

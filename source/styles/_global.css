@@ -1,4 +1,32 @@
 html {
+	--color-paper: #ffffff;
+	--color-text: #000000;
+	--color-text-30: rgba(0, 0, 0, 0.3);
+	--color-text-accent: #000000;
+	--color-text-accent-strong: #ffc700;
+	--color-text-light: #444444;
+	--color-bg: #f0f0f0;
+	--color-bg-medium: #ebebeb;
+	--color-bg-dark: #dcdcdc;
+	--color-bg-accent: #ffe17f;
+	--color-select: #af4fff;
+	--color-status-error: #ff3d3d;
+	--color-status-warning: #fd912e;
+	--color-status-success: #08af00;
+	--font-basic: "Rubik", "Arial", sans-serif;
+	--font-accent: "Raleway", "Arial", sans-serif;
+	--focus-outline: 2px solid var(--color-select);
+	min-width: 1240px;
+	overflow-y: scroll;
+	overflow-anchor: none;
+	scroll-behavior: smooth;
+	font-size: 18px;
+	line-height: 1.166667;
+	font-family: var(--font-basic);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	color: var(--color-text);
+	-webkit-tap-highlight-color: transparent;
   height: 100%;
 }
 
@@ -7,15 +35,15 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  min-width: 1440px;
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  background-color: #FFFFFF;
   color: #444444;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
