@@ -1,5 +1,5 @@
 .main-footer {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #444444;
 }
 
@@ -15,28 +15,27 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
-.main-nav__link {
+.main-nav-link {
+  border-width: 2px;
+  left: 5px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  position: relative;
   color: inherit;
 }
 
-.main-nav__link--product {
-  font-size: 16px;
-  line-height: 18px;
-  color: inherit;
-}
-
-.main-nav__link--catalog {
+.main-nav-link-catalog {
   margin-right: 276px;
 }
 
-.main-nav__link--catalog::after {
+.main-nav-link-catalog::after {
   background-color: #000000;
   border-radius: 50px;
   border: 2px solid #000000;
@@ -45,16 +44,16 @@
   width: 13px;
 }
 
-.main-nav__link--delivery,
-.main-nav__link--warranty {
+.main-nav-link-delivery,
+.main-nav-link-warranty {
   margin-right: 45px;
 }
 
-.main-nav__list {
+.main-list {
   display: grid;
   grid-template-columns: repeat(3, 215px);
 }
 
-.main-nav__list-products:first-child {
-  margin-right: 30px;
+.main-nav-item {
+  margin: 15px 0 15px 46px;
 }

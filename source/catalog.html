@@ -5,9 +5,9 @@
 {% block catalogLink %} navigation-link-current{% endblock %}
 
 {% block profile %}
-<li>
-  <a class="user-nav__link user-nav__link--user" href="#">Коля Петухов</a>
-  <a class="user-nav__log-off" href="#">Выйти</a>
+<li class="user-nav-item user-nav-item-extended">
+    <a class="user-nav-link user-nav-link-user" href="catalog.html">Коля Петухов</a>
+    <a class="user-nav-link user-nav-link-extend" href="index.html">Выйти </a>
 </li>
 
 
@@ -33,7 +33,6 @@
       </li>
     </ol>
   </header>
-
 
   <!-- Catalog-products -->
   <section class="catalog-products">
@@ -125,9 +124,9 @@
         </a>
 
         <!-- Product-container -->
-        <div class="product-container">
-          <ul class="product-list">
-            <li class="product-card">
+        <div class="product-card-container">
+          <ul class="product-card-list">
+            <li class="product-card-item">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-1.jpg" alt="Селфи-палка." width="360"
                   height="380">
@@ -137,7 +136,7 @@
                 </div>
               </a>
             </li>
-            <li class="product-card">
+            <li class="product-card-item">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-2.jpg" alt="Профессиональная селфи-палка."
                   width="360" height="380">
@@ -147,7 +146,7 @@
                 </div>
               </a>
             </li>
-            <li class="product-card">
+            <li class="product-card-item">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-3.jpg" alt="Непотопляемая селфи-палка."
                   width="360" height="380">
@@ -157,7 +156,7 @@
                 </div>
               </a>
             </li>
-            <li class="product-card">
+            <li class="product-card-item">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/products/product-4.jpg" alt="Селфи-палка «Следуй за мной»."
                   width="360" height="380">

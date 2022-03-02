@@ -1,11 +1,21 @@
-.footer-contacts-address {
+.footer-start-address {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
+  margin: 0;
+  margin-bottom: 64px;
+  width: 239px;
+}
+
+.footer-contacts-address::after {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #ffc500;
 }
 
 .footer-menu-link {
-  font-family: "Raleway",sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -21,10 +31,10 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.htmlacademy-link {
+.footer-dev {
   display: flex;
   justify-content: flex-end;
 }
@@ -32,6 +42,11 @@
 .footer-start {
   width: 300px;
   flex-shrink: 0;
+}
+
+.footer-logo {
+  display: flex;
+  margin-bottom: 35px;
 }
 
 .footer-menu {
@@ -74,7 +89,18 @@
   margin-bottom: 15px;
 }
 
+.footer-social-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  background-color: #ffe17f;
+  font-size: inherit;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
 }
-

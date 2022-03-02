@@ -1,23 +1,27 @@
 .subscription {
-  display: flex;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subscription-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subscription-title {
+  margin: 64px 252px 144px 0;
 }
 
 .subscription-subtitle {
   color: #444444;
   margin: 74px 0 144px 0;
-}
-
-.subscription-title {
-  float: left;
-  margin: 64px 252px 144px 0;
+  width: 560px;
 }
 
 .subscription-form {
+  width: 810px;
   margin-right: 188px;
+}
+
+.subscription-form-field {
+  background-color: #c4c4c4;
 }

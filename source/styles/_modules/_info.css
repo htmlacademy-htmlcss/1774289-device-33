@@ -1,5 +1,5 @@
 .info {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .info-container {
@@ -8,14 +8,14 @@
 }
 
 .info-list {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 100%;
-  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #f0f0f0;
 }
 
 .info-item {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
 }

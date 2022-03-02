@@ -1,25 +1,33 @@
 .button {
+  display: inline-block;
+  padding: 10px 6.14px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  background-color: #FFE17F;
-  font-size: inherit;
   line-height: 21px;
+  letter-spacing: 0.2em;
   text-align: center;
   color: #000000;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
+  cursor: pointer;
+  border: none;
 }
 
 .button-secondary-current {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
   text-align: left;
   width: 280px;
 }
 
 .button-secondary:active {
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
   text-align: left;
   width: 280px;
 }
@@ -46,18 +54,19 @@
 }
 
 .button-title::after {
-  background-color: var(--color-text);
   content: "";
   height: 12px;
   left: 100%;
   margin-left: 56px;
   background-image: url("../images/icons/exclamation-point-1.svg");
-  opacity: .3;
+  opacity: 0.3;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   width: 12px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .button-wide-iconable {
@@ -88,10 +97,7 @@
   transition: inherit;
 }
 
-.button-submit {
-  border: none;
-}
-
-.button-wide-iconable:active .button-title:after, .button-wide-iconable:hover .button-title:after {
+.button-wide-iconable::after .button-title::after,
+.button-wide-iconable:hover .button-title::after {
   opacity: 0.3;
 }

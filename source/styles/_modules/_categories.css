@@ -11,8 +11,8 @@
 }
 
 .categories-image::before {
-  content:"";
-  background-color: #FFE17F;
+  content: "";
+  background-color: #ffe17f;
   height: 160px;
   margin-bottom: 32px;
 }

@@ -4,10 +4,20 @@
   padding-right: 108px;
 }
 
-.about-item {
-  font-style: normal;
+.about-us-list,
+.about-us-subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-us-item {
   font-weight: 700;
   color: #000000;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin: 19px 0px;
+}
+
+.about-us-item:last-child {
+  margin-bottom: 0;
 }

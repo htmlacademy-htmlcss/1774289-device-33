@@ -5,7 +5,7 @@
 .catalog-products {
   display: flex;
   color: #000000;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .catalog-title {
@@ -39,4 +39,76 @@
 
 .catalog-right-column {
   width: 840px;
+}
+
+.catalog-nav {
+  position: relative;
+}
+
+.catalog-nav-toggler::before {
+  border: 2px solid;
+  border-radius: 50%;
+  height: 46px;
+  right: 0;
+  top: 0;
+  width: 46px;
+}
+
+.catalog-nav-toggler {
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  padding: 15px 67px 14px 0;
+  position: relative;
+  text-transform: uppercase;
+  border: none;
+  color: inherit;
+}
+
+.catalog-nav-toggler::after {
+  background-color: currentColor;
+  height: 16px;
+  mask-image: url("../images/icons/plus-1.svg");
+  right: 17px;
+  top: 17px;
+  width: 16px;
+}
+
+.catalog-nav-toggler::after,
+.catalog-nav-toggler::before {
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  transition: inherit;
+}
+
+.catalog-nav-list {
+  background-color: #ffe17f;
+  box-sizing: border-box;
+  display: grid;
+  gap: 15px 30px;
+  grid-template-columns: 222px 1fr 1fr;
+  left: -60px;
+  margin-top: 4px;
+  opacity: 0.01;
+  padding: 7px 455px 56px 60px;
+  position: absolute;
+  top: 100%;
+  transition: visibility 0.3s, opacity 0.3s;
+  visibility: hidden;
+  width: 1160px;
+  z-index: 1;
+}
+
+.catalog-nav-item:last-child {
+  grid-column: 1/-1;
+}
+
+.catalog-nav-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
 }

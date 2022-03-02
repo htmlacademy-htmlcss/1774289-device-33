@@ -1,25 +1,3 @@
-.header-basket {
-  background-color: #000000;
-}
-
-.header-products-link {
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-
-.header-products {
-  background-color: #1A1A1A;
-}
-
-.header-button-products {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  background-color: #FFFFFF;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: inherit;
+.header {
+  color: #000000;
 }
