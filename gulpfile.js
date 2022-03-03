@@ -5,19 +5,27 @@ const server = require('browser-sync').create();
 const parser = require('posthtml-parser');
 const render = require('posthtml-render');
 const chalk = require('chalk');
+const fetch = require('node-fetch');
 const { HtmlValidate } = require('html-validate');
+const gulpIf = require('gulp-if');
 
+let firstRun = true;
 const validateHtml = new HtmlValidate();
+const SeverityLevel = {
+	error: 2,
+	info: 1
+};
 const Severity = {
   1: {
-    log: chalk.yellow.bold,
+    logOutput: chalk.yellow.bold,
     title: 'WARNING'
   },
   2: {
-    log: chalk.red.bold,
+    logOutput: chalk.red.bold,
     title: 'ERROR'
   }
 };
+const W3C_TIMEOUT = 1000;
 const isDev = process.env.NODE_ENV === 'development';
 const getPage = (tree) => tree.options.from.replace(/^.*source(\\+|\/+)(.*)\.html$/, '$2');
 
@@ -31,30 +39,61 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
         page: getPage(tree)
       }));
     })(),
-    (() => (tree) => {
-      // Оффлайновый валидатор HTML
-      const report = validateHtml.validateString(render(tree), {
-        extends: [
-          'html-validate:recommended',
-          'html-validate:document'
-        ],
-				rules: {
-          'no-trailing-whitespace': 'off',
-          'input-missing-label': 'off',
-					'require-sri': 'off'
-				}
-      });
+    (() => async (tree) => {
+      let output = '';
+      const html = render(tree);
+      const page = `${getPage(tree)}.html`;
+      const controller = new AbortController();
+      setTimeout(() => {
+        controller.abort();
+      }, W3C_TIMEOUT);
 
-      report.results.forEach(({ messages }) => {
-        messages.forEach(({ column, line, message, selector, severity, ruleUrl }) => {
-          if (Severity[severity]) {
-            const { log, title } = Severity[severity];
-            const prefix = `\n[${chalk.cyan('HtmlValidate')}] ${getPage(tree)}.html (${line}:${column})`;
-            const selectorMsg = selector ? ` ${chalk.cyan(selector)}` : '';
-            console.log(`${prefix}${selectorMsg}:\n${log.underline(title)}: ${log(message)}\n`);
+      try {
+        // Онлайн-валидатор HTML
+
+        const validRes = await fetch('https://validator.nu/?out=json', {
+          body: html,
+          headers: { 'Content-Type': 'text/html' },
+          method: 'POST',
+          signal: controller.signal
+        });
+        const { messages = [] } = await validRes.json();
+        messages.forEach(({ extract, firstColumn, lastLine, message, type }) => {
+          const { logOutput, title } = Severity[SeverityLevel[type]];
+          const prefix = `\n[${chalk.cyan('Validate HTML Online')}] ${page} (${lastLine}:${firstColumn + 1})`;
+          const selectorMsg = ` ${chalk.cyan(extract)}`;
+
+          output += `${prefix}${selectorMsg}:\n${logOutput.underline(title)}: ${logOutput(message)}\n`;
+        });
+      } catch (err) {
+        // Оффлайн-валидатор HTML
+
+        const report = validateHtml.validateString(html, {
+          extends: [
+            'html-validate:recommended',
+            'html-validate:document'
+          ],
+          rules: {
+            'attribute-boolean-style': 'off',
+            'no-trailing-whitespace': 'off',
+            'input-missing-label': 'off',
+            'require-sri': 'off'
           }
         });
-      });
+        report.results.forEach(({ messages }) => {
+          messages.forEach(({ column, line, message, selector, severity }) => {
+            if (Severity[severity]) {
+              const { logOutput, title } = Severity[severity];
+              const prefix = `\n[${chalk.cyan('Validate HTML Offline')}] ${page} (${line}:${column})`;
+              const selectorMsg = selector ? ` ${chalk.cyan(selector)}` : '';
+
+              output += `${prefix}${selectorMsg}:\n${logOutput.underline(title)}: ${logOutput(message)}\n`;
+            }
+          });
+        });
+      } if (output) {
+				console.log(output);
+			}
 
       return tree;
     })()
@@ -128,6 +167,7 @@ const optimizeImages = () => src('source/**/*.{svg,png,jpg}')
     imagemin.mozjpeg({ quality: 75, progressive: true }),
     imagemin.optipng()
   ]))
+  .pipe(gulpIf(firstRun, dest('source')))
   .pipe(dest('.'));
 
 const reload = (done) => {
@@ -136,6 +176,8 @@ const reload = (done) => {
 };
 
 const startServer = () => {
+  firstRun = false;
+
   server.init({
     cors: true,
     server: '.',

@@ -9,7 +9,7 @@
 
 .slider-item {
   display: grid;
-  grid-template-columns: repeat(2, 560px);
+  grid-template-columns: 560px 1fr;
   gap: 40px;
 }
 

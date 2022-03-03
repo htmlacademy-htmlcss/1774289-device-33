@@ -35,31 +35,53 @@
         <a class="user-nav-link user-nav-link-sort" href="#">Сравнить</a>
       </li>
       <li class="user-nav-item">
-        <a class="user-nav-link user-nav-link-cart" href="#">
+        <button class="user-nav-link user-nav-link-cart" type="button">
           Корзина
           <span class="visually-hidden">Товаров в корзине</span>
           <span class="user-nav-label">2</span>
-        </a>
-        <div class="user-basket visually-hidden">
-          <ul class="user-basket-list">
-            <li>
-              <a class="user-products-link" href="#">
-                <img src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
-                Любительская селфи-палка
+        </button>
+        <div class="cart user-nav-popover">
+          <ul class="cart-list">
+            <li class="cart-item">
+              <a class="cart-link" href="#">
+                Любительская
+                <br>
+                селфи-палка
+                <picture class="cart-image picture">
+                  <source type="image/webp" srcset="images/product-1-small.webp">
+                  <img src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
+                </picture>
+              </a>
+              <a class="cart-remover" href="blank.html">
+                <span class="visually-hidden">Удалить из корзины</span>
               </a>
             </li>
-            <li>
-              <a class="user-products-link" href="#">
-                <img src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
-                Профессиональная селфи-палка
+            <li class="cart-item">
+              <a class="cart-link" href="cart.html">
+                Профессиональная
+                <br>
+                селфи-палка
+                <picture class="cart-image picture">
+                  <source type="image/webp" srcset="images/product-2-small.webp">
+                  <img src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+                </picture>
+              </a>
+              <a class="cart-remover" href="blank.html">
+                <span class="visually-hidden">Удалить из корзины</span>
               </a>
             </li>
           </ul>
-          <div class="user-products">
-            <p class="user-products-link">Товаров: 2</p>
-            <p class="user-products-link">Сумма: 2000 ₽</p>
-          </div>
-          <a class="user-products-button" href="#">Открыть корзину</a>
+          <dl class="cart__params">
+            <div class="cart__param">
+              <dt class="cart__value">Товаров:</dt>
+              <dd class="cart__value">2</dd>
+            </div>
+            <div class="cart__param">
+              <dt class="cart__value">Сумма:</dt>
+              <dd class="cart__value">2000 ₽</dd>
+            </div>
+          </dl>
+          <a class="cart__button" href="cart.html">Открыть корзину</a>
         </div>
       </li>
     </ul>
@@ -192,22 +214,22 @@
       <h2 class="visually-hidden">Список категорий каталога.</h2>
       <ul class="categories-list">
         <li class="categories-item">
-          <a class="categories-link categories-image virtual-reality" href="#">Виртуальная реальность</a>
+          <a class="categories-link categories-virtual-reality" href="#">Виртуальная реальность</a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-image monopods" href="#">Моноподы <br>для селфи</a>
+          <a class="categories-link categories-monopods" href="#">Моноподы <br>для селфи</a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-image cameras" href="#">Экшн-камеры</a>
+          <a class="categories-link categories-cameras" href="#">Экшн-камеры</a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-image bracelets" href="#">Фитнес-браслеты</a>
+          <a class="categories-link categories-bracelets" href="#">Фитнес-браслеты</a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-image clock" href="#">Умные часы</a>
+          <a class="categories-link categories-clock" href="#">Умные часы</a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-image quadrocopters" href="#">Квадрокоптеры</a>
+          <a class="categories-link categories-quadrocopters" href="#">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
@@ -217,33 +239,33 @@
       <div class="info-container container">
         <ul class="info-button-list">
           <li class="info-button">
-            <a class="button-secondary-current" href="#!">Доставка</a>
+            <a class="info-button-current" href="#!">Доставка</a>
           </li>
           <li class="info-button">
-            <a class="button button-secondary" href="#!">Гарантия</a>
+            <a class="button" href="#!">Гарантия</a>
           </li>
           <li class="info-button">
-            <a class="button button-secondary" href="#!">Кредит</a>
+            <a class="button" href="#!">Кредит</a>
           </li>
         </ul>
         <ul class="info-list">
           <li class="info-item">
             <h3 class="title">Доставка</h3>
-            <p class="item-subtitle">
+            <p class="info-subtitle">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж.
             </p>
           </li>
           <li class="info-item">
             <h3 class="title">Гарантия</h3>
-            <p class="item-subtitle">
+            <p class="info-subtitle">
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.
             </p>
           </li>
           <li class="info-item">
             <h3 class="title">Кредит</h3>
-            <p class="item-subtitle">
+            <p class="info-subtitle">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
               кредита. Выгодные для банка, разумеется.
             </p>
@@ -286,11 +308,13 @@
           </p>
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
-        <h3 class="contacts-subtitle">Время работы</h3>
-        <ul class="contacts-schedule">
-          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
+        <div class="contacts-info">
+          <h3 class="contacts-info-title">Время работы</h3>
+          <ul class="contacts-schedule-list">
+            <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
+        </div>
         <a class="button button-feedback" href="#">Напишите нам</a>
       </section>
     </div>
@@ -316,7 +340,7 @@
     <div class="main-footer-inner container">
       <!-- Footer-start -->
       <div class="footer-start">
-        <a class="footer-logo logo">
+        <a class="footer-logo">
           <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
         </a>
         <address class="footer-start-address">
@@ -340,17 +364,17 @@
         <!-- Footer-social-list -->
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+            <a class="footer-social-link footer-social-fb" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook.</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
+            <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Instagram.</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+            <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter.</span>
             </a>
           </li>

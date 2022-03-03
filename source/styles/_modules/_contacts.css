@@ -27,3 +27,18 @@
   text-decoration-line: underline;
   color: inherit;
 }
+
+.contacts-info {
+  margin-bottom: 30px;
+}
+
+.contacts-info-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-schedule-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}

@@ -5,27 +5,14 @@
 }
 
 .index-columns-title {
+  display: flex;
   margin-top: 40px;
   margin-bottom: 48px;
 }
 
-.index-columns-title::before {
+.index-columns-title::after {
   content: "";
-  background-image: url("../images/icons/basket.svg");
-  height: 14px;
-  width: 16px;
-}
-
-.abous-us-image::before {
-  background: var(--icon);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  content: "";
-  margin-top: 40px;
-}
-
-.about-us-title::before {
-background-image: url("../images/icons/rectangle.svg");
-width: 84px;
-height: 7px;
+  background-image: url("../images/icons/rectangle.svg");
+  width: 84px;
+  height: 8px;
 }

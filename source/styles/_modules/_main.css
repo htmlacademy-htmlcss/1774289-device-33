@@ -31,6 +31,19 @@
   color: inherit;
 }
 
+.main-nav-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-link:active {
+  opacity: 0.3;
+}
+
+.main-nav-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .main-nav-link-catalog {
   margin-right: 276px;
 }

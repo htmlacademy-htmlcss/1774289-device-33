@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  box-sizing: border-box;
   padding: 10px 6.14px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -12,7 +13,14 @@
   border: none;
 }
 
-.button-secondary-current {
+.button::before {
+  content: "";
+  background-color: #ffe17f;
+  width: 220px;
+  height: 8px;
+}
+
+.info-button-current {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -21,7 +29,6 @@
   text-transform: uppercase;
   background-color: #000000;
   color: #ffe17f;
-  text-align: left;
   width: 280px;
 }
 
@@ -43,7 +50,7 @@
 }
 
 .button-title {
-  font-family: var(--font-accent);
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   letter-spacing: 0.2em;
   line-height: 23px;
@@ -70,7 +77,7 @@
 }
 
 .button-wide-iconable {
-  background-color: var(--color-bg);
+  background-color: #f0f0f0;
   display: grid;
   grid-template-columns: 124px 1fr 124px;
   outline-offset: 4px;
@@ -79,7 +86,7 @@
 
 .button-wide-iconable::after {
   align-self: center;
-  background-color: var(--color-bg-dark);
+  background-color: #dcdcdc;
   border-radius: 50%;
   content: "";
   height: 40px;
@@ -89,7 +96,7 @@
 
 .button-wide-iconable::before {
   content: "";
-  background-color: var(--color-bg-accent);
+  background-color: #ffe17f;
   background-image: url("../images/icons/truck.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;

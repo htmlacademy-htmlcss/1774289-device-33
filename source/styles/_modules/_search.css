@@ -1,7 +1,7 @@
 .search-form {
   display: grid;
-  font-size: 16px;
   grid-template-columns: 359px 1fr;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -17,6 +17,11 @@
   width: 100%;
 }
 
+.search-form-field:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .search-form-submit {
   background-color: transparent;
   border: 2px solid;
@@ -26,4 +31,24 @@
   min-width: 162px;
   padding: 8px 16px;
   text-align: center;
+}
+
+.search-form-submit:hover {
+  box-sizing: border-box;
+  background: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+}
+
+.search-form-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form-submit:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.search-form-submit:disabled {
+  opacity: 0.3;
 }

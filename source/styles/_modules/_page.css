@@ -25,6 +25,13 @@
   opacity: 0.3;
 }
 
+.page input::-webkit-search-decoration,
+.page input::-webkit-search-cancel-button,
+.page input::-webkit-search-results-button,
+.page input::-webkit-search-results-decoration {
+  display: none;
+}
+
 .page a,
 .page button,
 .page input,

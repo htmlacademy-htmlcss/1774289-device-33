@@ -36,31 +36,53 @@
         <a class="user-nav-link user-nav-link-sort" href="#">Сравнить</a>
       </li>
       <li class="user-nav-item">
-        <a class="user-nav-link user-nav-link-cart" href="#">
+        <button class="user-nav-link user-nav-link-cart" type="button">
           Корзина
           <span class="visually-hidden">Товаров в корзине</span>
           <span class="user-nav-label">2</span>
-        </a>
-        <div class="user-basket visually-hidden">
-          <ul class="user-basket-list">
-            <li>
-              <a class="user-products-link" href="#">
-                <img src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
-                Любительская селфи-палка
+        </button>
+        <div class="cart user-nav-popover">
+          <ul class="cart-list">
+            <li class="cart-item">
+              <a class="cart-link" href="#">
+                Любительская
+                <br>
+                селфи-палка
+                <picture class="cart-image picture">
+                  <source type="image/webp" srcset="images/product-1-small.webp">
+                  <img src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
+                </picture>
+              </a>
+              <a class="cart-remover" href="blank.html">
+                <span class="visually-hidden">Удалить из корзины</span>
               </a>
             </li>
-            <li>
-              <a class="user-products-link" href="#">
-                <img src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
-                Профессиональная селфи-палка
+            <li class="cart-item">
+              <a class="cart-link" href="cart.html">
+                Профессиональная
+                <br>
+                селфи-палка
+                <picture class="cart-image picture">
+                  <source type="image/webp" srcset="images/product-2-small.webp">
+                  <img src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+                </picture>
+              </a>
+              <a class="cart-remover" href="blank.html">
+                <span class="visually-hidden">Удалить из корзины</span>
               </a>
             </li>
           </ul>
-          <div class="user-products">
-            <p class="user-products-link">Товаров: 2</p>
-            <p class="user-products-link">Сумма: 2000 ₽</p>
-          </div>
-          <a class="user-products-button" href="#">Открыть корзину</a>
+          <dl class="cart__params">
+            <div class="cart__param">
+              <dt class="cart__value">Товаров:</dt>
+              <dd class="cart__value">2</dd>
+            </div>
+            <div class="cart__param">
+              <dt class="cart__value">Сумма:</dt>
+              <dd class="cart__value">2000 ₽</dd>
+            </div>
+          </dl>
+          <a class="cart__button" href="cart.html">Открыть корзину</a>
         </div>
       </li>
     </ul>
@@ -137,13 +159,13 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" name="color[]" type="checkbox" value="black" checked>
+                  <input class="control-input" name="color[]" type="checkbox" value="black" checked="">
                   Черный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" name="color[]" type="checkbox" value="white" checked>
+                  <input class="control-input" name="color[]" type="checkbox" value="white" checked="">
                   Белый
                 </label>
               </li>
@@ -172,7 +194,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" name="option" type="radio" value="there's" checked>
+                  <input class="control-input" name="option" type="radio" value="there's" checked="">
                   Есть
                 </label>
               </li>
@@ -282,7 +304,7 @@
     <div class="main-footer-inner container">
       <!-- Footer-start -->
       <div class="footer-start">
-        <a class="footer-logo logo">
+        <a class="footer-logo">
           <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
         </a>
         <address class="footer-start-address">
@@ -306,17 +328,17 @@
         <!-- Footer-social-list -->
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+            <a class="footer-social-link footer-social-fb" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook.</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
+            <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Instagram.</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+            <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter.</span>
             </a>
           </li>

@@ -25,3 +25,17 @@
 .subscription-form-field {
   background-color: #c4c4c4;
 }
+
+.subscription-check-title {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscription-check-title::before {
+  content: "";
+  background-image: url("../images/icons/tick-big-green.svg");
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  margin-right: 16px;
+}
