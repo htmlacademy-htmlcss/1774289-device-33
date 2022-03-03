@@ -1,0 +1,61 @@
+.pagination-show-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-show-more {
+  display: flex;
+  align-items: center;
+  padding: 18px 294.5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: inherit;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.pagination-link-secondary {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+  background: #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  min-width: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.pagination-prev,
+.pagination-next {
+  display: flex;
+  padding: 25px;
+}
+
+.pagination-prev {
+  margin-right: 145.5px;
+}
+
+.pagination-next {
+  margin-left: 145.5px;
+}

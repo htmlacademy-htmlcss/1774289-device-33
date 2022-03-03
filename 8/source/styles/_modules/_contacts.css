@@ -1,0 +1,44 @@
+.contacts {
+  width: 532px;
+}
+
+.contacts-subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-address {
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.contacts-address-subtitle {
+  margin: 0;
+}
+
+.contacts-phone {
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+.contacts-info {
+  margin-bottom: 30px;
+}
+
+.contacts-info-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-schedule-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}

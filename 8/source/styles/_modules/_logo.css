@@ -1,0 +1,17 @@
+.logo img {
+  display: block;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.logo:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}

@@ -1,0 +1,53 @@
+.categories {
+  margin: 70px 140px;
+}
+
+.categories-list {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  grid-gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-link {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: -0.02em;
+  height: 253px;
+}
+
+.categories-link::before {
+  content: "";
+  background-color: #ffe17f;
+  height: 160px;
+  margin-bottom: 32px;
+}
+
+.categories-virtual-reality::before {
+  background-image: url("../images/icons/property/property-1.svg");
+}
+
+.categories-monopods::before {
+  background-image: url("../images/icons/property/property-2.svg");
+}
+
+.categories-cameras::before {
+  background-image: url("../images/icons/property/property-3.svg");
+}
+
+.categories-bracelets::before {
+  background-image: url("../images/icons/property/property-4.svg");
+}
+
+.categories-clock::before {
+  background-image: url("../images/icons/property/property-5.svg");
+}
+
+.categories-quadrocopters::before {
+  background-image: url("../images/icons/property/property-6.svg");
+}

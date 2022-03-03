@@ -1,0 +1,41 @@
+.subscription {
+  background-color: #f0f0f0;
+}
+
+.subscription-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscription-title {
+  margin: 64px 252px 144px 0;
+}
+
+.subscription-subtitle {
+  color: #444444;
+  margin: 74px 0 144px 0;
+  width: 560px;
+}
+
+.subscription-form {
+  width: 810px;
+  margin-right: 188px;
+}
+
+.subscription-form-field {
+  background-color: #c4c4c4;
+}
+
+.subscription-check-title {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscription-check-title::before {
+  content: "";
+  background-image: url("../images/icons/tick-big-green.svg");
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  margin-right: 16px;
+}
