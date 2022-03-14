@@ -1,35 +1,47 @@
 .button {
-  display: inline-block;
+  position: relative;
   box-sizing: border-box;
-  padding: 10px 6.14px;
+  padding: 10px 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-align: center;
-  color: #000000;
   text-transform: uppercase;
-  cursor: pointer;
   border: none;
+  z-index: 1;
+  background-color: transparent;
+  outline-offset: 0;
+  color: #000000;
 }
 
 .button::before {
   content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  z-index: -1;
   background-color: #ffe17f;
-  width: 220px;
-  height: 8px;
+  transition-property: top, bottom, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.info-button-current {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #000000;
-  color: #ffe17f;
-  width: 280px;
+.button:hover:before {
+  top: 0;
+  bottom:0
+}
+
+.button:active::before {
+  top: 0;
+  bottom: 0;
+  background-color: #ffc700;
+}
+
+.button:disabled {
+  opacity: 0.3;
 }
 
 .button-secondary:active {
@@ -37,11 +49,6 @@
   color: #ffe17f;
   text-align: left;
   width: 280px;
-}
-
-.button-ascending {
-  width: 30px;
-  height: 30px;
 }
 
 .button-container {
@@ -62,18 +69,19 @@
 
 .button-title::after {
   content: "";
+  background-color: #000000;
   height: 12px;
   left: 100%;
   margin-left: 56px;
-  background-image: url("../images/icons/exclamation-point-1.svg");
+  mask-image: url("../images/icons/exclamation-point.svg");
   opacity: 0.3;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: opacity 0.2s ease-in-out;
   width: 12px;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  mask-repeat: no-repeat;
+  mask-position: 50%;
 }
 
 .button-wide-iconable {
@@ -85,10 +93,10 @@
 }
 
 .button-wide-iconable::after {
+  content: "";
   align-self: center;
   background-color: #dcdcdc;
   border-radius: 50%;
-  content: "";
   height: 40px;
   justify-self: center;
   width: 40px;
@@ -104,7 +112,22 @@
   transition: inherit;
 }
 
-.button-wide-iconable::after .button-title::after,
-.button-wide-iconable:hover .button-title::after {
+.button-wide-iconable:active {
   opacity: 0.3;
+}
+
+.button-wide-iconable:active::before,
+.button-wide-iconable:hover::before {
+  background-color: #ffc700;
+}
+
+.button-wide-iconable:active .button-title::after,
+.button-wide-iconable:hover .button-title::after {
+  opacity: 1;
+}
+
+.button-show {
+  background: transparent;
+  margin: 0;
+  font-size: 18px;
 }

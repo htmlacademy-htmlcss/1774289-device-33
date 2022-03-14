@@ -4,13 +4,7 @@
   padding-right: 108px;
 }
 
-.about-us-list,
-.about-us-subtitle {
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.about-us-item {
+.about-item {
   font-weight: 700;
   color: #000000;
   line-height: 20px;
@@ -18,6 +12,24 @@
   margin: 19px 0;
 }
 
-.about-us-item:last-child {
+.about-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin: 6px;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 199, 0, 1);
+  border-radius: 50%;
+}
+
+.about-item:last-child {
   margin-bottom: 0;
+}
+
+.about-list,
+.item-paragraph {
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
 }

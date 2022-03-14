@@ -3,8 +3,30 @@
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: 36px;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
 }
+
+.breadcrumbs-link::before {
+  content: "";
+  background-image: url("../images/icons/nav-arrow.svg");
+  margin: 6px 16px;
+  width: 4px;
+  height: 7px;
+}
+
+ /**
+.breadcrumbs-link:last-child::before {
+  content: none;
+}
+**/
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+

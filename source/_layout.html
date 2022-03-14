@@ -24,15 +24,11 @@
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru">
-      <label>
-        <span class="visually-hidden">Поиск:</span>
-        <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту"
-          aria-label="Поиск">
-      </label>
+      <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту"
+        aria-label="Поиск">
       <button class="search-form-submit" type="submit">Найти</button>
     </form>
 
-    <!-- Page-header-user -->
     <ul class="page-header-user-nav user-nav">
       {% block profile %}
       <li class="user-nav-item">
@@ -55,13 +51,10 @@
                 Любительская
                 <br>
                 селфи-палка
-                <picture class="cart-image picture">
-                  <source type="image/webp" srcset="images/product-1-small.webp">
-                  <img src="images/products/product-1-small.jpg"
-                    alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
-                </picture>
+                <img class="cart-image" src="images/products/product-1-small.jpg"
+                  alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
               </a>
-              <a class="cart-remover" href="blank.html">
+              <a class="cart-remover" href="#">
                 <span class="visually-hidden">Удалить из корзины</span>
               </a>
             </li>
@@ -70,64 +63,61 @@
                 Профессиональная
                 <br>
                 селфи-палка
-                <picture class="cart-image picture">
-                  <source type="image/webp" srcset="images/product-2-small.webp">
-                  <img src="images/products/product-2-small.jpg"
-                    alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
-                </picture>
+                <img class="cart-image" src="images/products/product-2-small.jpg"
+                  alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
               </a>
-              <a class="cart-remover" href="blank.html">
+              <a class="cart-remover" href="#">
                 <span class="visually-hidden">Удалить из корзины</span>
               </a>
             </li>
           </ul>
-          <dl class="cart__params">
-            <div class="cart__param">
-              <dt class="cart__value">Товаров:</dt>
-              <dd class="cart__value">2</dd>
+          <dl class="cart-params">
+            <div class="cart-param">
+              <dt class="cart-value">Товаров:</dt>
+              <dd class="cart-value">2</dd>
             </div>
-            <div class="cart__param">
-              <dt class="cart__value">Сумма:</dt>
-              <dd class="cart__value">2000 ₽</dd>
+            <div class="cart-param">
+              <dt class="cart-value">Сумма:</dt>
+              <dd class="cart-value">2000 ₽</dd>
             </div>
           </dl>
-          <a class="cart__button" href="cart.html">Открыть корзину</a>
+          <a class="cart-button" href="cart.html" class="disabled">Открыть корзину</a>
         </div>
       </li>
     </ul>
 
     <div class="page-header-catalog-nav catalog-nav">
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
-      <ul class="catalog-nav-list">
+      <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="blank.html"> Виртуальная реальность </a>
+          <a class="catalog-nav-link" href="#"> Виртуальная реальность </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="blank.html"> Фитнес-браслеты </a>
+          <a class="catalog-nav-link" href="#"> Фитнес-браслеты </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="blank.html"> Квадрокоптеры </a>
+          <a class="catalog-nav-link" href="#"> Квадрокоптеры </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="catalog.html"> Моноподы для cелфи </a>
+          <a class="catalog-nav-link" href="#"> Моноподы для cелфи </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="blank.html"> Умные часы </a>
+          <a class="catalog-nav-link" href="#"> Умные часы </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="blank.html"> Экшн-камеры </a>
+          <a class="catalog-nav-link" href="#"> Экшн-камеры </a>
         </li>
       </ul>
     </div>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
-        <a class="main-nav-link" href="blank.html"> Доставка </a>
+        <a class="main-nav-link" href="#"> Доставка </a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="blank.html"> Гарантия </a>
+        <a class="main-nav-link" href="#"> Гарантия </a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="blank.html"> Контакты </a>
+        <a class="main-nav-link" href="#"> Контакты </a>
       </li>
     </ul>
   </header>
@@ -137,21 +127,14 @@
   <!-- Main-footer -->
   <footer class="main-footer">
     <div class="main-footer-inner container">
-
-      <!-- Footer-start -->
-      <div class="footer-start">
-        <a class="footer-logo">
-          <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145"
-            height="36">
-        </a>
-        <address class="footer-start-address">
+      <a class="footer-logo">
+        <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
+      </a>
+      <div class="footer-inner">
+        <address class="footer-content">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
-      </div>
 
-      <!-- Footer-menu -->
-      <section class="footer-menu">
-        <h2 class="visually-hidden">Меню разделов.</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Доставка</a>
@@ -164,35 +147,38 @@
           </li>
         </ul>
 
-        <!-- Footer-social-list -->
+        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+
         <ul class="footer-social-list">
-          <li class="footer-social-item">
+          <li>
             <a class="footer-social-link footer-social-fb" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook.</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li>
             <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Instagram.</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li>
             <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter.</span>
             </a>
           </li>
         </ul>
-      </section>
 
-      <!-- Footer-end -->
-      <div class="footer-end">
-        <a class="footer-contacts-phone" href="tel:88128121212">Тел:+7 (812) 812-12-12</a>
         <a class="footer-dev" href="https://htmlacademy.ru/">
           <img src="images/logo/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
         </a>
       </div>
-    </div>
   </footer>
+
+  <!-- <div class="modal-container">
+    <div class="modal modal-auth">
+
+    </div>
+  </div>
+  -->
 </body>
 
 </html>
