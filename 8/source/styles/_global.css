@@ -16,7 +16,7 @@ html {
   --font-basic: "Rubik", "Arial", sans-serif;
   --font-accent: "Raleway", "Arial", sans-serif;
   --focus-outline: 2px solid var(--color-select);
-  min-width: 1240px;
+  min-width: 1440px;
   overflow-y: scroll;
   overflow-anchor: none;
   scroll-behavior: smooth;

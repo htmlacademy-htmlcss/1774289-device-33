@@ -1,11 +1,7 @@
 .main-footer {
   color: #ffffff;
   background-color: #444444;
-}
-
-.main-footer-inner {
-  display: flex;
-  padding: 62px 0;
+  padding: 62px 0 54px;
 }
 
 .main-page {
@@ -42,6 +38,11 @@
 .main-nav-link:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.main-nav-link-current {
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
 }
 
 .main-nav-link-catalog {

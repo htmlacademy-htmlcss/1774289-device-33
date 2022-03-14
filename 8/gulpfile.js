@@ -75,9 +75,11 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
           ],
           rules: {
             'attribute-boolean-style': 'off',
-            'no-trailing-whitespace': 'off',
             'input-missing-label': 'off',
-            'require-sri': 'off'
+            'no-inline-style': 'off',
+            'no-trailing-whitespace': 'off',
+            'require-sri': 'off',
+            'svg-focusable': 'off'
           }
         });
         report.results.forEach(({ messages }) => {
@@ -184,7 +186,7 @@ const startServer = () => {
     ui: false
   });
 
-  watch('source/**/*.html', series(buildHTML, reload));
+  watch('source/**/*.{html,svg}', series(buildHTML, reload));
   watch('source/**/*.css', series(buildCSS, testBuildedCSS, reload));
   watch('source/**/*.{svg,png,jpg}', series(optimizeImages, reload));
 };

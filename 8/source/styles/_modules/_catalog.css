@@ -8,23 +8,31 @@
   background-color: #f0f0f0;
 }
 
-.catalog-title {
+.catalog-main-filter-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-.catalog-title-add {
-  padding: 25.5px 0;
+  margin: 25px 0 60px;
 }
 
 .catalog-filter-title {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.catalog-filter-title::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 12px;
 }
 
 .catalog-filter-item {
@@ -35,6 +43,15 @@
 .catalog-filter {
   width: 220px;
   margin-right: 40px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 67px;
+}
+
+.catalog-filter-label:last-child {
+  margin: 0;
 }
 
 .catalog-right-column {
@@ -68,10 +85,14 @@
   color: inherit;
 }
 
+.catalog-nav-toggler:hover {
+  color: #000000;
+}
+
 .catalog-nav-toggler::after {
   background-color: currentColor;
   height: 16px;
-  mask-image: url("../images/icons/plus-1.svg");
+  mask-image: url("../images/icons/plus.svg");
   right: 17px;
   top: 17px;
   width: 16px;
@@ -85,7 +106,14 @@
   transition: inherit;
 }
 
-.catalog-nav-list {
+.catalog-nav-toggler:active::after,
+.catalog-nav-toggler:active::before,
+.catalog-nav-toggler:hover::after,
+.catalog-nav-toggler:hover::before {
+  opacity: 1;
+}
+
+.catalog-nav-subcatalog {
   background-color: #ffe17f;
   box-sizing: border-box;
   display: grid;
@@ -111,4 +139,41 @@
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+}
+
+.catalog-nav-toggler:focus + .catalog-nav-subcatalog,
+.catalog-nav-toggler:hover + .catalog-nav-subcatalog,
+.catalog-nav-subcatalog:focus-within,
+.catalog-nav-subcatalog:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.catalog-nav-link:hover {
+  opacity: 0.6;
+}
+
+.catalog-nav-link:active {
+  opacity: 0.3;
+}
+
+.catalog-nav-link-current {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }

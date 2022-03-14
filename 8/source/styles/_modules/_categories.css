@@ -1,13 +1,8 @@
-.categories {
-  margin: 70px 140px;
-}
-
 .categories-list {
   display: grid;
-  grid-template-columns: repeat(6, 160px);
-  grid-gap: 40px;
-  margin: 0;
-  padding: 0;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 60px 40px;
+  margin: 70px 0 0;
 }
 
 .categories-link {
@@ -50,4 +45,18 @@
 
 .categories-quadrocopters::before {
   background-image: url("../images/icons/property/property-6.svg");
+}
+
+.categories-link:active {
+  opacity: 0.3;
+}
+
+.categories-link:active::before,
+.categories-link:hover::before {
+  background-color: #ffc700;
+}
+
+.categories-link:active .categories-link::before,
+.categories-link:hover .categories-link::before {
+  opacity: 1;
 }
