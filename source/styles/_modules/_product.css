@@ -1,41 +1,114 @@
-.product-container {
+.product-card-container {
   padding: 70px 40px 78px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.product-list {
+.product-card-list {
   display: grid;
   grid-template-columns: repeat(2, 360px);
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
   gap: 44px 40px;
 }
 
 .product-card {
-  display: flex;
+  position: relative;
+  display: grid;
+  grid-template-columns: 207px 1fr;
+  gap: 32px;
 }
 
-.product-card-content {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  margin-top: 32px;
+.product-card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.product-card-overlay::before {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 380px;
+  background-color: rgba(240, 240, 240, 0.8);
+  border: 1px solid #444444;
+}
+
+.product-card-overlay-link {
+  top: 170px;
+  left: 70px;
+  width: 220px;
+}
+
+.product-card-overlay .product-card-overlay-link,
+.product-card-overlay::before {
+  position: absolute;
+  opacity: 0;
+  transition: inherit;
+  pointer-events: all;
+}
+
+.product-card-image {
+  grid-column: span 2;
 }
 
 .product-card-title {
-  flex-grow: 0;
   font-weight: 700;
-  color: #000000;
+  font-size: 1rem;
   line-height: 20px;
-  margin: 0;
-  margin-right: 17px;
 }
 
 .product-card-price {
-  display: flex;
-  flex-shrink: 0;
-  margin: 0;
-  margin-bottom: auto;
-  line-height: 21px;
+  justify-self: end;
   color: #444444;
+}
+
+.product-card-title,
+.product-card-price {
+  margin: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.product-card-label {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  box-sizing: border-box;
+  min-width: 60px;
+  margin: 0;
+  padding: 17px 6px 18px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Raleway", "Arial", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+.product-card-overlay:hover ~ .product-card-title {
+  opacity: 0.6;
+}
+
+.product-card-overlay:active ~ .product-card-title,
+.product-card-overlay:active ~ .product-card-price {
+  opacity:.3
+}
+
+.product-card-overlay:active .card__link:before {
+  background-color: #ffc700;
+}
+
+.product-card-overlay:active .product-card-overlay-link,
+.product-card-overlay:active::before,
+.product-card-overlay:hover .product-card-overlay-link,
+.product-card-overlay:hover::before {
+  opacity: 1;
 }

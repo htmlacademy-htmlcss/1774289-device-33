@@ -5,7 +5,15 @@
 }
 
 .index-columns-title {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 48px;
-  color: #000000;
+}
+
+.index-columns-title::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 8px;
+  background-color: #000000;
+  margin-bottom: 40px;
 }

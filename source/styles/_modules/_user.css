@@ -1,34 +1,53 @@
 .user-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: -14px 0 0 -14px;
+  padding: 0;
 }
 
-.user-nav__log-off {
-  align-items: baseline;
+.user-nav-item {
+  margin: 20px 0 0 20px;
+  position: relative;
+}
+
+.user-nav-item-extended {
   display: flex;
-  line-height: 30px;
-  margin: 14px 0 0 14px;
-  padding: 5px 0;
-  opacity: 0.3;
-  color: inherit;
 }
 
-.user-nav :first-child {
+.user-nav-link-extend {
+  margin-left: 28px;
+  opacity: 0.3;
+}
+
+.user-nav-link-extend:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.user-nav-item:first-child {
   margin-right: auto;
 }
 
-.user-nav__link {
+.user-nav-link {
   align-items: baseline;
+  background-color: transparent;
+  cursor: pointer;
   display: flex;
+  font-size: inherit;
   line-height: 30px;
-  margin: 14px 0 0 14px;
   padding: 5px 0;
   color: inherit;
+  border: none;
 }
 
-.user-nav__link:before {
+.user-nav-link:hover {
+  opacity: 0.6;
+}
+
+.user-nav-link:active {
+  opacity: 0.3;
+}
+
+.user-nav-link::before {
   background: var(--icon);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -36,26 +55,27 @@
   margin-right: 10px;
 }
 
-.user-nav__link--user:before {
+.user-nav-link-user::before {
   background-image: url("../images/icons/user.svg");
-  height: 13px;
+  height: 12px;
   width: 13px;
 }
 
-.user-nav__link--sort:before {
+.user-nav-link-sort::before {
   background-image: url("../images/icons/static.svg");
   height: 12px;
   width: 10px;
 }
 
-.user-nav__link--cart:before {
+.user-nav-link-cart::before {
   background-image: url("../images/icons/basket.svg");
   height: 14px;
+  margin-left: -6px;
   width: 16px;
 }
 
-.user-nav__label {
-  background-color: var(--color-paper);
+.user-nav-label {
+  background-color: #ffffff;
   border-radius: 11px;
   box-sizing: border-box;
   font-size: 14px;
@@ -63,6 +83,38 @@
   min-width: 21px;
   order: -1;
   padding: 2px 6px;
+  position: relative;
   text-align: center;
-  transform: translateX(6px);
+  z-index: 1;
+}
+
+.user-nav-popover {
+  left: 32px;
+  opacity: 0.01;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  transition: visibility 0.3s, opacity 0.3s;
+  visibility: hidden;
+  width: 320px;
+  z-index: 1;
+}
+
+.user-nav-popover::before {
+  border-bottom: 6px solid #000000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  bottom: 100%;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: inherit;
+}
+
+.user-nav-link:focus + .user-nav-popover,
+.user-nav-link:hover + .user-nav-popover,
+.user-nav-popover:focus-within,
+.user-nav-popover:hover {
+  opacity: 1;
+  visibility: visible;
 }

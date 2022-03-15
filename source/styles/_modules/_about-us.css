@@ -5,9 +5,31 @@
 }
 
 .about-item {
-  font-style: normal;
   font-weight: 700;
   color: #000000;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin: 19px 0;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin: 6px;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 199, 0, 1);
+  border-radius: 50%;
+}
+
+.about-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-list,
+.item-paragraph {
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
 }
