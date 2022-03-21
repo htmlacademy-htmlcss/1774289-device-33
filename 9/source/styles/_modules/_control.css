@@ -1,0 +1,85 @@
+.control {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.control-input {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  flex-shrink: 0;
+  border-radius: 3px;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  appearance: none;
+}
+
+.control-input::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #cccccc;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.control-input::after,
+.control-input::before {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+
+.control-input::after {
+  top: 5px;
+  left: 5px;
+  right: 4px;
+  width: 9.3px;
+  height: 10px;
+  background-color: currentColor;
+  mask-image: url("../images/icons/tick-control.svg");
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.control-input:checked::before {
+  border-color: currentColor;
+}
+
+.control-input:checked::after {
+  opacity: 1;
+}
+
+.control-label {
+  padding-left: 16px;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.control-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]::after {
+  mask-image: url("../images/icons/ellipse.svg");
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:disabled {
+  opacity: 0.1;
+}
+
+.control-input:disabled,
+.control-input:disabled + .control-label {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
