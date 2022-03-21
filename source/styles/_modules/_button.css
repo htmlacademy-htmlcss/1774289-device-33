@@ -1,27 +1,27 @@
 .button {
   position: relative;
+  z-index: 1;
   box-sizing: border-box;
   padding: 10px 20px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", "Arial", sans-serif;
   line-height: 21px;
-  letter-spacing: 0.2em;
+  font-weight: 800;
   text-align: center;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: none;
-  z-index: 1;
   background-color: transparent;
-  outline-offset: 0;
+  border: none;
   color: #000000;
+  outline-offset: 0;
 }
 
 .button::before {
   content: "";
   position: absolute;
   top: 16px;
+  right: 0;
   bottom: 16px;
   left: 0;
-  right: 0;
   z-index: -1;
   background-color: #ffe17f;
   transition-property: top, bottom, background-color;
@@ -29,9 +29,9 @@
   transition-timing-function: ease-in-out;
 }
 
-.button:hover:before {
+.button:hover::before {
   top: 0;
-  bottom:0
+  bottom: 0;
 }
 
 .button:active::before {
@@ -40,15 +40,11 @@
   background-color: #ffc700;
 }
 
-.button:disabled {
-  opacity: 0.3;
-}
-
 .button-secondary:active {
-  background-color: #000000;
-  color: #ffe17f;
-  text-align: left;
   width: 280px;
+  text-align: left;
+  color: #ffe17f;
+  background-color: #000000;
 }
 
 .button-container {
@@ -57,49 +53,49 @@
 }
 
 .button-title {
+  position: relative;
+  padding: 30px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
-  letter-spacing: 0.2em;
   line-height: 23px;
-  padding: 30px;
-  position: relative;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
 }
 
 .button-title::after {
   content: "";
-  background-color: #000000;
-  height: 12px;
-  left: 100%;
-  margin-left: 56px;
-  mask-image: url("../images/icons/exclamation-point.svg");
-  opacity: 0.3;
   position: absolute;
   top: 50%;
+  left: 100%;
+  width: 12px;
+  height: 12px;
+  margin-left: 56px;
+  background-color: #000000;
+  opacity: 0.3;
   transform: translateY(-50%);
   transition: opacity 0.2s ease-in-out;
-  width: 12px;
+  mask-image: url("../images/icons/exclamation-point.svg");
   mask-repeat: no-repeat;
   mask-position: 50%;
 }
 
 .button-wide-iconable {
-  background-color: #f0f0f0;
   display: grid;
   grid-template-columns: 124px 1fr 124px;
   outline-offset: 4px;
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 .button-wide-iconable::after {
   content: "";
+  width: 40px;
+  height: 40px;
   align-self: center;
+  justify-self: center;
   background-color: #dcdcdc;
   border-radius: 50%;
-  height: 40px;
-  justify-self: center;
-  width: 40px;
 }
 
 .button-wide-iconable::before {
@@ -127,7 +123,7 @@
 }
 
 .button-show {
-  background: transparent;
   margin: 0;
   font-size: 18px;
+  background: transparent;
 }

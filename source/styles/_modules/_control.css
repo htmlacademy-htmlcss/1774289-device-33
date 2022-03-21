@@ -1,33 +1,69 @@
 .control {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.control-input {
   position: relative;
-  display: block;
-  padding-left: 36px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  flex-shrink: 0;
+  border-radius: 3px;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+  appearance: none;
 }
 
-.control-mark {
-  position: absolute;
-  top: 2px;
+.control-input::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
   border: 2px solid #cccccc;
-  border-radius: 3px;
+  transition: border-color 0.2s ease-in-out;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input::after,
+.control-input::before {
   content: "";
-  background-image: url("../images/icons/tick-control-mark.svg");
-  width: 10px;
-  height: 10px;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  border-radius: inherit;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
-  content: "";
-  border: 2px solid #000000;
-  border-radius: 3px;
+.control-input::after {
+  top: 5px;
+  left: 5px;
+  right: 4px;
+  width: 9.3px;
+  height: 10px;
+  background-color: currentColor;
+  mask-image: url("../images/icons/tick-control.svg");
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.control-input:checked::before {
+  border-color: currentColor;
+}
+
+.control-input:checked::after {
+  opacity: 1;
+}
+
+.control-label {
+  padding-left: 16px;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.control-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]::after {
+  mask-image: url("../images/icons/ellipse.svg");
 }
 
 .control:hover {
@@ -42,22 +78,8 @@
   opacity: 0.1;
 }
 
-.control-input[type="radio"] + .control-mark {
-  border-radius: 50%;
-}
-
-.control-input[type="radio"]:checked + .control-mark {
-  content: "";
-  border: 2px solid #000000;
-}
-
-.control-input[type="radio"]:checked + .control-mark::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #000000;
+.control-input:disabled,
+.control-input:disabled + .control-label {
+  opacity: 0.1;
+  cursor: not-allowed;
 }

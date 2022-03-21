@@ -6,23 +6,23 @@
 .pagination-show-more {
   display: flex;
   justify-content: center;
-  padding: 18px 39px;
   margin: 44px 0;
+  padding: 18px 39px;
   border: 3px solid #e5e5e5;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 800;
   color: inherit;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .pagination-link-secondary {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", "Arial", sans-serif;
   line-height: 21px;
+  font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: inherit;
@@ -31,19 +31,19 @@
 .pagination-list {
   display: flex;
   align-items: center;
-  background: #ebebeb;
   margin: 0;
   padding: 0;
+  background: #ebebeb;
 }
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
   min-width: 40px;
+  padding: 10px;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: rgba(68, 68, 68, 0.3);
 }
 

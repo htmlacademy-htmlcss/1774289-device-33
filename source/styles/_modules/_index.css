@@ -1,12 +1,12 @@
 .index-columns {
-  display: flex;
-  justify-content: space-between;
-  margin: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 96px;
+  padding: 0 0 70px;
 }
 
 .index-columns-title {
-  margin: 0;
-  margin-bottom: 48px;
+  margin: 0 0 48px;
 }
 
 .index-columns-title::before {
@@ -14,6 +14,6 @@
   display: block;
   width: 84px;
   height: 8px;
-  background-color: #000000;
   margin-bottom: 40px;
+  background-color: #000000;
 }

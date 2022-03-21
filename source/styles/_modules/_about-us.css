@@ -1,24 +1,18 @@
-.about-us {
-  width: 520px;
-  height: 493px;
-  padding-right: 108px;
-}
-
 .about-item {
-  font-weight: 700;
-  color: #000000;
-  line-height: 20px;
-  letter-spacing: -0.02em;
   margin: 19px 0;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .about-item::before {
   content: "";
   position: absolute;
   left: 0;
-  margin: 6px;
   width: 8px;
   height: 8px;
+  margin: 6px;
   background: rgba(255, 199, 0, 1);
   border-radius: 50%;
 }
@@ -28,8 +22,7 @@
 }
 
 .about-list,
-.item-paragraph {
-  margin: 0;
-  margin-bottom: 30px;
+.paragraph {
   position: relative;
+  margin: 0 0 30px;
 }

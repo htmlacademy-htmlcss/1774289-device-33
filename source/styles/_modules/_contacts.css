@@ -1,17 +1,12 @@
-.contacts {
-  width: 532px;
-}
-
 .contacts-title {
   font-size: 24px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 }
 
 .contacts-address {
+  margin: 0 0 30px;
   font-style: normal;
-  margin-bottom: 30px;
 }
 
 .contacts-address-subtitle {
@@ -24,16 +19,14 @@
 }
 
 .contacts-info {
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .contacts-info-title {
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 }
 
 .contacts-schedule-list {
+  margin: 0 0 30px;
   padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
 }

@@ -30,7 +30,7 @@
 }
 
 .footer-menu-item {
-  margin-right: 35px;
+  margin: 0 35px 0 0;
 }
 
 .footer-menu-item:last-child {
@@ -38,17 +38,17 @@
 }
 
 .footer-menu-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", "Arial", sans-serif;
   line-height: 21px;
+  font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: inherit;
 }
 
 .footer-menu-link:hover {
-  color: #ffc500;
   padding-bottom: 4px;
+  color: #ffc500;
   border-bottom: 2px solid #ffc500;
 }
 
@@ -73,16 +73,9 @@
 }
 
 .footer-dev {
-  margin-left: auto;
-}
-
-.footer-social-list a:hover,
-.footer-dev:hover {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-dev:active {
-  opacity: 0.3;
+  justify-self: end;
+  margin: 15px 0 0 auto;
+  mask-image: url("../images/logo/logo-html-academy.svg");
 }
 
 .footer-start {
@@ -91,9 +84,11 @@
 }
 
 .footer-logo {
+  order: -1;
   display: inline-block;
-  margin-bottom: 35px;
-  cursor: default;
+  vertical-align: baseline;
+  margin-bottom: 30px;
+  mask-image: url("../images/logo/logo-device-footer.svg");
 }
 
 .footer-social-list {
@@ -135,13 +130,13 @@
   mask-image: url("../images/icons/twitter.svg");
 }
 
-.footer-social-list a:hover,
+.footer-social-link a:hover,
 .footer-contacts-phone:hover {
   color: #ffc700;
   opacity: 1;
 }
 
-.footer-social-list a:active {
+.footer-social-link a:active {
   color: rgba(255, 199, 0, 0.3);
   opacity: 1;
 }
@@ -158,4 +153,41 @@
 .footer-logo img,
 .footer-dev img {
   display: block;
+  opacity: 0;
+}
+
+.footer-logo,
+.footer-dev {
+  position: relative;
+  outline-offset: 1px;
+}
+
+.footer-dev::before,
+.footer-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc700;
+  mask-image: var(--logo-mask);
+  transition: inherit;
+  pointer-events: none;
+}
+
+.footer-logo:hover::before {
+  background-color: rgba(255, 199, 0, 0.6);
+}
+
+.footer-logo:active::before {
+  opacity: 0.3;
+}
+
+.footer-dev:hover::before {
+  background-color: #ffffff;
+}
+
+.footer-dev:active::before {
+  opacity: 0.3;
 }

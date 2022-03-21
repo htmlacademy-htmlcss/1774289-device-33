@@ -1,7 +1,7 @@
 .main-footer {
+  padding: 62px 0 54px;
   color: #ffffff;
   background-color: #444444;
-  padding: 62px 0 54px;
 }
 
 .main-page {
@@ -9,22 +9,22 @@
 }
 
 .main-nav {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .main-nav-link {
-  border-width: 2px;
+  position: relative;
   left: 5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  position: relative;
   color: inherit;
+  border-width: 2px;
 }
 
 .main-nav-link:hover {
@@ -41,26 +41,26 @@
 }
 
 .main-nav-link-current {
-  border-bottom: 2px solid;
   padding-bottom: 4px;
+  border-bottom: 2px solid;
 }
 
 .main-nav-link-catalog {
-  margin-right: 276px;
+  margin: 0 276px 0 0;
 }
 
 .main-nav-link-catalog::after {
+  width: 13px;
+  height: 13px;
   background-color: #000000;
   border-radius: 50px;
   border: 2px solid #000000;
   box-sizing: border-box;
-  height: 13px;
-  width: 13px;
 }
 
 .main-nav-link-delivery,
 .main-nav-link-warranty {
-  margin-right: 45px;
+  margin: 0 45px 0 0;
 }
 
 .main-list {

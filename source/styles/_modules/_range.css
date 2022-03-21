@@ -1,21 +1,22 @@
 .range-scale {
   position: relative;
+  width: 200px;
   height: 2px;
   margin-bottom: 11px;
   background-color: #dcdcdc;
-  width: 200px;
 }
 
 .range-bar {
   position: absolute;
-  height: 2px;
-  background-color: #000000;
   left: 0;
   width: 119px;
+  height: 2px;
+  background-color: #000000;
 }
 
 .range-toggle {
   position: absolute;
+  top: -8px;
   width: 18px;
   height: 18px;
   background-color: #ebebeb;
@@ -25,8 +26,16 @@
   z-index: 2;
 }
 
+.range-toggle-min {
+  left: -10px;
+}
+
+.range-toggle-max {
+  right: -10px;
+}
+
 .range-toggle:hover {
-  opacity: 0.5;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 .range-toggle:active {
@@ -34,16 +43,10 @@
   border-color: #000000;
 }
 
-.range-toggle:focus {
-  outline: 3px solid #af4fff;
-  background-color: #ebebeb;
-  border-color: #000000;
-}
-
-.range-wrapper-inputs {
+.range-inputs-wrapper {
   display: flex;
   position: relative;
-  left: -20px;
+  left: -20px; /* PP */
   opacity: 0.3;
 }
 

@@ -8,19 +8,19 @@
 .categories-link {
   display: flex;
   flex-direction: column;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 24px;
-  color: #000000;
-  letter-spacing: -0.02em;
   height: 253px;
+  font-family: "Raleway", "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .categories-link::before {
   content: "";
-  background-color: #ffe17f;
   height: 160px;
   margin-bottom: 32px;
+  background-color: #ffe17f;
 }
 
 .categories-virtual-reality::before {

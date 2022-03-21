@@ -25,6 +25,10 @@
   opacity: 0.3;
 }
 
+.page input:disabled {
+  opacity: 0.3;
+}
+
 .page input::-webkit-search-decoration,
 .page input::-webkit-search-cancel-button,
 .page input::-webkit-search-results-button,
@@ -42,14 +46,32 @@
   transition-timing-function: ease-in-out;
 }
 
+.page input[type="number"] {
+  text-align: center;
+  appearance: textfield;
+}
+
+.page [type="number"]::-webkit-outer-spin-button,
+.page [type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.page button:disabled {
+  opacity: 0.3;
+}
+
+.page .form-field {
+  font-size: 16px;
+}
+
 .page .footer-contacts-phone {
   text-decoration-line: underline;
 }
 
 .page-header {
   align-items: start;
-  background-color: var(--color-bg-accent);
-  border-top: 40px solid var(--color-paper);
+  background-color: #ffe17f;
+  border-top: 40px solid #ffffff;
   display: grid;
   gap: 30px 0;
   grid-template-columns: 518px 1fr;
@@ -82,8 +104,8 @@
   outline-offset: 2px;
 }
 
-@supports selector(: focus-visible) {
-  .page:focus {
+@supports selector(:focus-visible) {
+  .page :focus {
     outline: none;
   }
 }
@@ -91,4 +113,8 @@
 .page :focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.page .range-input:focus {
+  outline: none;
 }

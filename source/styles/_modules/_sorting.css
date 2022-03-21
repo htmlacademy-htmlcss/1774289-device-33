@@ -1,11 +1,11 @@
 .sorting-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  margin: 5px 0;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin: 5px 0;
 }
 
 .sorting-container {
@@ -17,7 +17,10 @@
   width: 30px;
   height: 30px;
   background-color: transparent;
-  background-image: url("../images/icons/sort-item-1.svg");
+  background-image: url("../images/icons/sort-item.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
   cursor: pointer;
 }
 
@@ -30,6 +33,5 @@
 }
 
 .sorting-button:active {
-  color: #000000;
   opacity: 1;
 }

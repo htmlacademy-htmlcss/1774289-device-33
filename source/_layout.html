@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Device – {% block title %}Страница в разработке{% endblock %}</title>
-
-  <link href="styles/styles.css" rel="stylesheet">
-
-  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <link type="image/png" href="favicon-32x32.png" rel="icon" sizes="32x32">
-  <link type="image/png" href="favicon-16x16.png" rel="icon" sizes="16x16">
-  <link href="site.webmanifest" rel="manifest">
-  <link href="safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" sizes="32x32" href="favicon.ico" >
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Device">
+  <meta name="application-name" content="Device">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -25,7 +25,7 @@
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru">
       <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту"
-        aria-label="Поиск">
+        aria-label="Поиск:">
       <button class="search-form-submit" type="submit">Найти</button>
     </form>
 
@@ -81,7 +81,7 @@
               <dd class="cart-value">2000 ₽</dd>
             </div>
           </dl>
-          <a class="cart-button" href="cart.html" class="disabled">Открыть корзину</a>
+          <a class="cart-button" href="cart.html">Открыть корзину</a>
         </div>
       </li>
     </ul>
@@ -99,7 +99,7 @@
           <a class="catalog-nav-link" href="#"> Квадрокоптеры </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Моноподы для cелфи </a>
+          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html"> Моноподы для cелфи </a>
         </li>
         <li class="catalog-nav-item">
           <a class="catalog-nav-link" href="#"> Умные часы </a>
@@ -172,13 +172,6 @@
         </a>
       </div>
   </footer>
-
-  <!-- <div class="modal-container">
-    <div class="modal modal-auth">
-
-    </div>
-  </div>
-  -->
 </body>
 
 </html>

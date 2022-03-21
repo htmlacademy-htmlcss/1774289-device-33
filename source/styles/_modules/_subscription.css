@@ -15,7 +15,7 @@
   margin: 0 0 0 7px;
 }
 
-.subscription-subtitle {
+.subscription-paragraph {
   width: 554px;
   margin: 9px 0 144px;
 }
@@ -55,14 +55,15 @@
 .subscription-button {
   padding: 18px 35px;
   margin-left: -2px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: inherit;
+  font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
   background-color: transparent;
   border: 3px solid #cecece;
+  cursor: pointer;
 }
 
 .subscription-button:hover {
@@ -94,9 +95,9 @@
 
 .subscription-check-title::before {
   content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
   background-image: url("../images/icons/tick-big-green.svg");
   background-repeat: no-repeat;
-  height: 16px;
-  width: 16px;
-  margin-right: 16px;
 }
