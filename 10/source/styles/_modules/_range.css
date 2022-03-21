@@ -1,0 +1,66 @@
+.range-scale {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+  left: 0;
+  width: 119px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  background-color: #ebebeb;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.range-toggle-min {
+  left: -10px;
+}
+
+.range-toggle-max {
+  right: -10px;
+}
+
+.range-toggle:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.range-toggle:active {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.range-inputs-wrapper {
+  display: flex;
+  position: relative;
+  left: -20px; /* PP */
+  opacity: 0.3;
+}
+
+.range-input {
+  width: 15px;
+  padding: 0 2px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

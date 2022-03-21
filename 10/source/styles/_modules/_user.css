@@ -1,0 +1,120 @@
+.user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.user-nav-item {
+  position: relative;
+  margin: 20px 0 0 20px;
+}
+
+.user-nav-item-extended {
+  display: flex;
+}
+
+.user-nav-link-extend {
+  margin-left: 28px;
+  opacity: 0.3;
+}
+
+.user-nav-link-extend:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.user-nav-item:first-child {
+  margin-right: auto;
+}
+
+.user-nav-link {
+  display: flex;
+  align-items: baseline;
+  padding: 5px 0;
+  font-size: inherit;
+  line-height: 30px;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.user-nav-link:hover {
+  opacity: 0.6;
+}
+
+.user-nav-link:active {
+  opacity: 0.3;
+}
+
+.user-nav-link::before {
+  content: "";
+  margin-right: 10px;
+  background: var(--icon);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.user-nav-link-user::before {
+  width: 13px;
+  height: 12px;
+  background-image: url("../images/icons/user.svg");
+}
+
+.user-nav-link-sort::before {
+  width: 10px;
+  height: 12px;
+  background-image: url("../images/icons/static.svg");
+}
+
+.user-nav-link-cart::before {
+  margin-left: -6px;
+  width: 16px;
+  height: 14px;
+  background-image: url("../images/icons/basket.svg");
+}
+
+.user-nav-label {
+  order: -1;
+  position: relative;
+  z-index: 1;
+  min-width: 21px;
+  padding: 2px 6px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+.user-nav-popover {
+  position: absolute;
+  top: 100%;
+  left: 32px;
+  z-index: 2;
+  width: 320px;
+  transform: translateX(-50%);
+  transition: visibility 0.3s, opacity 0.3s;
+  visibility: hidden;
+  opacity: 0.01;
+}
+
+.user-nav-popover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  border-bottom: 6px solid #000000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  transform: inherit;
+}
+
+.user-nav-link:focus + .user-nav-popover,
+.user-nav-link:hover + .user-nav-popover,
+.user-nav-popover:focus-within,
+.user-nav-popover:hover {
+  visibility: visible;
+  opacity: 1;
+}

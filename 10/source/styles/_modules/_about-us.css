@@ -1,0 +1,28 @@
+.about-item {
+  margin: 19px 0;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  margin: 6px;
+  background: rgba(255, 199, 0, 1);
+  border-radius: 50%;
+}
+
+.about-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-list,
+.paragraph {
+  position: relative;
+  margin: 0 0 30px;
+}

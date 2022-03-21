@@ -1,0 +1,73 @@
+.main-footer {
+  padding: 62px 0 54px;
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.main-page {
+  flex-grow: 1;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-link {
+  position: relative;
+  left: 5px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  border-width: 2px;
+}
+
+.main-nav-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-link:active {
+  opacity: 0.3;
+}
+
+.main-nav-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.main-nav-link-current {
+  padding-bottom: 4px;
+  border-bottom: 2px solid;
+}
+
+.main-nav-link-catalog {
+  margin: 0 276px 0 0;
+}
+
+.main-nav-link-catalog::after {
+  width: 13px;
+  height: 13px;
+  background-color: #000000;
+  border-radius: 50px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+.main-nav-link-delivery,
+.main-nav-link-warranty {
+  margin: 0 45px 0 0;
+}
+
+.main-list {
+  display: grid;
+  grid-template-columns: repeat(3, 215px);
+}
+
+.main-nav-item {
+  margin: 15px 0 15px 46px;
+}
