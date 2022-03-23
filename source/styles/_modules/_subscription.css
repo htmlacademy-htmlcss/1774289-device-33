@@ -72,7 +72,7 @@
 
 .subscription-button:active,
 .subscription-button:hover {
-  background: #000000;
+  background-color: #000000;
   border: 3px solid #000000;
   color: #ffffff;
 }

@@ -2,7 +2,7 @@
   position: relative;
   width: 200px;
   height: 2px;
-  margin-bottom: 11px;
+  margin-top: 16px;
   background-color: #dcdcdc;
 }
 
@@ -47,13 +47,14 @@
   display: flex;
   position: relative;
   left: -20px; /* PP */
-  opacity: 0.3;
+  margin-top: 7px;
 }
 
 .range-input {
   width: 15px;
   padding: 0 2px;
   text-align: center;
+  color: inherit;
   background-color: transparent;
   border: none;
   appearance: textfield;

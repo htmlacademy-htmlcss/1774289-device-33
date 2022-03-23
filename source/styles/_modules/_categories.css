@@ -3,6 +3,7 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 60px 40px;
   margin: 70px 0 0;
+  padding: 0;
 }
 
 .categories-link {
@@ -19,6 +20,7 @@
 .categories-link::before {
   content: "";
   height: 160px;
+  margin-top: 1px;
   margin-bottom: 32px;
   background-color: #ffe17f;
 }

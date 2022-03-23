@@ -1,16 +1,18 @@
 .search-form {
   display: grid;
-  grid-template-columns: 359px 1fr;
+  grid-template-columns: 1fr min-content;
   font-size: 16px;
   line-height: 20px;
+  margin-top: -1px;
+  margin-right: 1px;
 }
 
 .search-form-field {
   width: 100%;
-  padding: 11px 16px 8px 45px;
+  padding: 8px 16px 7px 44px;
   background-color: transparent;
   background-image: url("../images/icons/search.svg");
-  background-position: 14px 50%;
+  background-position: 14px 53%;
   background-repeat: no-repeat;
   background-size: 16px 16px;
   border: 2px solid;
@@ -22,7 +24,7 @@
 }
 
 .search-form-submit {
-  min-width: 162px;
+  min-width: 160px;
   margin-left: -2px;
   padding: 8px 16px;
   font: inherit;
@@ -34,7 +36,7 @@
 
 .search-form-submit:hover {
   box-sizing: border-box;
-  background: #000000;
+  background-color: #000000;
   border: 2px solid #000000;
   color: #ffffff;
 }

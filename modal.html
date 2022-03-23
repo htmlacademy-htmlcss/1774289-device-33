@@ -1,44 +1,226 @@
-<section class="modal modal-ready modal-opened" data-modal="order">
-  <div class="modal-inner">
-    <header class="modal-header">
-      <h2 class="title modal-title">Доставка под заказ</h2>
-      <button class="modal-closer" type="button" data-modal-close="order">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </header>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <p class="form-group form-group-text">
-        <label class="form-label" for="order-username">Ваше имя</label>
-        <input class="form-field" type="text" name="username" id="order-username" placeholder="Введите имя" required="">
-        <span class="form-prompt">Добавьте имя</span>
-      </p>
-      <p class="form-group form-group-email">
-        <label class="form-label" for="order-email">Ваш e-mail</label>
-        <input class="form-field" type="email" name="email" id="order-email" placeholder="Введите e-mail" value="почта">
-        <span class="form-prompt">Забавный у вас адрес</span>
-      </p>
-      <p class="form-group form-group-comment">
-        <label class="form-label" for="order-comment">Что нужно привезти:</label>
-        <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме">
-      </p>
-      <p class="form-group form-group-quantity">
-        <label class="form-label" for="order-quantity">Количество</label>
-        <span class="form-tooltip">
-          <span class="form-tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
-            Привезём сколько получится по требованиям к провозу багажа.
-          </span>
-        </span>
-        <span class="form-controls">
-          <input class="form-field form-field-counter" type="number" id="order-quantity" name="quantity" min="1" max="999" step="1" value="1" required="">
-          <button class="form-control form-control-step-down" type="button">
-            <span class="visually-hidden">Меньше</span>
-          </button>
-          <button class="form-control form-control-step-up" type="button">
-            <span class="visually-hidden">Больше</span>
-          </button>
-        </span>
-      </p>
-      <button class="button form-submit" type="submit">Отправить</button>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Device – Модальное окно (разработка)</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" sizes="32x32" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Device">
+  <meta name="application-name" content="Device">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="page">
+  <!-- Page-header -->
+  <header class="container page-header">
+    <a class="logo page-header-logo" href="index.html">
+      <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
+    </a>
+    <form class="search-form" action="https://echo.htmlacademy.ru">
+      <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту" aria-label="Поиск:">
+      <button class="search-form-submit" type="submit">Найти</button>
     </form>
-  </div>
-</section>
+    <ul class="page-header-user-nav user-nav">
+      <li class="user-nav-item">
+        <a class="user-nav-link user-nav-link-user" href="catalog.html">Войти</a>
+      </li>
+      <li class="user-nav-item">
+        <a class="user-nav-link user-nav-link-sort" href="#">Сравнить</a>
+      </li>
+      <li class="user-nav-item">
+        <button class="user-nav-link user-nav-link-cart" type="button">
+          Корзина
+          <span class="visually-hidden">Товаров в корзине</span>
+          <span class="user-nav-label">2</span>
+        </button>
+        <div class="cart user-nav-popover">
+          <ul class="cart-list">
+            <li class="cart-item">
+              <a class="cart-link" href="#">
+                Любительская
+                <br>
+                селфи-палка
+                <img class="cart-image" src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
+              </a>
+              <a class="cart-remover" href="#">
+                <span class="visually-hidden">Удалить из корзины</span>
+              </a>
+            </li>
+            <li class="cart-item">
+              <a class="cart-link" href="cart.html">
+                Профессиональная
+                <br>
+                селфи-палка
+                <img class="cart-image" src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+              </a>
+              <a class="cart-remover" href="#">
+                <span class="visually-hidden">Удалить из корзины</span>
+              </a>
+            </li>
+          </ul>
+          <dl class="cart-params">
+            <div class="cart-param">
+              <dt class="cart-value">Товаров:</dt>
+              <dd class="cart-value">2</dd>
+            </div>
+            <div class="cart-param">
+              <dt class="cart-value">Сумма:</dt>
+              <dd class="cart-value">2000 ₽</dd>
+            </div>
+          </dl>
+          <a class="cart-button" href="cart.html">Открыть корзину</a>
+        </div>
+      </li>
+    </ul>
+    <div class="page-header-catalog-nav catalog-nav">
+      <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
+      <ul class="catalog-nav-subcatalog">
+        <li class="catalog-nav-item">
+          <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
+        </li>
+        <li class="catalog-nav-item">
+          <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
+        </li>
+        <li class="catalog-nav-item">
+          <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
+        </li>
+        <li class="catalog-nav-item">
+          <a class="catalog-nav-link" href="catalog.html">
+            Моноподы для cелфи
+          </a>
+        </li>
+        <li class="catalog-nav-item">
+          <a class="catalog-nav-link" href="#">Умные часы</a>
+        </li>
+        <li class="catalog-nav-item">
+          <a class="catalog-nav-link" href="#">Экшн-камеры</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="main-nav page-header-main-nav">
+      <li class="main-nav-item">
+        <a class="main-nav-link" href="#">Доставка</a>
+      </li>
+      <li class="main-nav-item">
+        <a class="main-nav-link" href="#">Гарантия</a>
+      </li>
+      <li class="main-nav-item">
+        <a class="main-nav-link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </header>
+  <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс".</h1>
+  <!-- Main-page -->
+
+  <main class="main-page">
+    <p class="button-container container">
+      <a class="button-wide-iconable" href="modal.html" data-modal-open="order">
+        <span class="button-title">Доставим редкий товар под заказ</span>
+      </a>
+    </p>
+  </main>
+  <!-- Main-footer -->
+
+  <footer class="main-footer">
+    <div class="main-footer-inner container">
+      <a class="footer-logo">
+        <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
+      </a>
+      <div class="footer-inner">
+        <address class="footer-content">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </address>
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+        <ul class="footer-social-list">
+          <li>
+            <a class="footer-social-link footer-social-fb" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook.</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Instagram.</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Twitter.</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer-dev" href="https://htmlacademy.ru/">
+          <img src="images/logo/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal modal-ready modal-opened" data-modal="order">
+    <div class="modal-inner">
+      <header class="modal-header">
+        <h2 class="title modal-title">Доставка под заказ</h2>
+        <button class="modal-closer" type="button" data-modal-close="order">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </header>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="form-group form-group-text">
+          <label class="form-label" for="order-username">Ваше имя</label>
+          <input class="form-field" type="text" name="username" id="order-username" placeholder="Введите имя" required="">
+          <span class="form-prompt">Добавьте имя</span>
+        </p>
+        <p class="form-group form-group-email">
+          <label class="form-label" for="order-email">Ваш e-mail</label>
+          <input class="form-field" type="email" name="email" id="order-email" placeholder="Введите e-mail" value="почта">
+          <span class="form-prompt">Забавный у вас адрес</span>
+        </p>
+        <p class="form-group form-group-comment">
+          <label class="form-label" for="order-comment">Что нужно привезти:</label>
+          <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме">
+        </p>
+        <p class="form-group form-group-quantity">
+          <label class="form-label" for="order-quantity">Количество</label>
+          <span class="form-tooltip">
+            <span class="form-tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+              Привезём сколько получится по требованиям к провозу багажа.
+            </span>
+          </span>
+          <span class="form-controls">
+            <input class="form-field form-field-counter" type="number" id="order-quantity" name="quantity" min="1" max="999" step="1" value="1" required="">
+            <button class="form-control form-control-step-down" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <button class="form-control form-control-step-up" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </span>
+        </p>
+        <button class="button form-submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    window.pinegladePP = {
+      breakpoints: [1240],
+      ext: 'png'
+    };
+
+  </script>
+  <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js"></script>
+</body>
+</html>

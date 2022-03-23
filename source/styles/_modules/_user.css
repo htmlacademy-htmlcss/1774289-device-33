@@ -6,7 +6,7 @@
 
 .user-nav-item {
   position: relative;
-  margin: 20px 0 0 20px;
+  margin: 19px 0 0 19px;
 }
 
 .user-nav-item-extended {
@@ -49,14 +49,14 @@
 
 .user-nav-link::before {
   content: "";
-  margin-right: 10px;
+  margin-right: 11px;
   background: var(--icon);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
 .user-nav-link-user::before {
-  width: 13px;
+  width: 15px;
   height: 12px;
   background-image: url("../images/icons/user.svg");
 }
@@ -68,9 +68,9 @@
 }
 
 .user-nav-link-cart::before {
-  margin-left: -6px;
-  width: 16px;
+  width: 14px;
   height: 14px;
+  margin-left: -3px;
   background-image: url("../images/icons/basket.svg");
 }
 

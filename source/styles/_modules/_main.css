@@ -69,5 +69,9 @@
 }
 
 .main-nav-item {
-  margin: 15px 0 15px 46px;
+  margin: 10px -1px 23px 46px;
+}
+
+.main-nav-link:last-child {
+  letter-spacing: 0;
 }

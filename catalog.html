@@ -17,7 +17,7 @@
 
 <body class="page">
   <!-- Page-header -->
-  <header class="container page-header header">
+  <header class="container page-header">
     <a class="logo page-header-logo" href="index.html">
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
@@ -82,34 +82,36 @@
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
       <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Виртуальная реальность </a>
+          <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Фитнес-браслеты </a>
+          <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Квадрокоптеры </a>
+          <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html"> Моноподы для cелфи </a>
+          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html">
+            Моноподы для cелфи
+          </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Умные часы </a>
+          <a class="catalog-nav-link" href="#">Умные часы</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Экшн-камеры </a>
+          <a class="catalog-nav-link" href="#">Экшн-камеры</a>
         </li>
       </ul>
     </div>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#"> Доставка </a>
+        <a class="main-nav-link" href="#">Доставка</a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#"> Гарантия </a>
+        <a class="main-nav-link" href="#">Гарантия</a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#"> Контакты </a>
+        <a class="main-nav-link" href="#">Контакты</a>
       </li>
     </ul>
   </header>
@@ -217,7 +219,7 @@
         <div class="catalog-right-column">
           <div class="sorting-container">
             <h3 class="sorting-title">Сортировка:</h3>
-            <select class="select-control">
+            <select class="select-control" aria-label="Сортировка">
               <option value="popular">Популярные</option>
               <option value="cheap">Дешёвые</option>
               <option value="expensive">Дорогие</option>
@@ -285,27 +287,27 @@
             <a class="pagination-show-more" href="#">Загрузить ещё</a>
             <!-- Pagination-list -->
             <ol class="pagination-list">
-              <li class="pagination-item">
+              <li class="pagination-item-prev">
                 <a class="pagination-prev pagination-link-secondary" href="#">
                   <span>Назад</span>
                 </a>
               </li>
-              <li class="pagination-item-number">
+              <li>
                 <a class="pagination-link pagination-link-current" href="#">1</a>
               </li>
-              <li class="pagination-item-number">
+              <li>
                 <a class="pagination-link" href="#">2</a>
               </li>
-              <li class="pagination-item-number">
+              <li>
                 <a class="pagination-link" href="#">3</a>
               </li>
-              <li class="pagination-item-number">
+              <li>
                 <a class="pagination-link" href="#">...</a>
               </li>
-              <li class="pagination-item-number">
+              <li>
                 <a class="pagination-link" href="#">15</a>
               </li>
-              <li class="pagination-item">
+              <li class="pagination-item-next">
                 <a class="pagination-next pagination-link-secondary" href="#">
                   <span>Вперёд</span>
                 </a>
@@ -362,5 +364,13 @@
       </div>
     </div>
   </footer>
+  <script>
+    window.pinegladePP = {
+      breakpoints: [1240],
+      ext: 'png'
+    };
+
+  </script>
+  <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js"></script>
 </body>
 </html>

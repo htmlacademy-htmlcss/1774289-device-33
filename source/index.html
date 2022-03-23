@@ -1,10 +1,12 @@
-{% include "_modal.html" %}
-
 {% extends "_layout.html" %}
 
 {% block title %}Главная{% endblock %}
 
 {% block rootLink %}{% endblock %}
+
+{% block modal %}
+  {% include "_modal.html" %}
+{% endblock %}
 
 {% block main %}
 
@@ -25,7 +27,7 @@
 
       <!-- Slider-list -->
       <ul class="slider-list">
-        <li class="slider-item slider_item--active">
+        <li class="slider-item slider-item-active">
           <h2 class="visually-hidden">Товар 1</h2>
           <img class="slider-image" src="images/slider/slider-1.png" alt="Квадрокоптер." width="560" height="560">
           <div class="slider-content">
@@ -225,7 +227,7 @@
         <li class="about-item">СДИК</li>
         <li class="about-item">ТоксБерри</li>
       </ul>
-      <a class="button" href="#">Подробнее о нас</a>
+      <a class="button about-button" href="#">Подробнее о нас</a>
     </section>
 
     <!-- Contacts -->
@@ -248,7 +250,7 @@
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
       </div>
-      <a class="button" href="#">Напишите нам</a>
+      <a class="button contacts-button" href="#">Напишите нам</a>
     </section>
   </div>
 

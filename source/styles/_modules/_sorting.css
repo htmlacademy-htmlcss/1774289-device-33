@@ -1,5 +1,6 @@
 .sorting-title {
-  margin: 5px 0;
+  width: 150px;
+  margin: 5px auto 5px 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -10,6 +11,8 @@
 
 .sorting-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   padding: 20px 40px;
 }
 
@@ -22,6 +25,10 @@
   background-position: center;
   opacity: 0.2;
   cursor: pointer;
+}
+
+.sorting-ascending {
+  margin-left: auto;
 }
 
 .sorting-descending {

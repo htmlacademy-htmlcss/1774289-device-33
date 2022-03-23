@@ -1,6 +1,7 @@
 .slider-container {
   position: relative;
-  margin-top: 0;
+  margin-top: -11px;
+  margin-right: 1px;
 }
 
 .slider-list {
@@ -33,7 +34,7 @@
   border-top: 186px solid #ffe17f;
 }
 
-.slider_item--active {
+.slider-item-active {
   position: relative;
   visibility: visible;
   transform: scale(1);
@@ -101,7 +102,7 @@
 }
 
 .slider-spaced {
-  padding-right: 20px;
+  padding-right: 1px;
 }
 
 .slider-footer {
@@ -110,7 +111,7 @@
 
 .slider-footer-button {
   display: block;
-  width: 220px;
+  width: 223px;
   margin: 0 0 48px;
 }
 
@@ -120,7 +121,7 @@
 }
 
 .slider-value {
-  margin: 0 0 12px;
+  margin: 0 0 11px;
   font-size: 36px;
 }
 
@@ -142,12 +143,12 @@
 }
 
 .slider-button-prev {
-  left: 28px;
+  left: 30px;
 }
 
 .slider-pagination {
   position: absolute;
-  right: 0;
+  right: -1px;
   bottom: 173px;
   z-index: 2;
   display: flex;

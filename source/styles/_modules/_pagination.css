@@ -30,10 +30,11 @@
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
-  background: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .pagination-link {
@@ -53,12 +54,12 @@
   padding: 25px;
 }
 
-.pagination-prev {
-  margin-right: 145.5px;
+.pagination-item-prev {
+  margin-right: auto;
 }
 
-.pagination-next {
-  margin-left: 145.5px;
+.pagination-item-next {
+  margin-left: auto;
 }
 
 .pagination-link-current {
@@ -81,11 +82,11 @@
 }
 
 .pagination-link-secondary:hover {
-  background: #dcdcdc;
+  background-color: #dcdcdc;
 }
 
 .pagination-link-secondary:active {
-  background: #dcdcdc;
+  background-color: #dcdcdc;
   color: rgba(0, 0, 0, 0.3);
 }
 

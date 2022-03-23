@@ -30,3 +30,8 @@
   margin: 0 0 30px;
   padding: 0;
 }
+
+.contacts-button {
+  display: block;
+  width: 260px;
+}
