@@ -1,7 +1,6 @@
 .slider-container {
   position: relative;
-  margin-top: -11px;
-  margin-right: 1px;
+  margin-top: 0;
 }
 
 .slider-list {
@@ -90,19 +89,15 @@
 .slider-params {
   display: flex;
   flex-wrap: wrap;
-  margin: -40px 0 0 -20px;
+  margin: -40px 0 0 -21px;
 }
 
 .slider-param {
   display: flex;
   flex-direction: column-reverse;
-  margin: 40px 0 0 20px;
+  margin: 40px 0 0 21px;
   line-height: 30px;
   color: #000000;
-}
-
-.slider-spaced {
-  padding-right: 1px;
 }
 
 .slider-footer {

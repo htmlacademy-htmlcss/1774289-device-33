@@ -6,7 +6,7 @@
 
 .user-nav-item {
   position: relative;
-  margin: 19px 0 0 19px;
+  margin: 20px 0 0 20px;
 }
 
 .user-nav-item-extended {
@@ -49,15 +49,13 @@
 
 .user-nav-link::before {
   content: "";
-  margin-right: 11px;
-  background: var(--icon);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  margin-right: 10px;
+  background-color: transparent;
 }
 
 .user-nav-link-user::before {
-  width: 15px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   background-image: url("../images/icons/user.svg");
 }
 

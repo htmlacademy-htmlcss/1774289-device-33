@@ -12,7 +12,7 @@
 
 .subscription-title {
   width: 360px;
-  margin: 0 0 0 7px;
+  margin: -1px 0 0 6px;
 }
 
 .subscription-paragraph {
@@ -22,12 +22,13 @@
 
 .subscription-form {
   display: flex;
+  flex-wrap: wrap;
   width: 810px;
 }
 
 .subscription-field {
   flex-grow: 1;
-  padding: 13px 18px 11px;
+  padding: 13px 16px 11px;
   color: #444444;
   background-color: transparent;
   border: none;
@@ -53,7 +54,7 @@
 }
 
 .subscription-button {
-  padding: 18px 35px;
+  padding: 14px 33px 14px 36px;
   margin-left: -2px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: inherit;
@@ -91,6 +92,8 @@
 .subscription-check-title {
   display: flex;
   align-items: baseline;
+  margin-top: 14px;
+  margin-right: 2px;
 }
 
 .subscription-check-title::before {

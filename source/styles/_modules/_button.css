@@ -19,8 +19,8 @@
   content: "";
   position: absolute;
   top: 16px;
-  right: 0px;
-  bottom: 16px;
+  right: 2px;
+  bottom: 17px;
   left: 0;
   z-index: -1;
   background-color: #ffe17f;
@@ -49,12 +49,13 @@
 
 .button-container {
   margin: 0;
-  padding: 70px 0;
+  padding: 69px 1px 70px 0;
 }
 
 .button-title {
   position: relative;
-  padding: 30px;
+  padding: 41px 2px 36px 2px;
+  margin-left: 3px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -102,7 +103,7 @@
   content: "";
   background-color: #ffe17f;
   background-image: url("../images/icons/truck.svg");
-  background-position: 50% 50%;
+  background-position: 50% 52%;
   background-repeat: no-repeat;
   background-size: 47px auto;
   transition: inherit;

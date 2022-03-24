@@ -78,17 +78,18 @@
   background-color: #ffe17f;
   border-top: 40px solid #ffffff;
   color: #000000;
+  margin-bottom: -12px;
 }
 
 .page-header-logo {
-  left: 60px;
   position: absolute;
   top: -22px;
+  left: 60px;
 }
 
 .page-header-user-nav {
   justify-content: flex-end;
-  margin: -20px 0 0 6px;
+  margin: -20px 0 0 10px;
 }
 
 .page-header-main-nav {

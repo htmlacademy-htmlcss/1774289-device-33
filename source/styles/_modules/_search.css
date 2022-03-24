@@ -3,16 +3,14 @@
   grid-template-columns: 1fr min-content;
   font-size: 16px;
   line-height: 20px;
-  margin-top: -1px;
-  margin-right: 1px;
 }
 
 .search-form-field {
   width: 100%;
-  padding: 8px 16px 7px 44px;
+  padding: 8px 16px 8px 45px;
   background-color: transparent;
   background-image: url("../images/icons/search.svg");
-  background-position: 14px 53%;
+  background-position: 14px 50%;
   background-repeat: no-repeat;
   background-size: 16px 16px;
   border: 2px solid;
@@ -24,7 +22,7 @@
 }
 
 .search-form-submit {
-  min-width: 160px;
+  min-width: 162px;
   margin-left: -2px;
   padding: 8px 16px;
   font: inherit;

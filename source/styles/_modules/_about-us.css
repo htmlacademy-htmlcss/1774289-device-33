@@ -1,5 +1,5 @@
 .about-item {
-  margin: 19px 0;
+  margin: 19px -4px;
   line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -9,7 +9,7 @@
 .about-item::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -4px;
   width: 8px;
   height: 8px;
   margin: 6px;
@@ -29,5 +29,9 @@
 
 .about-button {
   display: block;
-  width: 270px;
+  width: 273px;
+}
+
+.about-section {
+  margin-left: -1px;
 }

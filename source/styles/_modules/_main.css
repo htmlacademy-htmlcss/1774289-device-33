@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 62px 0 54px;
+  padding: 56px 0 54px;
   color: #ffffff;
   background-color: #444444;
 }
@@ -70,8 +70,4 @@
 
 .main-nav-item {
   margin: 10px -1px 23px 46px;
-}
-
-.main-nav-link:last-child {
-  letter-spacing: 0;
 }
