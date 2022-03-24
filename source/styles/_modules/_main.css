@@ -4,6 +4,10 @@
   background-color: #444444;
 }
 
+.main-footer-inner {
+  margin-top: 5px;
+}
+
 .main-page {
   flex-grow: 1;
 }
@@ -12,7 +16,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: -5px -2px 0 0;
   padding: 0;
 }
 
@@ -69,5 +73,9 @@
 }
 
 .main-nav-item {
-  margin: 10px -1px 23px 46px;
+  margin: 15px 1px 10px 45px;
+}
+
+.main-nav-item:last-child {
+  margin-right: 3px;
 }

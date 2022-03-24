@@ -6,8 +6,9 @@
 .pagination-show-more {
   display: flex;
   justify-content: center;
-  margin: 44px 0;
-  padding: 18px 39px;
+  margin-right: -2px;
+  margin-bottom: 44px;
+  padding: 15px 30px;
   border: 3px solid #e5e5e5;
   box-sizing: border-box;
   font-family: "Raleway", "Arial", sans-serif;
@@ -39,8 +40,8 @@
 
 .pagination-link {
   display: block;
-  min-width: 40px;
-  padding: 10px;
+  min-width: 12px;
+  padding: 12px 15px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
@@ -51,7 +52,16 @@
 .pagination-prev,
 .pagination-next {
   display: flex;
+}
+
+.pagination-prev {
+  justify-self: flex-start;
   padding: 25px;
+}
+
+.pagination-next {
+  justify-self: end;
+  padding: 25px 21px;
 }
 
 .pagination-item-prev {

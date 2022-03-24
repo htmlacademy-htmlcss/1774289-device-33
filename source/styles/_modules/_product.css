@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(2, 360px);
   gap: 44px 40px;
-  margin: 0 0 40px;
+  margin: 0 0 44px;
   padding: 0;
 }
 
@@ -60,16 +60,17 @@
   font-weight: 700;
   font-size: 1rem;
   line-height: 20px;
+  margin: 0;
 }
 
 .product-card-price {
   justify-self: end;
   color: #444444;
+  margin: -5px 0 0 0;
 }
 
 .product-card-title,
 .product-card-price {
-  margin: 0;
   transition: opacity 0.2s ease-in-out;
 }
 

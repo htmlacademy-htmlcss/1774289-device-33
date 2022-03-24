@@ -14,7 +14,7 @@
 }
 
 .user-nav-link-extend {
-  margin-left: 28px;
+  margin-left: 18px;
   opacity: 0.3;
 }
 
@@ -49,7 +49,7 @@
 
 .user-nav-link::before {
   content: "";
-  margin-right: 10px;
+  margin-right: 13px;
   background-color: transparent;
 }
 
@@ -65,11 +65,17 @@
   background-image: url("../images/icons/static.svg");
 }
 
+.user-nav-link-cart {
+  margin: 0 5px 0 -5px;
+}
+
 .user-nav-link-cart::before {
   width: 14px;
   height: 14px;
-  margin-left: -3px;
+  margin-left: -7px;
+  padding: 2px 2px 0 0;
   background-image: url("../images/icons/basket.svg");
+  background-repeat: no-repeat;
 }
 
 .user-nav-label {

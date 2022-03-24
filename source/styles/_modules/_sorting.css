@@ -1,19 +1,8 @@
-.sorting-title {
-  width: 150px;
-  margin: 5px auto 5px 0;
-  font-family: "Raleway", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 .sorting-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding: 20px 40px;
+  padding: 0 40px 20px;
 }
 
 .sorting-button {
