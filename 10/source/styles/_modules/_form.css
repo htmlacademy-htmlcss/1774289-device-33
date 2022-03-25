@@ -193,8 +193,9 @@
 }
 
 .form-submit {
-  margin: 42px 0 0 40px;
+  margin: 42px 0 0 41px;
   font-size: 18px;
+  width: 200px;
 }
 
 .form-field-counter,

@@ -20,7 +20,7 @@
 
   <!-- Page-header -->
   <header class="container page-header">
-    <a class="logo page-header-logo" href="#" block rootLink %}href="index.html" {% endblock %} aria-current="page">
+    <a class="logo page-header-logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru">
@@ -36,7 +36,7 @@
       </li>
       {% endblock %}
       <li class="user-nav-item">
-        <a class="user-nav-link user-nav-link-sort" href="#">Сравнить</a>
+        <a class="user-nav-link user-nav-link-sort" href="#!">Сравнить</a>
       </li>
       <li class="user-nav-item">
         <button class="user-nav-link user-nav-link-cart" type="button">
@@ -90,36 +90,36 @@
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
       <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
+          <a class="catalog-nav-link" href="#!">Виртуальная реальность</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
+          <a class="catalog-nav-link" href="#!">Фитнес-браслеты</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
+          <a class="catalog-nav-link" href="#!">Квадрокоптеры</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link{{ ' catalog-nav-link-current' if page === 'catalog' }}" href="catalog.html" aria-current="page">
+          <a class="catalog-nav-link{{ ' catalog-nav-link-current' if page === 'catalog' }}" href="catalog.html" {{ 'aria-current="page"' if page == 'catalog' }}>
             Моноподы для cелфи
           </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Умные часы</a>
+          <a class="catalog-nav-link" href="#!">Умные часы</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Экшн-камеры</a>
+          <a class="catalog-nav-link" href="#!">Экшн-камеры</a>
         </li>
       </ul>
     </div>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#">Доставка</a>
+        <a class="main-nav-link" href="#!">Доставка</a>
       </li>
       <li class="main-nav-item main-nav-item-nav">
-        <a class="main-nav-link" href="#">Гарантия</a>
+        <a class="main-nav-link" href="#!">Гарантия</a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#">Контакты</a>
+        <a class="main-nav-link" href="#!">Контакты</a>
       </li>
     </ul>
   </header>
@@ -128,8 +128,8 @@
 
   <!-- Main-footer -->
   <footer class="main-footer">
-    <div class="main-footer-inner container">
-      <a class="logo footer-logo" href="#" aria-current="page">
+    <div class="container">
+      <a class="footer-logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
         <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
       </a>
       <div class="footer-inner">
@@ -139,13 +139,13 @@
 
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Доставка</a>
+            <a class="footer-menu-link" href="#!">Доставка</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Гарантия</a>
+            <a class="footer-menu-link" href="#!">Гарантия</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Контакты</a>
+            <a class="footer-menu-link" href="#!">Контакты</a>
           </li>
         </ul>
 
@@ -169,7 +169,7 @@
           </li>
         </ul>
 
-        <a class="footer-dev" href="https://htmlacademy.ru/" aria-current="page">
+        <a class="footer-dev" href="https://htmlacademy.ru/">
           <img src="images/logo/logo-html-academy.svg" alt="Логотип HTML Academy." width="115" height="33">
         </a>
       </div>

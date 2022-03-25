@@ -31,7 +31,7 @@
         <a class="user-nav-link user-nav-link-user" href="catalog.html">Войти</a>
       </li>
       <li class="user-nav-item">
-        <a class="user-nav-link user-nav-link-sort" href="#">Сравнить</a>
+        <a class="user-nav-link user-nav-link-sort" href="#!">Сравнить</a>
       </li>
       <li class="user-nav-item">
         <button class="user-nav-link user-nav-link-cart" type="button">
@@ -82,13 +82,13 @@
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
       <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
+          <a class="catalog-nav-link" href="#!">Виртуальная реальность</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
+          <a class="catalog-nav-link" href="#!">Фитнес-браслеты</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
+          <a class="catalog-nav-link" href="#!">Квадрокоптеры</a>
         </li>
         <li class="catalog-nav-item">
           <a class="catalog-nav-link" href="catalog.html">
@@ -96,22 +96,22 @@
           </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Умные часы</a>
+          <a class="catalog-nav-link" href="#!">Умные часы</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Экшн-камеры</a>
+          <a class="catalog-nav-link" href="#!">Экшн-камеры</a>
         </li>
       </ul>
     </div>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#">Доставка</a>
+        <a class="main-nav-link" href="#!">Доставка</a>
       </li>
       <li class="main-nav-item main-nav-item-nav">
-        <a class="main-nav-link" href="#">Гарантия</a>
+        <a class="main-nav-link" href="#!">Гарантия</a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#">Контакты</a>
+        <a class="main-nav-link" href="#!">Контакты</a>
       </li>
     </ul>
   </header>
@@ -128,8 +128,8 @@
   <!-- Main-footer -->
 
   <footer class="main-footer">
-    <div class="main-footer-inner container">
-      <a class="logo footer-logo">
+    <div class="container">
+      <a class="footer-logo" href="index.html">
         <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
       </a>
       <div class="footer-inner">
@@ -138,13 +138,13 @@
         </address>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Доставка</a>
+            <a class="footer-menu-link" href="#!">Доставка</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Гарантия</a>
+            <a class="footer-menu-link" href="#!">Гарантия</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Контакты</a>
+            <a class="footer-menu-link" href="#!">Контакты</a>
           </li>
         </ul>
         <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:&nbsp;+7 (812) 812-12-12</a>
@@ -171,7 +171,8 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-ready modal-opened" data-modal="order">
+  <section class="modal modal-opened">
+    <!-- Открытие модального окна производится добавлением к элементу с классом modal класса modal-opened -->
     <div class="modal-inner">
       <header class="modal-header">
         <h2 class="title modal-title">Доставка под заказ</h2>
@@ -195,7 +196,7 @@
           <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме">
         </p>
         <p class="form-group form-group-quantity">
-          <label class="form-label" for="order-quantity">Количество</label>
+          <label class="form-label" for="order-quantity">Количество:</label>
           <span class="form-tooltip" tabindex="0">
             <span class="form-tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
               Привезём сколько получится по требованиям к провозу багажа.

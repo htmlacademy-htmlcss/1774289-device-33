@@ -1,2 +1,46 @@
-
-
+<section class="modal{{ ' modal-opened' if page == 'modal' }}">
+  <!-- Открытие модального окна производится добавлением к элементу с классом modal класса modal-opened -->
+  <div class="modal-inner">
+    <header class="modal-header">
+      <h2 class="title modal-title">Доставка под заказ</h2>
+      <button class="modal-closer" type="button" data-modal-close="order">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </header>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="form-group form-group-text">
+        <label class="form-label" for="order-username">Ваше имя:</label>
+        <input class="form-field" type="text" name="username" id="order-username" placeholder="Введите имя" required>
+        <span class="form-prompt">Добавьте имя</span>
+      </p>
+      <p class="form-group form-group-email">
+        <label class="form-label" for="order-email">Ваш e-mail:</label>
+        <input class="form-field" type="email" name="email" id="order-email" placeholder="Введите e-mail" value="почта">
+        <span class="form-prompt">Забавный у вас адрес</span>
+      </p>
+      <p class="form-group form-group-comment">
+        <label class="form-label" for="order-comment">Что нужно привезти:</label>
+        <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме">
+      </p>
+      <p class="form-group form-group-quantity">
+        <label class="form-label" for="order-quantity">Количество:</label>
+        <span class="form-tooltip" tabindex="0">
+          <span class="form-tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+            Привезём сколько получится по требованиям к провозу багажа.
+          </span>
+        </span>
+        <span class="form-controls">
+          <input class="form-field form-field-counter" type="number" id="order-quantity" name="quantity" min="1"
+            max="999" step="1" value="1" required>
+          <button class="form-control form-control-step-down" type="button">
+            <span class="visually-hidden">Меньше</span>
+          </button>
+          <button class="form-control form-control-step-up" type="button">
+            <span class="visually-hidden">Больше</span>
+          </button>
+        </span>
+      </p>
+      <button class="button form-submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>

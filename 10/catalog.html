@@ -32,7 +32,7 @@
         <a class="user-nav-link user-nav-link-extend" href="index.html">Выйти</a>
       </li>
       <li class="user-nav-item">
-        <a class="user-nav-link user-nav-link-sort" href="#">Сравнить</a>
+        <a class="user-nav-link user-nav-link-sort" href="#!">Сравнить</a>
       </li>
       <li class="user-nav-item">
         <button class="user-nav-link user-nav-link-cart" type="button">
@@ -83,36 +83,36 @@
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
       <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
+          <a class="catalog-nav-link" href="#!">Виртуальная реальность</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
+          <a class="catalog-nav-link" href="#!">Фитнес-браслеты</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
+          <a class="catalog-nav-link" href="#!">Квадрокоптеры</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html">
+          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html" aria-current="page">
             Моноподы для cелфи
           </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Умные часы</a>
+          <a class="catalog-nav-link" href="#!">Умные часы</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#">Экшн-камеры</a>
+          <a class="catalog-nav-link" href="#!">Экшн-камеры</a>
         </li>
       </ul>
     </div>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#">Доставка</a>
+        <a class="main-nav-link" href="#!">Доставка</a>
       </li>
       <li class="main-nav-item main-nav-item-nav">
-        <a class="main-nav-link" href="#">Гарантия</a>
+        <a class="main-nav-link" href="#!">Гарантия</a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#">Контакты</a>
+        <a class="main-nav-link" href="#!">Контакты</a>
       </li>
     </ul>
   </header>
@@ -130,7 +130,7 @@
           <a class="breadcrumbs-link " href="#!">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Моноподы для селфи</a>
+          <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Моноподы для селфи</a>
         </li>
       </ol>
     </header>
@@ -140,7 +140,7 @@
       <div class="catalog-container container">
         <div>
           <h3 class="catalog-title catalog-main-title">Фильтр:</h3>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
               <div class="range">
@@ -219,7 +219,7 @@
             <button class="button button-show" type="submit">Показать</button>
           </form>
         </div>
-        <div class="catalog-right-column">
+        <div>
           <div class="sorting-container">
             <h3 class="catalog-title">Сортировка:</h3>
             <select class="select-control" aria-label="Сортировка">
@@ -227,10 +227,10 @@
               <option value="cheap">Дешёвые</option>
               <option value="expensive">Дорогие</option>
             </select>
-            <a class="sorting-button sorting-ascending">
+            <a class="sorting-button sorting-ascending" href="#!">
               <span class="visually-hidden">По возрастанию.</span>
             </a>
-            <a class="sorting-button sorting-descending">
+            <a class="sorting-button sorting-descending" href="#!">
               <span class="visually-hidden">По убыванию.</span>
             </a>
           </div>
@@ -239,7 +239,7 @@
             <ul class="product-card-list">
               <li>
                 <article class="product-card">
-                  <a class="product-card-overlay" href="#">
+                  <a class="product-card-overlay" href="#!">
                     <span class="button product-card-overlay-link">
                       Подробнее
                     </span>
@@ -254,7 +254,7 @@
               </li>
               <li>
                 <article class="product-card">
-                  <a class="product-card-overlay" href="#">
+                  <a class="product-card-overlay" href="#!">
                     <span class="button product-card-overlay-link">
                       Подробнее
                     </span>
@@ -266,7 +266,7 @@
               </li>
               <li>
                 <article class="product-card">
-                  <a class="product-card-overlay" href="#">
+                  <a class="product-card-overlay" href="#!">
                     <span class="button product-card-overlay-link">
                       Подробнее
                     </span>
@@ -278,7 +278,7 @@
               </li>
               <li>
                 <article class="product-card">
-                  <a class="product-card-overlay" href="#">
+                  <a class="product-card-overlay" href="#!">
                     <span class="button product-card-overlay-link">
                       Подробнее
                     </span>
@@ -289,30 +289,30 @@
                 </article>
               </li>
             </ul>
-            <a class="pagination-show-more" href="#">Загрузить ещё</a>
+            <a class="pagination-show-more" href="#!">Загрузить ещё</a>
             <!-- Pagination -->
             <div class="pagination">
-              <a class="pagination-prev pagination-link-secondary" href="#">
+              <a class="pagination-prev pagination-link-secondary" href="#!">
                 <span>Назад</span>
               </a>
               <ol class="pagination-list">
                 <li>
-                  <a class="pagination-link pagination-link-current" href="#">1</a>
+                  <a class="pagination-link pagination-link-current" href="#!" aria-current="page">1</a>
                 </li>
                 <li>
-                  <a class="pagination-link" href="#">2</a>
+                  <a class="pagination-link" href="#!">2</a>
                 </li>
                 <li>
-                  <a class="pagination-link" href="#">3</a>
+                  <a class="pagination-link" href="#!">3</a>
                 </li>
                 <li>
-                  <a class="pagination-link" href="#">...</a>
+                  <a class="pagination-link" href="#!">...</a>
                 </li>
                 <li>
-                  <a class="pagination-link" href="#">15</a>
+                  <a class="pagination-link" href="#!">15</a>
                 </li>
               </ol>
-              <a class="pagination-next pagination-link-secondary" href="#">
+              <a class="pagination-next pagination-link-secondary" href="#!">
                 <span>Вперёд</span>
               </a>
             </div>
@@ -324,8 +324,8 @@
   <!-- Main-footer -->
 
   <footer class="main-footer">
-    <div class="main-footer-inner container">
-      <a class="logo footer-logo">
+    <div class="container">
+      <a class="footer-logo" href="index.html">
         <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
       </a>
       <div class="footer-inner">
@@ -334,13 +334,13 @@
         </address>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Доставка</a>
+            <a class="footer-menu-link" href="#!">Доставка</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Гарантия</a>
+            <a class="footer-menu-link" href="#!">Гарантия</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">Контакты</a>
+            <a class="footer-menu-link" href="#!">Контакты</a>
           </li>
         </ul>
         <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:&nbsp;+7 (812) 812-12-12</a>
