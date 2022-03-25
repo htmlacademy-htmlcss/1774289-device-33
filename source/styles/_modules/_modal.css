@@ -13,10 +13,10 @@
   display: none;
   overflow-y: scroll;
 }
-
-.modal-opened {
+/*.modal-opened {
   display: flex;
 }
+*/
 
 .modal-inner {
   width: 760px;

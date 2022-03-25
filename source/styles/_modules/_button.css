@@ -95,7 +95,7 @@
   height: 40px;
   align-self: center;
   justify-self: center;
-  background-color: #dcdcdc;
+  background-color: rgba(220, 220, 220, 0.5);
   border-radius: 50%;
 }
 

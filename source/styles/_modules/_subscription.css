@@ -1,5 +1,5 @@
 .subscription {
-  padding: 64px 0 51px;
+  padding: 63px 0 51px;
   background-color: #f0f0f0;
 }
 
@@ -12,12 +12,12 @@
 
 .subscription-title {
   width: 360px;
-  margin: -1px 0 0 6px;
+  margin: 0 0 0 6px;
 }
 
 .subscription-paragraph {
   width: 554px;
-  margin: 9px 0 144px;
+  margin: 8px 0 144px;
 }
 
 .subscription-form {
@@ -38,6 +38,7 @@
 
 .subscription-field:focus {
   background-color: #dcdcdc;
+  outline: none;
 }
 
 .subscription-field::placeholder {
@@ -46,7 +47,7 @@
 
 .subscription-field:invalid {
   color: rgba(68, 68, 68, 0.5);
-  border-color: 3px solid #ff3d3d;
+  border-bottom: 3px solid #ff3d3d;
 }
 
 .subscription-field:disabled {

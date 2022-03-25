@@ -1,11 +1,7 @@
 .main-footer {
-  padding: 56px 0 54px;
+  padding: 62px 0 54px;
   color: #ffffff;
   background-color: #444444;
-}
-
-.main-footer-inner {
-  margin-top: 5px;
 }
 
 .main-page {
@@ -16,7 +12,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: -5px -2px 0 0;
+  margin: 20px 0;
   padding: 0;
 }
 
@@ -73,9 +69,9 @@
 }
 
 .main-nav-item {
-  margin: 15px 1px 10px 45px;
+  margin: 10px 0 10px 45px;
 }
 
 .main-nav-item:last-child {
-  margin-right: 3px;
+  margin-right: 2px;
 }

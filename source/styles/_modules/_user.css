@@ -13,16 +13,6 @@
   display: flex;
 }
 
-.user-nav-link-extend {
-  margin-left: 18px;
-  opacity: 0.3;
-}
-
-.user-nav-link-extend:disabled {
-  opacity: 0.3;
-  cursor: default;
-}
-
 .user-nav-item:first-child {
   margin-right: auto;
 }
@@ -33,18 +23,10 @@
   padding: 5px 0;
   font-size: inherit;
   line-height: 30px;
-  color: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-.user-nav-link:hover {
-  opacity: 0.6;
-}
-
-.user-nav-link:active {
-  opacity: 0.3;
+  color: inherit;
 }
 
 .user-nav-link::before {
@@ -76,6 +58,15 @@
   padding: 2px 2px 0 0;
   background-image: url("../images/icons/basket.svg");
   background-repeat: no-repeat;
+}
+
+.user-nav-link-extend {
+  margin-left: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-nav-link-extend::before {
+  content: none;
 }
 
 .user-nav-label {
@@ -122,3 +113,17 @@
   visibility: visible;
   opacity: 1;
 }
+
+.user-nav-link:hover {
+  opacity: 0.6;
+}
+
+.user-nav-link:active {
+  opacity: 0.3;
+}
+
+.user-nav-link-extend:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+

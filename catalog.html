@@ -246,7 +246,9 @@
                   <img class="product-card-image" src="images/products/product-1.jpg" alt="Селфи-палка." width="360" height="380">
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
                   <p class="product-card-price">500 ₽</p>
+                  <!-- Если на карточке товара есть стикер "new", то добавить параграф и добавить слово "new"
                   <p class="product-card-label">new</p>
+                -->
                 </article>
               </li>
               <li>
@@ -287,34 +289,32 @@
               </li>
             </ul>
             <a class="pagination-show-more" href="#">Загрузить ещё</a>
-            <!-- Pagination-list -->
-            <ol class="pagination-list">
-              <li class="pagination-item-prev">
-                <a class="pagination-prev pagination-link-secondary" href="#">
-                  <span>Назад</span>
-                </a>
-              </li>
-              <li>
-                <a class="pagination-link pagination-link-current" href="#">1</a>
-              </li>
-              <li>
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li>
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li>
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li>
-                <a class="pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item-next">
-                <a class="pagination-next pagination-link-secondary" href="#">
-                  <span>Вперёд</span>
-                </a>
-              </li>
-            </ol>
+            <!-- Pagination -->
+            <div class="pagination">
+              <a class="pagination-prev pagination-link-secondary" href="#">
+                <span>Назад</span>
+              </a>
+              <ol class="pagination-list">
+                <li>
+                  <a class="pagination-link pagination-link-current" href="#">1</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+              </ol>
+              <a class="pagination-next pagination-link-secondary" href="#">
+                <span>Вперёд</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -324,7 +324,7 @@
 
   <footer class="main-footer">
     <div class="main-footer-inner container">
-      <a class="footer-logo">
+      <a class="logo footer-logo">
         <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
       </a>
       <div class="footer-inner">

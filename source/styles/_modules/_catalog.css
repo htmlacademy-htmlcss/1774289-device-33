@@ -44,7 +44,7 @@
 }
 
 .catalog-main-title {
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 }
 
 .catalog-filter-label {
@@ -68,15 +68,6 @@
   position: relative;
 }
 
-.catalog-nav-toggler::before {
-  top: 0;
-  right: 0;
-  width: 46px;
-  height: 46px;
-  border: 2px solid;
-  border-radius: 50%;
-}
-
 .catalog-nav-toggler {
   position: relative;
   padding: 15px 67px 14px 0;
@@ -89,10 +80,16 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 3;
 }
 
-.catalog-nav-toggler:hover {
-  color: #000000;
+.catalog-nav-toggler::before {
+  top: 0;
+  right: 0;
+  width: 46px;
+  height: 46px;
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .catalog-nav-toggler::after {
@@ -101,6 +98,8 @@
   width: 16px;
   height: 16px;
   mask-image: url("../images/icons/plus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: currentColor;
 }
 
@@ -112,17 +111,8 @@
   transition: inherit;
 }
 
-
-.catalog-nav-toggler:active::after,
-.catalog-nav-toggler:hover::after {
-  top: 17px;
-  right: 17px;
-  width: 16px;
-  height: 16px;
-  mask-image: url("../images/icons/minus.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: currentColor;
+.catalog-nav-toggler:hover {
+  color: #000000;
 }
 
 .catalog-nav-toggler:active::after,
@@ -130,6 +120,10 @@
 .catalog-nav-toggler:hover::after,
 .catalog-nav-toggler:hover::before {
   opacity: 1;
+}
+
+.catalog-nav:focus-within .catalog-nav-toggler::after {
+  mask-image: url("../images/icons/minus.svg");
 }
 
 .catalog-nav-subcatalog {
@@ -141,13 +135,20 @@
   gap: 15px 30px;
   grid-template-columns: 222px 1fr 1fr;
   width: 1160px;
-  margin-top: 4px;
-  padding: 7px 455px 56px 60px;
+  margin: 0;
+  padding: 11px 455px 49px 60px;
   box-sizing: border-box;
   background-color: #ffe17f;
   transition: visibility 0.3s, opacity 0.3s;
   opacity: 0.01;
   visibility: hidden;
+}
+
+.catalog-nav-subcatalog:focus-within,
+.catalog-nav-subcatalog:hover,
+.catalog-nav-toggler:focus + .catalog-nav-subcatalog {
+  visibility: visible;
+  opacity: 1;
 }
 
 .catalog-nav-item:last-child {
@@ -158,14 +159,6 @@
   font-size: 16px;
   line-height: 20px;
   color: inherit;
-}
-
-.catalog-nav-toggler:focus + .catalog-nav-subcatalog,
-.catalog-nav-toggler:hover + .catalog-nav-subcatalog,
-.catalog-nav-subcatalog:focus-within,
-.catalog-nav-subcatalog:hover {
-  opacity: 1;
-  visibility: visible;
 }
 
 .catalog-nav-link:hover {

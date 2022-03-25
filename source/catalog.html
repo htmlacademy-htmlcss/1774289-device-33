@@ -27,10 +27,10 @@
         <a class="breadcrumbs-link" href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link " href="#!">Каталог товаров</a>
+        <a class="breadcrumbs-link " href="#">Каталог товаров</a>
       </li>
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link" href="catalog.html">Моноподы для селфи</a>
+        <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Моноподы для селфи</a>
       </li>
     </ol>
   </header>
@@ -133,10 +133,10 @@
             <option value="cheap">Дешёвые</option>
             <option value="expensive">Дорогие</option>
           </select>
-          <a class="sorting-button sorting-ascending">
+          <a class="sorting-button sorting-ascending" href="#">
             <span class="visually-hidden">По возрастанию.</span>
           </a>
-          <a class="sorting-button sorting-descending">
+          <a class="sorting-button sorting-descending" href="#">
             <span class="visually-hidden">По убыванию.</span>
           </a>
         </div>
@@ -155,7 +155,9 @@
                   height="380">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                 <p class="product-card-price">500 ₽</p>
-                <p class="product-card-label">new</p>
+                <!-- Если на карточке товара есть стикер "new", то добавить параграф и добавить слово "new"
+                  <p class="product-card-label">new</p>
+                -->
               </article>
             </li>
             <li>
@@ -201,34 +203,32 @@
 
           <a class="pagination-show-more" href="#">Загрузить ещё</a>
 
-          <!-- Pagination-list -->
-          <ol class="pagination-list">
-            <li class="pagination-item-prev">
-              <a class="pagination-prev pagination-link-secondary" href="#">
-                <span>Назад</span>
-              </a>
-            </li>
-            <li>
-              <a class="pagination-link pagination-link-current" href="#">1</a>
-            </li>
-            <li>
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li>
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li>
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li>
-              <a class="pagination-link" href="#">15</a>
-            </li>
-            <li class="pagination-item-next">
-              <a class="pagination-next pagination-link-secondary" href="#">
-                <span>Вперёд</span>
-              </a>
-            </li>
-          </ol>
+          <!-- Pagination -->
+          <div class="pagination">
+            <a class="pagination-prev pagination-link-secondary" href="#">
+              <span>Назад</span>
+            </a>
+            <ol class="pagination-list">
+              <li>
+                <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
+              </li>
+              <li>
+                <a class="pagination-link" href="#" aria-current="page">2</a>
+              </li>
+              <li>
+                <a class="pagination-link" href="#" aria-current="page">3</a>
+              </li>
+              <li>
+                <a class="pagination-link" href="#" aria-current="page">...</a>
+              </li>
+              <li>
+                <a class="pagination-link" href="#" aria-current="page">15</a>
+              </li>
+            </ol>
+            <a class="pagination-next pagination-link-secondary" href="#">
+              <span>Вперёд</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
