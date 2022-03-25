@@ -1,7 +1,7 @@
 .modal {
   /* display: flex; */
   z-index: 3;
-  background-color: hsla(0, 0%, 94%, 0.9);
+  background-color: rgba(240, 240, 240, 0.9);
 }
 
 .modal-ready {
@@ -12,7 +12,10 @@
   left: 0;
   display: none;
   overflow-y: scroll;
+  z-index: 3;
+  background-color: rgb(240, 240, 240, 0.9);
 }
+
 /*.modal-opened {
   display: flex;
 }

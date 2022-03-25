@@ -105,7 +105,7 @@
   width: 40px;
   height: 40px;
   margin: 8px;
-  background-color: hsla(0, 0%, 100%, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
@@ -173,7 +173,6 @@
   bottom: 0;
   left: 0;
   background-color: #ffc700;
-  background-image: var(--logo-mask);
   transition: inherit;
   pointer-events: none;
 }
