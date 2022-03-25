@@ -20,7 +20,7 @@
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru">
       <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту"
-        aria-label="Поиск:" required>
+        aria-label="Поиск:" required="">
       <button class="search-form-submit" type="submit">Найти</button>
     </form>
     <ul class="page-header-user-nav user-nav">
@@ -302,7 +302,7 @@
       </div>
     </section>
     <p class="button-container container">
-      <a class="button-wide-iconable" href="modal.html" data-modal-open="order">
+      <a class="button-wide-iconable" href="modal.html" data-*>
         <span class="button-title">Доставим редкий товар под заказ</span>
       </a>
     </p>
@@ -363,7 +363,7 @@
           спецпредложения и вот это вот всё.
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscription-field" name="email" type="email" placeholder="Ваш e-mail" aria-label="E-mail" required>
+          <input class="subscription-field" name="email" type="email" placeholder="Ваш e-mail" aria-label="E-mail" required="">
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
         <p class="subscription-check-title">Это бесплатно</p>
@@ -421,7 +421,7 @@
     <div class="modal-inner">
       <header class="modal-header">
         <h2 class="title modal-title">Доставка под заказ</h2>
-        <button class="modal-closer" type="button" data-modal-close="order">
+        <button class="modal-closer" type="button" data-*>
           <span class="visually-hidden">Закрыть</span>
         </button>
       </header>
@@ -435,12 +435,12 @@
         <p class="form-group form-group-email">
           <label class="form-label" for="order-email">Ваш e-mail:</label>
           <input class="form-field" type="email" name="email" id="order-email" placeholder="Введите e-mail"
-            value="почта">
+            value="почта" required="">
           <span class="form-prompt">Забавный у вас адрес</span>
         </p>
         <p class="form-group form-group-comment">
           <label class="form-label" for="order-comment">Что нужно привезти:</label>
-          <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме">
+          <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме" required="">
         </p>
         <p class="form-group form-group-quantity">
           <label class="form-label" for="order-quantity">Количество:</label>
