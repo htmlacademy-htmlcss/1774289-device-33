@@ -6,6 +6,7 @@
 }
 
 .sorting-button {
+  position: relative;
   width: 30px;
   height: 30px;
 }
@@ -31,10 +32,10 @@
   transform: scaleY(-1);
 }
 
-.sorting-button:hover {
+.sorting-button:hover::before {
   opacity: 0.5;
 }
 
-.sorting-button:active {
+.sorting-button:active::before {
   opacity: 1;
 }
