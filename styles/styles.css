@@ -2215,6 +2215,7 @@ img {
   background-image: url("../images/icons/sort-item.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transition: inherit;
   opacity: 0.2;
 }
 
