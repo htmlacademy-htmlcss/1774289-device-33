@@ -1162,14 +1162,14 @@ img {
   background-color: #dcdcdc;
 }
 
-/* Класс field-invalid будет добавляться с помощью js */
+/* Класс subscription-field-invalid будет добавляться с помощью js */
 
-.field:invalid:not(:-moz-placeholder-shown) {
+.subscription-field:invalid:not(:-moz-placeholder-shown) {
   border-color: #c4c4c4;
 }
 
-.field-invalid,
-.field:invalid:not(:placeholder-shown) {
+.subscription-field-invalid,
+.subscription-field:invalid:not(:placeholder-shown) {
   border-color: #c4c4c4;
 }
 
