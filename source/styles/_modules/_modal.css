@@ -1,9 +1,4 @@
 .modal {
-  z-index: 3;
-  background-color: rgba(240, 240, 240, 0.9);
-}
-
-.modal-ready {
   position: fixed;
   top: 0;
   right: 0;
