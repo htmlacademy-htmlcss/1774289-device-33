@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Device – Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" sizes="32x32" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <meta name="apple-mobile-web-app-title" content="Device">
   <meta name="application-name" content="Device">
   <meta name="msapplication-TileColor" content="#00aba9">
@@ -18,17 +15,17 @@
 <body class="page">
   <!-- Page-header -->
   <header class="container page-header">
-    <a class="logo page-header-logo" href="index.html">
+    <a class="logo page-header-logo" href="index.html" aria-current="page">
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru">
-      <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту" aria-label="Поиск:">
+      <input class="search-form-field" name="search" type="search" value="Текст поиска" placeholder="Поиск по сайту"
+        aria-label="Поиск:" required="">
       <button class="search-form-submit" type="submit">Найти</button>
     </form>
     <ul class="page-header-user-nav user-nav">
-      <li class="user-nav-item user-nav-item-extended">
-        <a class="user-nav-link user-nav-link-user" href="#!">Коля Петухов</a>
-        <a class="user-nav-link user-nav-link-extend" href="#!">Выйти</a>
+      <li class="user-nav-item">
+        <a class="user-nav-link user-nav-link-user" href="#!">Войти</a>
       </li>
       <li class="user-nav-item">
         <a class="user-nav-link user-nav-link-sort" href="#!">Сравнить</a>
@@ -46,7 +43,8 @@
                 Любительская
                 <br>
                 селфи-палка
-                <img class="cart-image" src="images/products/product-1-small.jpg" alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
+                <img class="cart-image" src="images/products/product-1-small.jpg"
+                  alt="Товар «Любительская селфи-палка» добавлен в корзину" width="39" height="43">
               </a>
               <a class="cart-remover" href="#!">
                 <span class="visually-hidden">Удалить из корзины</span>
@@ -57,7 +55,8 @@
                 Профессиональная
                 <br>
                 селфи-палка
-                <img class="cart-image" src="images/products/product-2-small.jpg" alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
+                <img class="cart-image" src="images/products/product-2-small.jpg"
+                  alt="Товар «Профессиональная селфи-палка» добавлен в корзину" width="39" height="43">
               </a>
               <a class="cart-remover" href="#!">
                 <span class="visually-hidden">Удалить из корзины</span>
@@ -78,7 +77,7 @@
         </div>
       </li>
     </ul>
-    <div class="page-header-catalog-nav catalog-nav">
+    <nav class="page-header-catalog-nav catalog-nav">
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
       <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
@@ -91,7 +90,7 @@
           <a class="catalog-nav-link" href="#!">Квадрокоптеры</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html" aria-current="page">
+          <a class="catalog-nav-link" href="catalog.html">
             Моноподы для cелфи
           </a>
         </li>
@@ -102,7 +101,7 @@
           <a class="catalog-nav-link" href="#!">Экшн-камеры</a>
         </li>
       </ul>
-    </div>
+    </nav>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
         <a class="main-nav-link" href="#!">Доставка</a>
@@ -116,7 +115,6 @@
     </ul>
   </header>
   <!-- Main-inner -->
-
   <main class="main-inner main-page">
     <!-- Inner-header -->
     <header class="inner-header container">
@@ -243,7 +241,8 @@
                       Подробнее
                     </span>
                   </a>
-                  <img class="product-card-image" src="images/products/product-1.jpg" alt="Селфи-палка." width="360" height="380">
+                  <img class="product-card-image" src="images/products/product-1.jpg" alt="Селфи-палка." width="360"
+                    height="380">
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
                   <p class="product-card-price">500 ₽</p>
                   <!-- Если на карточке товара есть стикер "new", то добавить параграф и добавить слово "new"
@@ -258,7 +257,8 @@
                       Подробнее
                     </span>
                   </a>
-                  <img class="product-card-image" src="images/products/product-2.jpg" alt="Профессиональная селфи-палка." width="360" height="380">
+                  <img class="product-card-image" src="images/products/product-2.jpg"
+                    alt="Профессиональная селфи-палка." width="360" height="380">
                   <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                   <p class="product-card-price">1 500 ₽</p>
                 </article>
@@ -270,7 +270,8 @@
                       Подробнее
                     </span>
                   </a>
-                  <img class="product-card-image" src="images/products/product-3.jpg" alt="Непотопляемая селфи-палка." width="360" height="380">
+                  <img class="product-card-image" src="images/products/product-3.jpg" alt="Непотопляемая селфи-палка."
+                    width="360" height="380">
                   <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                   <p class="product-card-price">2 500 ₽</p>
                 </article>
@@ -282,7 +283,8 @@
                       Подробнее
                     </span>
                   </a>
-                  <img class="product-card-image" src="images/products/product-4.jpg" alt="Селфи-палка «Следуй за мной»." width="360" height="380">
+                  <img class="product-card-image" src="images/products/product-4.jpg"
+                    alt="Селфи-палка «Следуй за мной»." width="360" height="380">
                   <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                   <p class="product-card-price">1 500 ₽</p>
                 </article>
@@ -375,4 +377,5 @@
   </script>
   <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js"></script>
 </body>
+
 </html>

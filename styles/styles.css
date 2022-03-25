@@ -24,9 +24,7 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .about-item {
@@ -1164,15 +1162,17 @@ img {
   background-color: #dcdcdc;
 }
 
-/* Класс field-invalid будет добавляться с помощью js */
+/* Класс subscription-field-invalid будет добавляться с помощью js */
 
-.field:invalid:not(:-moz-placeholder-shown) {
-  border-color: #c4c4c4;
+.subscription-field:invalid:not(:-moz-placeholder-shown) {
+  background-color: #ffffff;
+  border-color: #ff3d3d;
 }
 
-.field-invalid,
-.field:invalid:not(:placeholder-shown) {
-  border-color: #c4c4c4;
+.subscription-field-invalid,
+.subscription-field:invalid:not(:placeholder-shown) {
+  background-color: #ffffff;
+  border-color: #ff3d3d;
 }
 
 .form-field:invalid ~ .form-prompt {
@@ -1663,7 +1663,6 @@ img {
   left: 0;
   height: 380px;
   background-color: rgba(240, 240, 240, 0.8);
-  border: 1px solid #444444;
 }
 
 .product-card-overlay-link {
@@ -2284,11 +2283,6 @@ img {
 
 .subscription-field::placeholder {
   opacity: 0.5;
-}
-
-.subscription-field:invalid {
-  color: rgba(68, 68, 68, 0.5);
-  border-bottom: 3px solid #ff3d3d;
 }
 
 .subscription-field:disabled {
