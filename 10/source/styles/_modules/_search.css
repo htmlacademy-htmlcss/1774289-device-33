@@ -1,13 +1,13 @@
 .search-form {
   display: grid;
-  grid-template-columns: 359px 1fr;
+  grid-template-columns: 1fr min-content;
   font-size: 16px;
   line-height: 20px;
 }
 
 .search-form-field {
   width: 100%;
-  padding: 11px 16px 8px 45px;
+  padding: 8px 16px 8px 45px;
   background-color: transparent;
   background-image: url("../images/icons/search.svg");
   background-position: 14px 50%;
@@ -34,7 +34,7 @@
 
 .search-form-submit:hover {
   box-sizing: border-box;
-  background: #000000;
+  background-color: #000000;
   border: 2px solid #000000;
   color: #ffffff;
 }

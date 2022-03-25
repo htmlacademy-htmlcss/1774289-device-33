@@ -12,7 +12,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
 }
 
@@ -69,5 +69,9 @@
 }
 
 .main-nav-item {
-  margin: 15px 0 15px 46px;
+  margin: 10px 0 10px 45px;
+}
+
+.main-nav-item:last-child {
+  margin-right: 2px;
 }

@@ -1,15 +1,26 @@
+.range {
+  margin-top: 40px;
+}
+
 .range-scale {
   position: relative;
-  width: 200px;
-  height: 2px;
-  margin-bottom: 11px;
+  height: 18px;
+}
+
+.range-scale::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  bottom: 8px;
+  left: 0;
   background-color: #dcdcdc;
 }
 
 .range-bar {
   position: absolute;
   left: 0;
-  width: 119px;
+  top: 8px;
   height: 2px;
   background-color: #000000;
 }
@@ -46,14 +57,15 @@
 .range-inputs-wrapper {
   display: flex;
   position: relative;
-  left: -20px; /* PP */
-  opacity: 0.3;
+  left: -14px;
+  margin-top: 7px;
 }
 
 .range-input {
   width: 15px;
   padding: 0 2px;
   text-align: center;
+  color: inherit;
   background-color: transparent;
   border: none;
   appearance: textfield;

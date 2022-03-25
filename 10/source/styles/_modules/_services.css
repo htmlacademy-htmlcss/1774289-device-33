@@ -16,11 +16,12 @@
 .services-button {
   display: block;
   width: 160px;
+  height: 40px;
 }
 
 .services-button--current {
   width: 100%;
-  padding-right: 140px;
+  padding: 10px 133px 10px 17px;
   color: #ffe17f;
   outline-offset: 2px;
 }
@@ -28,6 +29,7 @@
 .services-button--current::before {
   top: 0;
   bottom: 0;
+  right: -2px;
   background-color: #000000;
   transition: none;
 }
@@ -51,8 +53,8 @@
 .services-content::after {
   content: "";
   position: absolute;
-  top: 62px;
-  right: 40px;
+  top: 63px;
+  right: 41px;
   width: 180px;
   height: 195px;
   background-image: url("../images/icons/services/services-1.svg");

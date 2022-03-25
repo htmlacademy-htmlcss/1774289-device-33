@@ -9,13 +9,14 @@
   content: "";
   width: 80px;
   height: 7px;
-  margin: 29px 0 0;
+  margin: 36px 0 0;
   background-color: #ffc500;
 }
 
 .footer-content {
   order: -1;
-  margin: 0;
+  width: 240px;
+  margin: -4px 0;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -23,9 +24,11 @@
 
 .footer-menu-list {
   order: -1;
-  display: flex;
+  display: grid;
+  gap: 30px 35px;
+  grid-template-columns: repeat(3, 125px);
   justify-content: center;
-  margin: -3px 0 0 0;
+  margin: -3px 15px 0 0;
   padding: 0;
 }
 
@@ -34,7 +37,7 @@
 }
 
 .footer-menu-item:last-child {
-  margin: 0;
+  margin: -1px 0 0 -4px;
 }
 
 .footer-menu-link {
@@ -57,10 +60,9 @@
 }
 
 .footer-contacts-phone {
+  margin: 4px 0 0;
   order: -1;
-  display: flex;
-  align-self: center;
-  justify-content: flex-end;
+  justify-self: flex-end;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -74,8 +76,8 @@
 
 .footer-dev {
   justify-self: end;
-  margin: 15px 0 0 auto;
-  mask-image: url("../images/logo/logo-html-academy.svg");
+  margin: 22px 1px 0 auto;
+  background-image: url("../images/logo/logo-html-academy.svg");
 }
 
 .footer-start {
@@ -88,13 +90,13 @@
   display: inline-block;
   vertical-align: baseline;
   margin-bottom: 30px;
-  mask-image: url("../images/logo/logo-device-footer.svg");
+  background-image: url("../images/logo/logo-device-footer.svg");
 }
 
 .footer-social-list {
   display: flex;
   justify-content: center;
-  margin: 4px 0 0;
+  margin: 11px 0 0;
   padding: 0;
 }
 
@@ -171,7 +173,7 @@
   bottom: 0;
   left: 0;
   background-color: #ffc700;
-  mask-image: var(--logo-mask);
+  background-image: var(--logo-mask);
   transition: inherit;
   pointer-events: none;
 }

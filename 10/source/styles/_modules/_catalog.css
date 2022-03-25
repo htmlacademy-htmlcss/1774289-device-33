@@ -1,5 +1,8 @@
 .catalog-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  padding: 20px 0 0 60px;
 }
 
 .catalog-products {
@@ -8,31 +11,12 @@
   color: #000000;
 }
 
-.catalog-main-filter-title {
-  margin: 25px 0 60px;
-  font-family: "Raleway", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 .catalog-filter-title {
-  margin-bottom: 20px;
-  padding: 0;
-  line-height: 20px;
+  float: left;
+  width: 100%;
+  padding: 0 0 20px;
   font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.catalog-filter-title::before {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 2px;
-  margin-bottom: 12px;
-  background-color: #000000;
+  line-height: 20px;
 }
 
 .catalog-filter-list {
@@ -49,18 +33,30 @@
   margin-top: 17px;
 }
 
-.catalog-filter {
-  width: 220px;
-  margin-right: 40px;
+.catalog-title {
+  margin: 5px 0 0;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Raleway", "Arial", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-main-title {
+  margin-bottom: 57px;
 }
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 67px;
+  margin-right: 69px;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-label:last-child {
-  margin: 0;
+  margin: -6px 0 3px -6px;
 }
 
 .catalog-filter-label:focus-within {
@@ -68,21 +64,8 @@
   outline-offset: 2px;
 }
 
-.catalog-right-column {
-  width: 840px;
-}
-
 .catalog-nav {
   position: relative;
-}
-
-.catalog-nav-toggler::before {
-  top: 0;
-  right: 0;
-  width: 46px;
-  height: 46px;
-  border: 2px solid;
-  border-radius: 50%;
 }
 
 .catalog-nav-toggler {
@@ -97,10 +80,16 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 3;
 }
 
-.catalog-nav-toggler:hover {
-  color: #000000;
+.catalog-nav-toggler::before {
+  top: 0;
+  right: 0;
+  width: 46px;
+  height: 46px;
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .catalog-nav-toggler::after {
@@ -109,6 +98,8 @@
   width: 16px;
   height: 16px;
   mask-image: url("../images/icons/plus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: currentColor;
 }
 
@@ -120,17 +111,8 @@
   transition: inherit;
 }
 
-
-.catalog-nav-toggler:active::after,
-.catalog-nav-toggler:hover::after {
-  top: 17px;
-  right: 17px;
-  width: 16px;
-  height: 16px;
-  mask-image: url("../images/icons/minus.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: currentColor;
+.catalog-nav-toggler:hover {
+  color: #000000;
 }
 
 .catalog-nav-toggler:active::after,
@@ -138,6 +120,10 @@
 .catalog-nav-toggler:hover::after,
 .catalog-nav-toggler:hover::before {
   opacity: 1;
+}
+
+.catalog-nav:focus-within .catalog-nav-toggler::after {
+  mask-image: url("../images/icons/minus.svg");
 }
 
 .catalog-nav-subcatalog {
@@ -149,13 +135,20 @@
   gap: 15px 30px;
   grid-template-columns: 222px 1fr 1fr;
   width: 1160px;
-  margin-top: 4px;
-  padding: 7px 455px 56px 60px;
+  margin: 0;
+  padding: 11px 455px 49px 60px;
   box-sizing: border-box;
   background-color: #ffe17f;
   transition: visibility 0.3s, opacity 0.3s;
   opacity: 0.01;
   visibility: hidden;
+}
+
+.catalog-nav-subcatalog:focus-within,
+.catalog-nav-subcatalog:hover,
+.catalog-nav-toggler:focus + .catalog-nav-subcatalog {
+  visibility: visible;
+  opacity: 1;
 }
 
 .catalog-nav-item:last-child {
@@ -166,14 +159,6 @@
   font-size: 16px;
   line-height: 20px;
   color: inherit;
-}
-
-.catalog-nav-toggler:focus + .catalog-nav-subcatalog,
-.catalog-nav-toggler:hover + .catalog-nav-subcatalog,
-.catalog-nav-subcatalog:focus-within,
-.catalog-nav-subcatalog:hover {
-  opacity: 1;
-  visibility: visible;
 }
 
 .catalog-nav-link:hover {
@@ -190,9 +175,10 @@
 }
 
 .catalog-filter-group {
-  margin: 0 0 35px;
-  padding: 0;
+  margin: 0 20px 33px 0;
+  padding: 12px 0 0;
   border: none;
+  border-top: 2px solid;
 }
 
 .catalog-filter-item:not(:last-child) {

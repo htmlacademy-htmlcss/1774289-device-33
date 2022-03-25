@@ -1,5 +1,5 @@
 .subscription {
-  padding: 64px 0 56px;
+  padding: 63px 0 51px;
   background-color: #f0f0f0;
 }
 
@@ -12,22 +12,23 @@
 
 .subscription-title {
   width: 360px;
-  margin: 0 0 0 7px;
+  margin: 0 0 0 6px;
 }
 
 .subscription-paragraph {
   width: 554px;
-  margin: 9px 0 144px;
+  margin: 8px 0 144px;
 }
 
 .subscription-form {
   display: flex;
+  flex-wrap: wrap;
   width: 810px;
 }
 
 .subscription-field {
   flex-grow: 1;
-  padding: 13px 18px 11px;
+  padding: 13px 16px 11px;
   color: #444444;
   background-color: transparent;
   border: none;
@@ -37,6 +38,7 @@
 
 .subscription-field:focus {
   background-color: #dcdcdc;
+  outline: none;
 }
 
 .subscription-field::placeholder {
@@ -45,7 +47,7 @@
 
 .subscription-field:invalid {
   color: rgba(68, 68, 68, 0.5);
-  border-color: 3px solid #ff3d3d;
+  border-bottom: 3px solid #ff3d3d;
 }
 
 .subscription-field:disabled {
@@ -53,7 +55,7 @@
 }
 
 .subscription-button {
-  padding: 18px 35px;
+  padding: 14px 33px 14px 36px;
   margin-left: -2px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: inherit;
@@ -72,7 +74,7 @@
 
 .subscription-button:active,
 .subscription-button:hover {
-  background: #000000;
+  background-color: #000000;
   border: 3px solid #000000;
   color: #ffffff;
 }
@@ -91,6 +93,8 @@
 .subscription-check-title {
   display: flex;
   align-items: baseline;
+  margin-top: 14px;
+  margin-right: 2px;
 }
 
 .subscription-check-title::before {

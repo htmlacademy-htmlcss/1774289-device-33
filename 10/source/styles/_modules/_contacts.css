@@ -1,6 +1,5 @@
 .contacts-title {
   font-size: 24px;
-  font-weight: 700;
   margin: 0 0 15px;
 }
 
@@ -24,9 +23,16 @@
 
 .contacts-info-title {
   margin: 0 0 15px;
+  font-size: 24px;
 }
 
 .contacts-schedule-list {
   margin: 0 0 30px;
   padding: 0;
+}
+
+.contacts-button {
+  display: block;
+  width: 260px;
+  right: -1px;
 }

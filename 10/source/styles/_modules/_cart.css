@@ -73,7 +73,7 @@
   color: #000000;
   background-color: #ffffff;
   border: 20px solid #000000;
-  outline-offset: -18px;
+  outline-offset: 18px;
 }
 
 .cart-link:hover,

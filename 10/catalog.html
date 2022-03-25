@@ -18,7 +18,7 @@
 
 <body class="page">
   <!-- Page-header -->
-  <header class="container page-header header">
+  <header class="container page-header">
     <a class="logo page-header-logo" href="index.html">
       <img src="images/logo-device.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
     </a>
@@ -83,34 +83,36 @@
       <button class="catalog-nav-toggler" type="button">Каталог товаров</button>
       <ul class="catalog-nav-subcatalog">
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Виртуальная реальность </a>
+          <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Фитнес-браслеты </a>
+          <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Квадрокоптеры </a>
+          <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html"> Моноподы для cелфи </a>
+          <a class="catalog-nav-link catalog-nav-link-current" href="catalog.html">
+            Моноподы для cелфи
+          </a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Умные часы </a>
+          <a class="catalog-nav-link" href="#">Умные часы</a>
         </li>
         <li class="catalog-nav-item">
-          <a class="catalog-nav-link" href="#"> Экшн-камеры </a>
+          <a class="catalog-nav-link" href="#">Экшн-камеры</a>
         </li>
       </ul>
     </div>
     <ul class="main-nav page-header-main-nav">
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#"> Доставка </a>
+        <a class="main-nav-link" href="#">Доставка</a>
+      </li>
+      <li class="main-nav-item main-nav-item-nav">
+        <a class="main-nav-link" href="#">Гарантия</a>
       </li>
       <li class="main-nav-item">
-        <a class="main-nav-link" href="#"> Гарантия </a>
-      </li>
-      <li class="main-nav-item">
-        <a class="main-nav-link" href="#"> Контакты </a>
+        <a class="main-nav-link" href="#">Контакты</a>
       </li>
     </ul>
   </header>
@@ -136,89 +138,91 @@
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
       <div class="catalog-container container">
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <h3 class="catalog-main-filter-title">Фильтр:</h3>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость</legend>
-            <div class="range">
-              <div class="range-scale">
-                <div class="range-bar" style="right: 81px; width: 119px">
-                  <button class="range-toggle range-toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle range-toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
+        <div>
+          <h3 class="catalog-title catalog-main-title">Фильтр:</h3>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="right: 81px; width: 119px">
+                    <button class="range-toggle range-toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle range-toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-inputs-wrapper">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price" style="width: 20px">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
+                  </label>
                 </div>
               </div>
-              <div class="range-inputs-wrapper">
-                <label class="catalog-filter-label">
-                  от <input class="range-input" type="number" value="0" name="min-price" style="width: 20px">
-                </label>
-                <label class="catalog-filter-label">
-                  до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
-                </label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="color[]" value="black" checked="">
-                  <span class="control-label">Черный</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="color[]" value="white" checked="">
-                  <span class="control-label">Белый</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="color[]" value="blue">
-                  <span class="control-label">Синий</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="color[]" value="red">
-                  <span class="control-label">Красный</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="color[]" value="pink">
-                  <span class="control-label">Розовый</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" name="bluetooth" type="radio" value="1" checked="">
-                  <span class="control-label">Есть</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" name="bluetooth" type="radio" value="0">
-                  <span class="control-label">Нет</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button button-show" type="submit">Показать</button>
-        </form>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="color[]" value="black" checked="">
+                    <span class="control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="color[]" value="white" checked="">
+                    <span class="control-label">Белый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="color[]" value="blue">
+                    <span class="control-label">Синий</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="color[]" value="red">
+                    <span class="control-label">Красный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="color[]" value="pink">
+                    <span class="control-label">Розовый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" name="bluetooth" type="radio" value="1" checked="">
+                    <span class="control-label">Есть</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" name="bluetooth" type="radio" value="0">
+                    <span class="control-label">Нет</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button-show" type="submit">Показать</button>
+          </form>
+        </div>
         <div class="catalog-right-column">
           <div class="sorting-container">
-            <h3 class="sorting-title">Сортировка:</h3>
-            <select class="select-control">
+            <h3 class="catalog-title">Сортировка:</h3>
+            <select class="select-control" aria-label="Сортировка">
               <option value="popular">Популярные</option>
               <option value="cheap">Дешёвые</option>
               <option value="expensive">Дорогие</option>
@@ -242,8 +246,10 @@
                   </a>
                   <img class="product-card-image" src="images/products/product-1.jpg" alt="Селфи-палка." width="360" height="380">
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
-                  <p class="product-card-price">744 ₽</p>
+                  <p class="product-card-price">500 ₽</p>
+                  <!-- Если на карточке товара есть стикер "new", то добавить параграф и добавить слово "new"
                   <p class="product-card-label">new</p>
+                -->
                 </article>
               </li>
               <li>
@@ -284,34 +290,32 @@
               </li>
             </ul>
             <a class="pagination-show-more" href="#">Загрузить ещё</a>
-            <!-- Pagination-list -->
-            <ol class="pagination-list">
-              <li class="pagination-item">
-                <a class="pagination-prev pagination-link-secondary" href="#">
-                  <span>Назад</span>
-                </a>
-              </li>
-              <li class="pagination-item-number">
-                <a class="pagination-link pagination-link-current" href="#">1</a>
-              </li>
-              <li class="pagination-item-number">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item-number">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item-number">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item-number">
-                <a class="pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-next pagination-link-secondary" href="#">
-                  <span>Вперёд</span>
-                </a>
-              </li>
-            </ol>
+            <!-- Pagination -->
+            <div class="pagination">
+              <a class="pagination-prev pagination-link-secondary" href="#">
+                <span>Назад</span>
+              </a>
+              <ol class="pagination-list">
+                <li>
+                  <a class="pagination-link pagination-link-current" href="#">1</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li>
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+              </ol>
+              <a class="pagination-next pagination-link-secondary" href="#">
+                <span>Вперёд</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -321,7 +325,7 @@
 
   <footer class="main-footer">
     <div class="main-footer-inner container">
-      <a class="footer-logo">
+      <a class="logo footer-logo">
         <img src="images/logo/logo-device-footer.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
       </a>
       <div class="footer-inner">
@@ -339,7 +343,7 @@
             <a class="footer-menu-link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:&nbsp;+7 (812) 812-12-12</a>
         <ul class="footer-social-list">
           <li>
             <a class="footer-social-link footer-social-fb" href="https://www.facebook.com/htmlacademy">
@@ -363,5 +367,13 @@
       </div>
     </div>
   </footer>
+  <script>
+    window.pinegladePP = {
+      breakpoints: [1240],
+      ext: 'png'
+    };
+
+  </script>
+  <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js"></script>
 </body>
 </html>
