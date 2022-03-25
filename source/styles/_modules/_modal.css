@@ -1,5 +1,4 @@
 .modal {
-  /* display: flex; */
   z-index: 3;
   background-color: rgba(240, 240, 240, 0.9);
 }
@@ -16,10 +15,9 @@
   background-color: rgb(240, 240, 240, 0.9);
 }
 
-/*.modal-opened {
+.modal-opened {
   display: flex;
 }
-*/
 
 .modal-inner {
   width: 760px;

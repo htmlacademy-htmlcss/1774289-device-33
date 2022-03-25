@@ -77,7 +77,6 @@
 .footer-dev {
   justify-self: end;
   margin: 22px 1px 0 auto;
-  background-image: url("../images/logo/logo-html-academy.svg");
 }
 
 .footer-start {
@@ -90,7 +89,6 @@
   display: inline-block;
   vertical-align: baseline;
   margin-bottom: 30px;
-  background-image: url("../images/logo/logo-device-footer.svg");
 }
 
 .footer-social-list {
@@ -173,8 +171,13 @@
   bottom: 0;
   left: 0;
   background-color: #ffc700;
+  mask-image: url("../images/logo/logo-device-footer.svg");
   transition: inherit;
   pointer-events: none;
+}
+
+.footer-dev::before {
+  mask-image: url("../images/logo/logo-html-academy.svg");
 }
 
 .footer-logo:hover::before {

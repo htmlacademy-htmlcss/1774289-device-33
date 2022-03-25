@@ -1,4 +1,4 @@
-<section class="modal{{ ' modal-opened' if page == 'modal' %}">
+<section class="modal{{ ' modal-opened' if page == 'modal' }}">
   <!-- Открытие модального окна производится добавлением к элементу с классом modal класса modal-opened -->
   <div class="modal-inner">
     <header class="modal-header">
@@ -23,7 +23,7 @@
         <input class="form-field" type="text" id="order-comment" name="comment" placeholder="В свободной форме">
       </p>
       <p class="form-group form-group-quantity">
-        <label class="form-label" for="order-quantity">Количество</label>
+        <label class="form-label" for="order-quantity">Количество:</label>
         <span class="form-tooltip" tabindex="0">
           <span class="form-tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
             Привезём сколько получится по требованиям к провозу багажа.
@@ -44,4 +44,3 @@
     </form>
   </div>
 </section>
-
