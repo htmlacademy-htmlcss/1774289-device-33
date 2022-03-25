@@ -1165,11 +1165,13 @@ img {
 /* Класс subscription-field-invalid будет добавляться с помощью js */
 
 .subscription-field:invalid:not(:-moz-placeholder-shown) {
+  background-color: #ffffff;
   border-color: #ff3d3d;
 }
 
 .subscription-field-invalid,
 .subscription-field:invalid:not(:placeholder-shown) {
+  background-color: #ffffff;
   border-color: #ff3d3d;
 }
 
