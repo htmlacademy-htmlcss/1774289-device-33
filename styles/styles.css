@@ -261,7 +261,7 @@ img {
 }
 
 .cart-item + .cart-item {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cart-link {
@@ -471,7 +471,8 @@ img {
   opacity: 1;
 }
 
-.catalog-nav:focus-within .catalog-nav-toggler::after {
+.catalog-nav:focus-within .catalog-nav-toggler::after,
+.catalog-nav:hover .catalog-nav-toggler::after {
   -webkit-mask-image: url("../images/icons/minus.svg");
           mask-image: url("../images/icons/minus.svg");
 }
@@ -482,11 +483,11 @@ img {
   left: -60px;
   z-index: 1;
   display: grid;
-  gap: 15px 30px;
+  gap: 6px 30px;
   grid-template-columns: 222px 1fr 1fr;
   width: 1160px;
-  margin: 0;
-  padding: 11px 455px 49px 60px;
+  margin-top: 4px;
+  padding: 7px 455px 51px 60px;
   box-sizing: border-box;
   background-color: #ffe17f;
   transition: visibility 0.3s, opacity 0.3s;
@@ -494,9 +495,8 @@ img {
   visibility: hidden;
 }
 
-.catalog-nav-subcatalog:focus-within,
-.catalog-nav-subcatalog:hover,
-.catalog-nav-toggler:focus + .catalog-nav-subcatalog {
+.catalog-nav:focus-within .catalog-nav-subcatalog,
+.catalog-nav:hover .catalog-nav-subcatalog {
   visibility: visible;
   opacity: 1;
 }
@@ -1164,6 +1164,8 @@ img {
   background-color: #dcdcdc;
 }
 
+/* Класс field-invalid будет добавляться с помощью js */
+
 .field:invalid:not(:-moz-placeholder-shown) {
   border-color: #c4c4c4;
 }
@@ -1342,9 +1344,9 @@ img {
   background-color: rgb(240, 240, 240, 0.9);
 }
 
-.modal-opened {
+/*.modal-opened {
   display: flex;
-}
+}*/
 
 .modal-inner {
   width: 760px;
@@ -2200,12 +2202,19 @@ img {
 .sorting-button {
   width: 30px;
   height: 30px;
-  background-color: transparent;
+}
+
+.sorting-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-image: url("../images/icons/sort-item.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
-  cursor: pointer;
 }
 
 .sorting-ascending {

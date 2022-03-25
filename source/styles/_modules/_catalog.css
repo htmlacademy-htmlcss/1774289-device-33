@@ -122,7 +122,8 @@
   opacity: 1;
 }
 
-.catalog-nav:focus-within .catalog-nav-toggler::after {
+.catalog-nav:focus-within .catalog-nav-toggler::after,
+.catalog-nav:hover .catalog-nav-toggler::after {
   mask-image: url("../images/icons/minus.svg");
 }
 
@@ -132,11 +133,11 @@
   left: -60px;
   z-index: 1;
   display: grid;
-  gap: 15px 30px;
+  gap: 6px 30px;
   grid-template-columns: 222px 1fr 1fr;
   width: 1160px;
-  margin: 0;
-  padding: 11px 455px 49px 60px;
+  margin-top: 4px;
+  padding: 7px 455px 51px 60px;
   box-sizing: border-box;
   background-color: #ffe17f;
   transition: visibility 0.3s, opacity 0.3s;
@@ -144,9 +145,8 @@
   visibility: hidden;
 }
 
-.catalog-nav-subcatalog:focus-within,
-.catalog-nav-subcatalog:hover,
-.catalog-nav-toggler:focus + .catalog-nav-subcatalog {
+.catalog-nav:focus-within .catalog-nav-subcatalog,
+.catalog-nav:hover .catalog-nav-subcatalog {
   visibility: visible;
   opacity: 1;
 }
