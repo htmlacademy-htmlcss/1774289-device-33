@@ -486,7 +486,7 @@ img {
   gap: 6px 30px;
   grid-template-columns: 222px 1fr 1fr;
   width: 1160px;
-  margin-top: 4px;
+  margin: 0;
   padding: 7px 455px 51px 60px;
   box-sizing: border-box;
   background-color: #ffe17f;
